@@ -21,12 +21,12 @@ def main():
     load(sys.argv[1])
 
 def load(path):
-    filesize = os.path.getsize(path)
-    f = file(path, "rb")
+    data = file(path, "rb").read()
+    filesize = len(data)
 
-    f.seek(0)
-    offsetsData = f.read(SECTOR_BYTES)
-    modTimesData = f.read(SECTOR_BYTES)
+    n = 0
+    offsetsData = data[0:SECTOR_BYTES]
+    modTimesData = data[SECTOR_BYTES:SECTOR_BYTES * 2]
 
     freeSectors = [True] * (filesize / SECTOR_BYTES)
     freeSectors[0:2] = False, False
