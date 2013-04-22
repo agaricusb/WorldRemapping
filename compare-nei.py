@@ -36,31 +36,9 @@ def matchAll(before, after):
             del after[newName]
             continue
 
-        fuzzyOldName = getFuzzyName(oldName)
-        if fuzzyOldName is not None:
-            for newName, newID in after.iteritems():
-                fuzzyNewName = getFuzzyName(newName)
-
-                found = False
-                if fuzzyOldName == fuzzyNewName:
-                    mapping[oldID] = (newID, oldName, newName, "fuzzy "+fuzzyNewName)
-                    del after[newName]
-                    found = True
-                    break
-                if found: break
-            if found: continue
-
         mapping[oldID] = (None, oldName, None, "no match")
 
     return mapping
-
-def getFuzzyName(name):
-    try:
-        import fuzzy # sudo easy_install fuzzy - fast Python phonetic algorithms: https://pypi.python.org/pypi/Fuzzy
-    except ImportError:
-        return None
-
-    return fuzzy.DMetaphone()(name)[0]
 
 def main():
     if len(sys.argv) < 3:
