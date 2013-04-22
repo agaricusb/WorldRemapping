@@ -51,8 +51,10 @@ def main():
     mapping = matchAll(before, after)
 
     for k, v in mapping.iteritems():
-        print k,v
-
+        if v[0] is not None:
+            print "%s -> %s # %s " % (k, v[0], v[1:])
+        else:
+            print "# %s -> %s" % (k, v)
  
 
 if __name__ == "__main__":
