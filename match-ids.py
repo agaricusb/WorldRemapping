@@ -58,8 +58,6 @@ def matchAll(before, after, configsBefore, configsAfter):
                         possibleNewNames.append((config, key, id))
         
 
-        print oldID,possibleOldNames,possibleNewNames
-
         mapping[oldID] = (None, oldName, None, "no match")
 
     return mapping
@@ -103,7 +101,8 @@ def main():
 
     mapping = matchAll(before, after, configsBefore, configsAfter)
 
-    for k, v in mapping.iteritems():
+    for k in sorted(mapping.keys()):
+        v = mapping[k]
         if v[0] is not None:
             print "%s -> %s # %s " % (k, v[0], v[1:])
         else:
