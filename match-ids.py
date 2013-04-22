@@ -14,6 +14,10 @@ def readNEIDump(fn):
         if line.startswith("Block. Name: ") or line.startswith("Item. Name: "):
             kind, info = line.split(": ", 1)
             unlocalizedName, id = info.split(". ID: ")
+
+            while m.has_key(unlocalizedName):
+                unlocalizedName += "_" # overloaded name
+
             m[unlocalizedName] = int(id)
 
     return m
