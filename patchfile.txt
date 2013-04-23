@@ -1,4 +1,4 @@
-# 126 -> ??? - config? (None, 'eloraam.logic.BlockLogic', None, 'no match')
+# 126 -> WR-CBE receivers/jammer (None, 'eloraam.logic.BlockLogic', None, 'no match')
 127 -> 3139 # NetherOres block ID first --  (None, 'tile.blockNetherOres', None, 'no match')
 128 -> 2603 # ('tile.crystalBlock', 'tile.crystalBlock', 'exact') 
 129 -> 2615 # ForgottenNature Dark Crystal, Crystal Leaves --  (None, 'tile.crystalLeaves', None, 'no match')
@@ -28,7 +28,7 @@
 154 -> 511 # ('tile.markerBlock', 'tile.markerBlock', 'exact') 
 155 -> 507 # ('tile.fillerBlock', 'tile.fillerBlock', 'exact') 
 157 -> 504 # ('tile.builderBlock', 'tile.builderBlock', 'exact') 
-# 158 -> (None, 'tile.templateBlock', None, 'no match')
+158 -> 504 # buildcraft builder templates - removed(None, 'tile.templateBlock', None, 'no match')
 160 -> 508 # ('tile.frameBlock', 'tile.frameBlock', 'exact') 
 161 -> 506 # tile.engineBlock -- (None, 'buildcraft.energy.BlockEngine', None, 'no match')
 162 -> 254 # ('tile.oilMoving', 'tile.oilMoving', 'exact') 
@@ -127,7 +127,7 @@
 
 # UsefulFoods
 # 450 -> UsefulFood (None, 'tile.Apple Cake', None, 'no match')
-# 451 -> Mo' Creatures where is hay?? (None, 'tile.HayBall', None, 'no match')
+# 451 -> UF placeable hay (None, 'tile.HayBall', None, 'no match')
 # 452 -> UF (None, 'tile.Magic Cake', None, 'no match')
 # 453 -> UF (None, 'tile.Shoco Cake', None, 'no match')
 701 -> 2316 # sofa_center JFM (None, 'tile.sofaSingle', None, 'no match')
@@ -157,11 +157,11 @@
 725 -> 213 # vanilla redstone lamp (None, 'tile.lightBulb', None, 'no match')
 726 -> 213 # vanilla redstone lamp (None, 'tile.lightBulb_', None, 'no match')
 727 -> 2311:4 # (None, 'tile.mantlepiece', None, 'no match')
-728 -> 2314:0 (None, 'tile.pighead', None, 'no match')
+728 -> 2314:0 #(None, 'tile.pighead', None, 'no match')
 729 -> 390 # vanilla flower pot (None, 'tile.plantpot', None, 'no match')
 730 -> 2315 # (None, 'tile.roofing', None, 'no match')
 731 -> 2315 # (None, 'tile.roofingCorner', None, 'no match')
-732 -> 2314:4 (None, 'tile.sheepHead', None, 'no match')
+732 -> 2314:4 # (None, 'tile.sheepHead', None, 'no match')
 733 -> 2306:8 # (None, 'tile.sink', None, 'no match')
 734 -> 2314:8 # (None, 'tile.skeletonHead', None, 'no match')
 735 -> 2316 # (None, 'tile.sofaCenter', None, 'no match')
@@ -182,7 +182,7 @@
 751 -> 2307:4 # (None, 'tile.freezer', None, 'no match')
 752 -> 2307 # (None, 'tile.fridge', None, 'no match')
 753 -> 2312:12 # (None, 'tile.dragonhead', None, 'no match')
-754 -> 2307:12 # j(None, 'tile.rubbishbin', None, 'no match')
+754 -> 2307:12 # (None, 'tile.rubbishbin', None, 'no match')
 755 -> 2322:8 # (None, 'tile.television', None, 'no match')
 # Netherrocks
 756 -> 6256 # (None, NR 'item.fyriteIngot', None, 'no match')
@@ -477,11 +477,11 @@
 1591 -> 1086 # (None, 'tile.Secret Wooden Door', None, 'no match')
 1592 -> 1087 # (None, 'tile.Full-Camo block', None, 'no match')
 1593 -> 1088 # (None, 'tile.One-Way Glass', None, 'no match')
-# 1594 -> (None, 'tile.Shelf Button', None, 'no match')
-# 1595 -> (None, 'tile.Shelf Wire', None, 'no match')
-# 1596 -> (None, 'tile.Shelf Gate', None, 'no match')
-# 1597 -> (None, 'com.github.AbrarSyed.SecretRooms.BlockShelfGateExt', None, 'no match')
-# 1598 -> (None, 'tile.Shelf Lever', None, 'no match')
+1594 -> 143 # vanilla button (None, 'tile.Shelf Button', None, 'no match')
+1595 -> 131 # vanilla tripwire hook (None, 'tile.Shelf Wire', None, 'no match')
+1596 -> 131 # vanilla tripwire hook (None, 'tile.Shelf Gate', None, 'no match')
+1597 -> 1080 # secret camo lever (None, 'com.github.AbrarSyed.SecretRooms.BlockShelfGateExt', None, 'no match')
+1598 -> 1080 # secret camo lever (None, 'tile.Shelf Lever', None, 'no match')
 1599 -> 1089 # (None, 'tile.Torch Lever', None, 'no match')
 1600 -> 567 # (None, 'tile.illumeniteBlock', None, 'no match')
 
@@ -556,10 +556,12 @@
 
 # Thermal Expansion
 4091 -> 2011 # (None, 'cofh.thermalexpansion.core.BlockRockwool', None, 'no match')
-# 4092 -> (None, 'cofh.thermalexpansion.factory.BlockFactory', None, 'no match')
-# 4298 -> (None, 'item.PipeLiquidsRedstone', None, 'no match')
-4299 -> 20260 # ('item.PipeItemsRedstone', 'item.PipeItemsRedstone', 'exact') 
-# 4300 -> (None, 'item.PipeItemsAdvancedInsertion', None, 'no match')
+4092 -> 2002 # factory.factoryBlocks.id=4092 I:Machine=2002 (None, 'cofh.thermalexpansion.factory.BlockFactory', None, 'no match')
+
+# Buildcraft / ABO
+# 4298 -> # Waterproof Redstone Pipe (None, 'item.PipeLiquidsRedstone', None, 'no match')
+4299 -> 20260 # Redstone Transport Pipe ('item.PipeItemsRedstone', 'item.PipeItemsRedstone', 'exact') 
+# 4300 -> # Advanced Insertion Pipe (None, 'item.PipeItemsAdvancedInsertion', None, 'no match')
 # 4301 -> (None, 'item.PipeItemsAdvancedWood', None, 'no match')
 # 4302 -> (None, 'item.PipeItemsDistributor', None, 'no match')
 # 4303 -> (None, 'item.PipeItemTeleport', None, 'no match')
@@ -793,9 +795,10 @@
 # 7315 -> (None, 'item.crowbarRC', None, 'no match')
 # 7316 -> (None, 'item.lapotronUpgrade', None, 'no match')
 
-7493 -> 7493 # ('item.enderpouch', 'item.enderpouch', 'exact') 
-7614 -> 11307 # ('item.tubestuff.uselessItem', 'item.tubestuff.uselessItem', 'exact') 
+7493 -> 7493 # EnderStorage ('item.enderpouch', 'item.enderpouch', 'exact') 
+7614 -> 11307 # TubeStuff ('item.tubestuff.uselessItem', 'item.tubestuff.uselessItem', 'exact') 
 
+# Greg's Lighting
 # 10556 -> (None, 'item.gcewing.item.calciumCarbide', None, 'no match')
 # 10557 -> (None, 'item.gcewing.item.bonemealAndCharcoal', None, 'no match')
 # 10558 -> (None, 'item.gcewing.item.gaslightMantle', None, 'no match')
@@ -814,7 +817,7 @@
 
 # Mo' Creatures
 11700 -> 9052 # (None, 'item.fishbowle', None, 'no match')
-11701 -> (None, 'item.fishbowlw', None, 'no match')
+11701 -> 9053 # (None, 'item.fishbowlw', None, 'no match')
 11702 -> 9054 # (None, 'item.fishbowl1', None, 'no match')
 11703 -> 9055 # (None, 'item.fishbowl2', None, 'no match')
 11704 -> 9056 # (None, 'item.fishbowl3', None, 'no match')
@@ -1125,13 +1128,37 @@
 27032 -> 26006 # (None, 'item.itembunnybike', None, 'no match')
 27033 -> 26011 # (None, 'item.itemdinobike', None, 'no match')
 
-# Ic2
-# 28256 -> (None, 'item.mineral', None, 'no match')
-# 28257 -> (None, 'item.pulverized', None, 'no match')
-# 28258 -> (None, 'item.alloy', None, 'no match')
-28259 -> 20262 # ('item.component', 'item.component', 'exact') 
+# Thermal Expansion
+28256:0 -> 20257:132 # rich slag # rare earth lode (None, 'item.mineral', None, 'no match') Mineral item
+28256:1 -> 20257:97 # niter
+28256:2 -> 20257:96 # sulphur
+28256:3 -> 20257:131 # slag
+28256:4 -> 13435:0 # # wood pulp
+28256:5 -> 20257:129 # sawdust
+28256:6 -> 20257:130 # compressed sawdust
+#28256 -> 20257 # other?
+28257:0 -> 20257:132 # rich slag # pulverized rare earth #  (None, 'item.pulverized', None, 'no match')
+28257:1 -> 20257:1 # pulverized gold ore
+28257:2 -> 20257:0 # pulverized iron ore
+28257:3 -> 20257:32 # pulverized copper ore
+28257:4 -> 20257:33 # pulverized tin ore
+28257:5 -> 20257:34 # pulverized silver ore
+#28257 -> 20257 # other?
+28258:1 -> 20257:38 # electrum blend # conductive alloy blend # 28258 -> (None, 'item.alloy', None, 'no match')
+28258:3 -> 20257:39 # invar blend # superconductive alloy blend
+28258:5 -> 20257:39 # invar blend # alloyed steel blind
+28257:7 -> 20257:38 # electrum blend # refactory alloy blend
+28258:9 -> 20257:36 # bronze blend
+28258:11 -> 20257:37 # brass blend
+#28258 -> 20257 # other?
+28259:0 -> 20257:160 # pneumatic servo 28259 -> 20262 # ('item.component', 'item.component', 'exact') 
+28259:1 -> 20257:161 # redstone reception coil # redstone power coil
+#28259 -> 20257 # other?
+# Omniwrench
 # 28266 -> (None, 'item.reconfigTool', None, 'no match')
 # 28356 -> (None, 'item.omniWrench', None, 'no match')
+
+# IC2
 30103 -> 30103 # ('item.itemCoolant', 'itemCoolant', 'replace') 
 30104 -> 30104 # (None, 'ic2.common.ItemDebug', None, 'no match')
 30105 -> 30105 # ('item.itemWeedEx', 'itemWeedEx', 'replace') 
