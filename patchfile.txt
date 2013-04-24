@@ -11,23 +11,11 @@
 136 -> 751 # RP2 microblock.id=751 -- (None, 'tile.rpwire', None, 'no match')
 
 # RedPower2 appliances RP2 appliance.id=750 -- (None, 'eloraam.base.BlockAppliance', None, 'no match')
-137:0 -> 2830:0 # 750:0 # alloy furnace 
-137:1 -> 2830:0 # 750:1 # blulectric furnace
-137:2 -> 2830:0 # 750:2 # buffer
+137:0 -> 750:0 # alloy furnace 
+137:1 -> 750:1 # blulectric furnace
+137:2 -> 750:2 # buffer
 137:3 -> 2830:0 # RedPower2 Project Bench -> bau5 Project Table # XXX also converts tile entity - ProjectBenchPlugin
-137:4 -> 2830:0 # 750:4 # blulectric alloy furnace
-# convert everything else to project benches
-137:5 -> 2830:0
-137:6 -> 2830:0
-137:7 -> 2830:0
-137:8 -> 2830:0
-137:9 -> 2830:0
-137:10 -> 2830:0
-137:11 -> 2830:0
-137:12 -> 2830:0
-137:13 -> 2830:0
-137:14 -> 2830:0
-137:15 -> 2830:0
+137:4 -> 750:4 # blulectric alloy furnace
 
 138 -> 761 # RP2 logic.logic.id=761 -- (None, 'eloraam.logic.BlockLogic_', None, 'no match')
 139 -> 241 # RP2 plants.id=214 -- (None, 'tile.indigo', None, 'no match')
