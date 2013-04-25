@@ -527,11 +527,11 @@
 3126 -> 13127 # (None, EXBL 'item.scarecrow', None, 'no match')
 
 # Hot Air Balloons
-# 3256 -> TODO: Flan's (None, HAB :('item.hotAirBalloon', None, 'no match')
-# 3257 -> (None, 'item.hotAirBalloonPropelled', None, 'no match')
-# 3258 -> (None, 'item.leatherBalloon', None, 'no match')
-# 3259 -> (None, 'item.leatherSheet', None, 'no match')
-# 3260 -> (None, 'item.rope', None, 'no match')
+3256 -> 23324:4 # Flan's P-51 Mustang # (None, HAB :('item.hotAirBalloon', None, 'no match')
+3257 -> 23324:6 # Flan's P-51 Mustang # (None, 'item.hotAirBalloonPropelled', None, 'no match')
+3258 -> 23265 # Flan's Metal Cockpit # (None, 'item.leatherBalloon', None, 'no match')
+3259 -> 23256 # Flan's Biplane Wing (None, 'item.leatherSheet', None, 'no match')
+3260 -> 23281 # Flan's Metal Propeller (None, 'item.rope', None, 'no match')
 
 # Mo' Creatures
 4028 -> 9029 # (None, MoC 'item.HorseSaddle', None, 'no match')
@@ -1117,7 +1117,7 @@
 23302 -> 349 # (None, 'item.Red Shrooma', None, 'no match')
 23303 -> 349 # (None, 'item.Brown Shrooma', None, 'no match')
 
-# 24256 -> TODO: Flan's (None, 'item.thxHelicopter', None, 'no match')
+24256 -> 23321:6 # Flan's Two Seat Biplane (None, 'item.thxHelicopter', None, 'no match')
 26711 -> 30256 # ic2 coal dust (None, 'item.itemDustCharcoal', None, 'no match')
 26712 -> 30256 # ic2 coal dust (None, 'item.itemFuelCharcoalDust', None, 'no match')
 26713 -> 30256 # ic2 coal dust (None, 'item.itemFuelCharcoalCmpr', None, 'no match')
