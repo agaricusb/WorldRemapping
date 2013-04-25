@@ -71,7 +71,7 @@
 186 -> 2640 # Forgotten Nature - torchID (None, 'tile.crystal torch', None, 'no match')
 187 -> 2608 # Forgotten Nature -- groundID (None, 'tile.crystal groundcover', None, 'no match')
 188 -> 216 # RP2 storage.id=216 -- (None, 'eloraam.world.BlockStorage', None, 'no match')
-# 189 -> Advanced Power Management? (None, 'BlockChargingBench', None, 'no match')
+189 -> 702:10 # GregTech Charge-O-Mat # Advanced Power Management? (None, 'BlockChargingBench', None, 'no match') # XXX also converts tile entity - ChargingBenchGregTechPlugin
 190 -> 2850 # Power Converters -- (None, 'tile.powerConverter', None, 'no match')
 191 -> 645 # AdvancedMachines AS -- (None, 'tile.advMachine', None, 'no match')
 192 -> 665 # ('tile.blockThermalMonitor', 'tile.blockThermalMonitor', 'exact') 
