@@ -99,7 +99,8 @@
 215 -> 2563 # Trees++ ('tile.Flowers', 'tile.Flowers', 'exact') 
 216 -> 614 # ('tile.blockIronScaffold', 'blockIronScaffold', 'replace') 
 217 -> 602 # IC2 I:blockBarrel=602 -- (None, 'ic2.common.BlockBarrel', None, 'no match')
-218 -> 604 # ('tile.blockCrop', 'blockCrop', 'replace') 
+#218 -> 604 # ('tile.blockCrop', 'blockCrop', 'replace')  # TODO
+218 -> 3 # XXX temporarily replace crops with dirt until crash fixed https://gist.github.com/agaricusb/5457143 http://bt.industrial-craft.net/view.php?id=376
 219 -> 616 # IC2 I:blockLuminatorDark=616 -- (None, 'tile.blockLuminatorD', None, 'no match')
 220 -> 629 # ('tile.blockScaffold', 'blockScaffold', 'replace') 
 221 -> 630 # ('tile.blockWall', 'blockWall', 'replace') 
