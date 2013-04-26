@@ -19,11 +19,20 @@
 
 138 -> 761 # RP2 logic.logic.id=761 -- (None, 'eloraam.logic.BlockLogic_', None, 'no match')
 139 -> 241 # RP2 plants.id=214 -- (None, 'tile.indigo', None, 'no match')
-140 -> 240 # RP2 ores.id=140 -- (None, 'tile.rpores', None, 'no match')
-141 -> 211 # RP2 leaves.id=211 -- (None, 'tile.rpleaves', None, 'no match')
-#142 -> 215 # RP2 stone.id=215 -- (None, 'tile.rpstone', None, 'no match')
 
-# RedPower world gen replacements
+# RedPower2 ores - 140 -> 240 # RP2 ores.id=140 -- (None, 'tile.rpores', None, 'no match')
+140:0 -> 703:3 # convert to GregTech ruby ore # RP2 ruby ore
+140:1 -> 129:0 # convert to vanilla emerald ore # RP2 green emerald ore
+140:2 -> 703:3 # convert to GregTech sapphire ore # RP2 sapphire ore
+140:3 -> 2001:2 # convert to Thermal Expansion silver ore # RP2 silver ore
+140:4 -> 2001:1 # convert to Thermal Expansion tin ore # RP2 tin ore
+140:5 -> 2000:0 # convert to Thermal Expansion copper ore # RP2 copper ore
+140:6 -> 703:9 # convert to GregTech Tungstate Ore # RP2 tungsten ore
+140:7 -> 1151:3 # convert to TubeStuff nikolite block # RP2 nikolite ore
+
+141 -> 211 # RP2 leaves.id=211 -- (None, 'tile.rpleaves', None, 'no match')
+
+# RedPower world gen replacements #142 -> 215 # RP2 stone.id=215 -- (None, 'tile.rpstone', None, 'no match')
 142:0 -> 2600:4 # FN marble # RP2 marble
 142:1 -> 2600:1 # FN granite # RP2 basalt
 142:2 -> 2600:8 # FN marble brick # RP2 marble brick
@@ -70,7 +79,12 @@
 185 -> 2606 # Forgotten Nature -- ('tile.fence_', 'tile.fence_', 'exact') 
 186 -> 2640 # Forgotten Nature - torchID (None, 'tile.crystal torch', None, 'no match')
 187 -> 2608 # Forgotten Nature -- groundID (None, 'tile.crystal groundcover', None, 'no match')
-188 -> 216 # RP2 storage.id=216 -- (None, 'eloraam.world.BlockStorage', None, 'no match')
+
+# RedPower2 storage blocks 188 -> 216 # RP2 storage.id=216 -- (None, 'eloraam.world.BlockStorage', None, 'no match')
+188:0 -> 700:4 # convert to GregTech Block of Ruby # RP2 ruby block
+188:1 -> 133:0 # convert to vanilla Block of Emerald # RP2 green emerald block
+188:2 -> 700:5 # convert to GregTech Block of Sapphire # RP2 sapphire block
+
 189 -> 702:10 # GregTech Charge-O-Mat # Advanced Power Management? (None, 'BlockChargingBench', None, 'no match') # XXX also converts tile entity - ChargingBenchGregTechPlugin
 190 -> 2850 # Power Converters -- (None, 'tile.powerConverter', None, 'no match')
 191 -> 645 # AdvancedMachines AS -- (None, 'tile.advMachine', None, 'no match')
@@ -298,9 +312,19 @@
 1208 -> 11567 # (None, 'item.gunStock', None, 'no match')
 # RedPower
 # 1256 -> (None, 'eloraam.core.ItemParts', None, 'no match')
-# 1257 -> (None, 'eloraam.core.ItemParts_', None, 'no match')
+
+# RP2 gems/items 1257 -> (None, 'eloraam.core.ItemParts_', None, 'no match')
+1257:0 -> 21256:32 # GregTech ruby # RP2 ruby
+1257:1 -> 21256:34 # GregTech green sapphire # vanilla emerald # # RP2 emerald
+1257:2 -> 21256:33 # GregTech sapphire (blue) # RP2 sapphire
+1257:3 -> 20257:66 # convert to Thermal Expansion silver ingot # RP2 silver ingot
+1257:4 -> 20257:65 # convert to Thermal Expansion tin ingot # RP2 tin ingot
+1257:5 -> 20257:64 # convert to Thermal Expansion copper ingot # RP2 copper ingot
+1257:6 -> 1151:3 # TubeStuff nikolite block # RP2 nikolite
+
 # 1258 -> (None, 'eloraam.core.ItemParts__', None, 'no match')
 # 1259 -> (None, 'eloraam.base.ItemDyeIndigo', None, 'no match')
+# RP2 tools
 # 1260 -> (None, 'item.handsawIron', None, 'no match')
 # 1261 -> (None, 'item.handsawDiamond', None, 'no match')
 # 1262 -> (None, 'item.screwdriver', None, 'no match')
@@ -331,6 +355,7 @@
 # 1287 -> (None, 'item.hoeRuby', None, 'no match')
 # 1288 -> (None, 'item.hoeEmerald', None, 'no match')
 # 1289 -> (None, 'item.hoeSapphire', None, 'no match')
+
 # 1290 -> (None, 'eloraam.world.ItemCustomSeeds', None, 'no match')
 # 1291 -> (None, 'item.paintcan.empty', None, 'no match')
 # 1292 -> (None, 'item.paintcan.white', None, 'no match')
