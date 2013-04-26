@@ -34,10 +34,10 @@
 
 # RedPower world gen replacements #142 -> 215 # RP2 stone.id=215 -- (None, 'tile.rpstone', None, 'no match')
 142:0 -> 2600:4 # FN marble # RP2 marble
-142:1 -> 2600:1 # FN granite # RP2 basalt
+142:1 -> 3134:0 # MFR smooth blackstone # RP2 basalt
 142:2 -> 2600:8 # FN marble brick # RP2 marble brick
-142:3 -> 251:1 # EXBL red cobblestone # RP2 basalt cobblestone
-142:4 -> 2600:5 # FN granite brick # RP2 basalt brick
+142:3 -> 3134:2 # MFR cobble blackstone # RP2 basalt cobblestone
+142:4 -> 3134:4 # MFR large blackstone bricks # RP2 basalt brick
 
 143 -> 212 # RP2 log.id=212 -- (None, 'tile.rplog', None, 'no match')
 144 -> 210 # RP2 crops.id=210 -- (None, 'eloraam.world.BlockCustomCrops', None, 'no match')
