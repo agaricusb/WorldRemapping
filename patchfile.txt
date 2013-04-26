@@ -102,9 +102,9 @@
 204 -> 927 # Forestry engine (None, 'tile.engine', None, 'no match')
 205 -> 938 # Forestry (None, 'tile.machine', None, 'no match')
 206 -> 759 # RedPower (None, 'tile.rplampoff', None, 'no match')
-# 207 -> Railcraft (None, 'tile.elevatorRail', None, 'no match')
+207 -> 1052 # I:block.elevator Railcraft (None, 'tile.elevatorRail', None, 'no match')
 # 208 -> Railcraft (None, 'tile.mill', None, 'no match')
-# 209 -> Railcraft (None, 'tile.blockRailcraftCube', None, 'no match')
+209 -> 1050 # I:block.cube  Railcraft (None, 'tile.blockRailcraftCube', None, 'no match')
 # 210 -> MFFS (None, 'mffs.BlockForceField', None, 'no match')
 # 211 -> MFFS (None, 'mffs.BlockMachine', None, 'no match')
 # 212 -> MFFS (None, 'mffs.BlockUpgrades', None, 'no match')
@@ -148,10 +148,35 @@
 249 -> 2000:0 # convert to Thermal Expansion copper ore (None, 'tile.blockOreCopper', None, 'no match')
 250 -> 617 # IC2 (None, 'ic2.common.BlockMachine', None, 'no match')
 251 -> 763 # RP2 machine.id=763 -- (None, 'tile.rpmachine', None, 'no match')
-# 252 -> Railcraft (None, 'tile.structureBlock', None, 'no match')
-# 253 -> Railcraft (None, 'tile.railcraftTrack', None, 'no match')
-# 254 -> Railcraft (None, 'tile.blockUtility', None, 'no match')
-# 255 -> Railcraft (None, 'tile.cartDetector', None, 'no match')
+# Railcraft structures - 252 -> Railcraft (None, 'tile.structureBlock', None, 'no match') - balancer, block, box, post, signal, switch
+252:1 -> 1058:1 # RC duel[sic]-head block signal
+252:2 -> 1058:2 # RC switch motor
+252:3 -> 1058:3 # RC block signal
+252:4 -> 1058:4 # RC switch lever
+252:5 -> 1056:0 # wooden post I:block.post # RC wooden post
+252:6 -> 1056:1 # stone post RC stone post
+252:8 -> 1058:8 # RC signal receiver box
+252:9 -> 1058:9 # RC signal controller box
+252:10 -> 1058:10 # RC distant signal
+253 -> 1059 # I:block.track Railcraft (None, 'tile.railcraftTrack', None, 'no match')
+# Railcraft utilities - 254 -> Railcraft (None, 'tile.blockUtility', None, 'no match')
+254:0 -> 1055:0 # RC item loader
+254:1 -> 1055:1 # RC item unloader
+254:2 -> 1055:2 # RC adv item loader
+254:3 -> 1055:4 # RC liquid loader
+254:4 -> 1055:5 # RC liquid unloader
+254:5 -> 1055:3 # RC adv item unloader
+254:6 -> 1055:8 # RC cart dispenser
+254:7 -> 1053:7 # RC coke oven brick
+254:8 -> 1053:8 # RC rolling machine
+254:9 -> 1055:6 # RC energy loader
+254:10 -> 1055:7 # RC energy unloader
+254:12 -> 1053:12 # RC blast furnace brick
+254:13 -> 1055:9 # RC train dispenser
+254:14 -> 1053:14 # RC water tank siding
+254:15 -> 1053:15 # RC rock crusher
+
+255 -> 1051 # I:block.detector Railcraft (None, 'tile.cartDetector', None, 'no match')
 
 # Items
 
