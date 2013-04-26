@@ -1228,9 +1228,9 @@
 28259:0 -> 20257:160 # pneumatic servo 28259 -> 20262 # ('item.component', 'item.component', 'exact') 
 28259:1 -> 20257:161 # redstone reception coil # redstone power coil
 #28259 -> 20257 # other?
-# Omniwrench
-# 28266 -> (None, 'item.reconfigTool', None, 'no match')
-# 28356 -> (None, 'item.omniWrench', None, 'no match')
+# OmniTools
+28266 -> 6258 # Forge Lexicon (None, 'item.reconfigTool', None, 'no match')
+28356 -> 6257 # Prototype Omniwrench (None, 'item.omniWrench', None, 'no match')
 
 # IC2
 30103 -> 30103 # ('item.itemCoolant', 'itemCoolant', 'replace') 
