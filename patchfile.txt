@@ -325,13 +325,15 @@
 # 1258 -> (None, 'eloraam.core.ItemParts__', None, 'no match')
 # 1259 -> (None, 'eloraam.base.ItemDyeIndigo', None, 'no match')
 # RP2 tools
-# 1260 -> (None, 'item.handsawIron', None, 'no match')
+# 1260 -> (None, 'item.handsawIron', None, 'no match') # TODO: immibis microblocks
 # 1261 -> (None, 'item.handsawDiamond', None, 'no match')
 # 1262 -> (None, 'item.screwdriver', None, 'no match')
 # 1263 -> (None, 'eloraam.core.ItemParts___', None, 'no match')
 # 1264 -> (None, 'item.handsawRuby', None, 'no match')
 # 1265 -> (None, 'item.handsawEmerald', None, 'no match')
 # 1266 -> (None, 'item.handsawSapphire', None, 'no match')
+
+# TODO: Extra Utilities
 # 1267 -> (None, 'item.sickleWood', None, 'no match')
 # 1268 -> (None, 'item.sickleStone', None, 'no match')
 # 1269 -> (None, 'item.sickleIron', None, 'no match')
@@ -340,21 +342,25 @@
 # 1272 -> (None, 'item.sickleRuby', None, 'no match')
 # 1273 -> (None, 'item.sickleEmerald', None, 'no match')
 # 1274 -> (None, 'item.sickleSapphire', None, 'no match')
-# 1275 -> (None, 'item.swordRuby', None, 'no match')
-# 1276 -> (None, 'item.swordEmerald', None, 'no match')
-# 1277 -> (None, 'item.swordSapphire', None, 'no match')
-# 1278 -> (None, 'item.shovelRuby', None, 'no match')
-# 1279 -> (None, 'item.shovelEmerald', None, 'no match')
-# 1280 -> (None, 'item.shovelSapphire', None, 'no match')
-# 1281 -> (None, 'item.pickaxeRuby', None, 'no match')
-# 1282 -> (None, 'item.pickaxeEmerald', None, 'no match')
-# 1283 -> (None, 'item.pickaxeSapphire', None, 'no match')
-# 1284 -> (None, 'item.axeRuby', None, 'no match')
-# 1285 -> (None, 'item.axeEmerald', None, 'no match')
-# 1286 -> (None, 'item.axeSapphire', None, 'no match')
-# 1287 -> (None, 'item.hoeRuby', None, 'no match')
-# 1288 -> (None, 'item.hoeEmerald', None, 'no match')
-# 1289 -> (None, 'item.hoeSapphire', None, 'no match')
+
+# RP2 gem tools
+# 278 = vanilla diamond pickaxe = 1562 Uses, vs. gems = 500 uses
+#  1562 - 500 = 1062. convert to diamond with 500 uses left
+1275 -> 276:1062 # diamond sword (None, 'item.swordRuby', None, 'no match')
+1276 -> 276:1062 # diamond sword (None, 'item.swordEmerald', None, 'no match')
+1277 -> 276:1062 # diamond sword (None, 'item.swordSapphire', None, 'no match')
+1278 -> 277:1062 # diamond shovel (None, 'item.shovelRuby', None, 'no match')
+1279 -> 277:1062 # diamond shovel (None, 'item.shovelEmerald', None, 'no match')
+1280 -> 277:1062 # diamond shovel (None, 'item.shovelSapphire', None, 'no match')
+1281 -> 278:1062 # diamond pickaxe (None, 'item.pickaxeRuby', None, 'no match')
+1282 -> 278:1062 # diamond pickaxe (None, 'item.pickaxeEmerald', None, 'no match')
+1283 -> 278:1062 # diamond pickaxe (None, 'item.pickaxeSapphire', None, 'no match')
+1284 -> 279:1062 # diamond axe (None, 'item.axeRuby', None, 'no match')
+1285 -> 279:1062 # diamond axe (None, 'item.axeEmerald', None, 'no match')
+1286 -> 279:1062 # diamond axe (None, 'item.axeSapphire', None, 'no match')
+1287 -> 293:1062 # diamond hoe (None, 'item.hoeRuby', None, 'no match')
+1288 -> 293:1062 # diamond hoe (None, 'item.hoeEmerald', None, 'no match')
+1289 -> 293:1062 # diamond hoe (None, 'item.hoeSapphire', None, 'no match')
 
 # 1290 -> (None, 'eloraam.world.ItemCustomSeeds', None, 'no match')
 # 1291 -> (None, 'item.paintcan.empty', None, 'no match')
