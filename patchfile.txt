@@ -1,3 +1,4 @@
+22:1 -> 2500 # QuickBench lapis lazuli block w/ metadata -> Easy Crafting Table
 # 126 -> WR-CBE receivers/jammer (None, 'eloraam.logic.BlockLogic', None, 'no match')
 127 -> 3139 # NetherOres block ID first --  (None, 'tile.blockNetherOres', None, 'no match')
 128 -> 2603 # ('tile.crystalBlock', 'tile.crystalBlock', 'exact') 
