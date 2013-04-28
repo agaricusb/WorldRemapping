@@ -359,15 +359,15 @@
 # 1265 -> (None, 'item.handsawEmerald', None, 'no match')
 # 1266 -> (None, 'item.handsawSapphire', None, 'no match')
 
-# TODO: Extra Utilities
-# 1267 -> (None, 'item.sickleWood', None, 'no match')
-# 1268 -> (None, 'item.sickleStone', None, 'no match')
-# 1269 -> (None, 'item.sickleIron', None, 'no match')
-# 1270 -> (None, 'item.sickleDiamond', None, 'no match')
-# 1271 -> (None, 'item.sickleGold', None, 'no match')
-# 1272 -> (None, 'item.sickleRuby', None, 'no match')
-# 1273 -> (None, 'item.sickleEmerald', None, 'no match')
-# 1274 -> (None, 'item.sickleSapphire', None, 'no match')
+# convert sickle to Extra Utilities 
+1267 -> 10264 # Foliage Axe (None, 'item.sickleWood', None, 'no match')
+1268 -> 10264 # (None, 'item.sickleStone', None, 'no match')
+1269 -> 10264 # (None, 'item.sickleIron', None, 'no match')
+1270 -> 10264 # (None, 'item.sickleDiamond', None, 'no match')
+1271 -> 10264 # (None, 'item.sickleGold', None, 'no match')
+1272 -> 10264 # (None, 'item.sickleRuby', None, 'no match')
+1273 -> 10264 # (None, 'item.sickleEmerald', None, 'no match')
+1274 -> 10264 # (None, 'item.sickleSapphire', None, 'no match')
 
 # RP2 gem tools
 # 278 = vanilla diamond pickaxe = 1562 Uses, vs. gems = 500 uses
