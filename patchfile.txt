@@ -605,10 +605,11 @@
 1666 -> 1200 # ('tile.enderchest', 'tile.enderchest', 'exact') 
 
 # Greg's Lighting
-# 1700 -> (None, Greg's Lighting 'tile.gcewing.block.carbideFloodlight', None, 'no match')
-# 1701 -> (None, 'tile.gcewing.block.floodlightBeam', None, 'no match')
-# 1702 -> (None, 'tile.gcewing.block.floodlight', None, 'no match')
-# 1703 -> (None, 'tile.gcewing.block.ic2ElectricFloodlight', None, 'no match')
+# convert all to Thermal Expansion - Glowstone Illuminator
+1700 -> 2009 # (None, Greg's Lighting 'tile.gcewing.block.carbideFloodlight', None, 'no match')
+1701 -> 2009 # (None, 'tile.gcewing.block.floodlightBeam', None, 'no match')
+1702 -> 2009 # (None, 'tile.gcewing.block.floodlight', None, 'no match')
+1703 -> 2009 # (None, 'tile.gcewing.block.ic2ElectricFloodlight', None, 'no match')
 
 3126 -> 13127 # (None, EXBL 'item.scarecrow', None, 'no match')
 
