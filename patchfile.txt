@@ -348,14 +348,36 @@
 1257:5 -> 20257:64 # convert to Thermal Expansion copper ingot # RP2 copper ingot
 1257:6 -> 1151:3 # TubeStuff nikolite block # RP2 nikolite
 
-# 1258 -> (None, 'eloraam.core.ItemParts__', None, 'no match')
+# RedPower2 items 1258 -> (None, 'eloraam.core.ItemParts__', None, 'no match')
+1258:0 -> # Red Alloy Ingot
+1258:1 -> # Blue Alloy Ingot
+1258:2 -> # Brass Ingot
+1258:3 -> # Silicon Boule
+1258:4 -> # Silicon Wafer
+1258:5 -> # Blue-Doped Wafer
+1258:6 -> # Red-Doped Wafer
+1258:7 -> # Tinplate
+1258:8 -> # Fine Copper Wire
+1258:9 -> # Fine Iron Wire
+1258:10 -> # Copper Wire
+1258:11 -> # Blulectric Motor
 1259 -> 21256:9 # GregTech indigo dye (None, 'eloraam.base.ItemDyeIndigo', None, 'no match')
 # RP2 tools
 # convert handsaw to immibis microblocks' hacksaw
 1260 -> 13782 # Hacksaw (None, 'item.handsawIron', None, 'no match')
 1261 -> 13782 # Hacksaw (None, 'item.handsawDiamond', None, 'no match')
 # 1262 -> (None, 'item.screwdriver', None, 'no match')
-# 1263 -> (None, 'eloraam.core.ItemParts___', None, 'no match')
+# RedPower2 items 1263 -> (None, 'eloraam.core.ItemParts___', None, 'no match')
+1263:0 -> # Stone Wafer
+1263:1 -> # Stone Wire
+1263:2 -> # Stone Anode
+1263:3 -> # Stone Cathode
+1263:4 -> # Stone Pointer
+1263:5 -> # Stone Redwire
+1263:6 -> # Plate Assembly
+1263:7 -> # Silicon Chip
+1263:8 -> # Tainted Silicon Chip
+1263:9 -> # Stone Bundle
 1264 -> 13782 # Hacksaw (None, 'item.handsawRuby', None, 'no match')
 1265 -> 13782 # Hacksaw (None, 'item.handsawEmerald', None, 'no match')
 1266 -> 13782 # Hacksaw (None, 'item.handsawSapphire', None, 'no match')
@@ -371,7 +393,7 @@
 1274 -> 10264 # Foliage Axe (None, 'item.sickleSapphire', None, 'no match')
 
 # RP2 gem tools
-# 278 = vanilla diamond pickaxe = 1562 Uses, vs. gems = 500 uses
+# vanilla diamond pickaxe = 278 = 1562 Uses, vs. gems = 500 uses
 #  1562 - 500 = 1062. convert to diamond with 500 uses left
 1275 -> 276:1062 # diamond sword (None, 'item.swordRuby', None, 'no match')
 1276 -> 276:1062 # diamond sword (None, 'item.swordEmerald', None, 'no match')
@@ -389,7 +411,7 @@
 1288 -> 293:1062 # diamond hoe (None, 'item.hoeEmerald', None, 'no match')
 1289 -> 293:1062 # diamond hoe (None, 'item.hoeSapphire', None, 'no match')
 
-# 1290 -> (None, 'eloraam.world.ItemCustomSeeds', None, 'no match')
+# 1290 -> (None, 'eloraam.world.ItemCustomSeeds', None, 'no match') # Flax seeds
 # 1291 -> (None, 'item.paintcan.empty', None, 'no match')
 # 1292 -> (None, 'item.paintcan.white', None, 'no match')
 # 1293 -> (None, 'item.paintcan.orange', None, 'no match')
@@ -431,8 +453,13 @@
 # 1329 -> (None, 'item.athame', None, 'no match')
 # 1331 -> (None, 'item.drawplateDiamond', None, 'no match')
 # 1332 -> (None, 'item.woolcard', None, 'no match')
-# 1333 -> (None, 'eloraam.control.ItemDisk', None, 'no match')
-# 1334 -> (None, 'eloraam.core.ItemParts____', None, 'no match')
+# 1333 -> (None, 'eloraam.control.ItemDisk', None, 'no match') 0=blank floppy, 1=FORTH Boot Disk
+# RedPower2 nuggets 1334 -> (None, 'eloraam.core.ItemParts____', None, 'no match')
+# note: Thaumcraft nuggets, Railcraft, GregTech.. dupe nuggets :(
+1334:0 -> 25286:0 # convert to Thaumcraft # Iron Nugget
+1334:1 -> 25286:3 # convert to Thaumcraft # Silver Nugget
+1334:2 -> 25286:2 # convert to Thaumcraft # Tin Nugget
+1334:3 -> 25286:1 # convert to Thaumcraft # Copper Nugget
 # Forestry
 1375 -> 924 # (None, 'forestry.cultivation.BlockMushroom', None, 'no match')
 1376 -> 943 # (None, 'forestry.cultivation.BlockSaplings', None, 'no match')
