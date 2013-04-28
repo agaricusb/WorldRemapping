@@ -9,17 +9,44 @@
 133 -> 2609 # ('tile.leaves_', 'tile.leaves_', 'exact') 
 134 -> 2610 # (None, 'tile.leaves__', None, 'no match')
 135 -> 2611 # (None, 'tile.leaves___', None, 'no match')
-136 -> 751 # RP2 microblock.id=751 -- (None, 'tile.rpwire', None, 'no match')
+136 -> 751 # RP2 microblock.id=751 -- (None, 'tile.rpwire', None, 'no match') # TODO - immibis microblock is 1439 but can't straight convert
 
 # RedPower2 appliances RP2 appliance.id=750 -- (None, 'eloraam.base.BlockAppliance', None, 'no match')
-137:0 -> 750:0 # alloy furnace 
-137:1 -> 750:1 # blulectric furnace
-137:2 -> 750:2 # buffer
+137:0 -> 750:0 # alloy furnace  TODO
+137:1 -> 750:1 # blulectric furnace TODO
+137:2 -> 1150 # convert to immibis tubestuff Buffer # 750:2 # buffer
 137:3 -> 2830:0 # RedPower2 Project Bench -> bau5 Project Table # XXX also converts tile entity - ProjectBenchPlugin
-137:4 -> 750:4 # blulectric alloy furnace
+137:4 -> 750:4 # blulectric alloy furnace TODO
 
-138 -> 761 # RP2 logic.logic.id=761 -- (None, 'eloraam.logic.BlockLogic_', None, 'no match')
-139 -> 241 # RP2 plants.id=214 -- (None, 'tile.indigo', None, 'no match')
+# RedPower logic 138 -> 761 # RP2 logic.logic.id=761 -- (None, 'eloraam.logic.BlockLogic_', None, 'no match')
+138:0 -> # Timer
+138:1 -> # Sequencer
+138:2 -> # State Cell
+138:256 -> # RS Latch
+138:257 -> # NOR Gate
+138:258 -> # OR Gate
+138:259 -> # NAND Gate
+138:260 -> # AND Gate
+138:261 -> # XNOR Gate
+138:262 -> # XOR Gate
+138:263 -> # Pulse Former
+138:264 -> # Toggle Latch
+138:265 -> # NOT Gate
+138:266 -> # Buffer Gate
+138:267 -> # Multiplexer
+138:268 -> # Repeater
+138:269 -> # Synchronizer
+138:270 -> # Randomizer
+138:271 -> # Transparent Latch
+138:272 -> 151 # convert to vanilla daylight sensor # Light Sensor
+138:512 -> # Null Cell
+138:513 -> # Invert Cell
+138:514 -> # Non-Invert Cell
+138:768 -> # Counter
+138:1024 -> # Bus Transceiver
+# RedPower2 plants #139 -> 241 # RP2 plants.id=214 -- (None, 'tile.indigo', None, 'no match')
+139:0 -> 21256:8 # convert to GregTech indigo blossom # Indigo Flower
+139:1 -> 626 # convert to IC2 rubber sapling # Rubber Sapling
 
 # RedPower2 ores - 140 -> 240 # RP2 ores.id=140 -- (None, 'tile.rpores', None, 'no match')
 140:0 -> 703:3 # convert to GregTech ruby ore # RP2 ruby ore
@@ -31,21 +58,21 @@
 140:6 -> 703:9 # convert to GregTech Tungstate Ore # RP2 tungsten ore
 140:7 -> 1151:3 # convert to TubeStuff nikolite block # RP2 nikolite ore
 
-141 -> 211 # RP2 leaves.id=211 -- (None, 'tile.rpleaves', None, 'no match')
+141 -> 625 # convert to IC2 rubbertree leaves 211 # RP2 leaves.id=211 -- (None, 'tile.rpleaves', None, 'no match')
 
 # RedPower world gen replacements #142 -> 215 # RP2 stone.id=215 -- (None, 'tile.rpstone', None, 'no match')
-142:0 -> 2600:4 # FN marble # RP2 marble
+142:0 -> 2600:4 # FN marble # RP2 marble - note could replace with chisel marble or pc mfr whitestone, alternatively
 142:1 -> 3134:0 # MFR smooth blackstone # RP2 basalt
 142:2 -> 2600:8 # FN marble brick # RP2 marble brick
 142:3 -> 3134:2 # MFR cobble blackstone # RP2 basalt cobblestone
 142:4 -> 3134:4 # MFR large blackstone bricks # RP2 basalt brick
 
-143 -> 212 # RP2 log.id=212 -- (None, 'tile.rplog', None, 'no match')
-144 -> 210 # RP2 crops.id=210 -- (None, 'eloraam.world.BlockCustomCrops', None, 'no match')
+143 -> 627 # convert to IC2 rubberwood log 212 # RP2 log.id=212 -- (None, 'tile.rplog', None, 'no match')
+144 -> 2565:1 # convert to FN corn block # 210 # RP2 crops.id=210 -- (None, 'eloraam.world.BlockCustomCrops', None, 'no match') # flax
 146 -> 252 #  tile.extrabiomes.crackedsand -- (None, 'tile.crackedsand', None, 'no match')
 147 -> 251 # tile.extrabiomes.redrock -- (None, 'tile.redrock', None, 'no match')
-148 -> 754 # RP2 backplane.id=754 -- (None, 'eloraam.core.BlockMultipart', None, 'no match')
-149 -> 755 # RP2 peripheral.id=755 -- (None, 'eloraam.control.BlockPeripheral', None, 'no match')
+148 -> 1226:2 # convert to ComputerCraft monitor.. close enough # 754 # RP2 backplane.id=754 -- (None, 'eloraam.core.BlockMultipart', None, 'no match') # TODO
+149 -> 1225 # convert to ComputerCraft computer.. yeah # 755 # RP2 peripheral.id=755 -- (None, 'eloraam.control.BlockPeripheral', None, 'no match') # TODO
 150 -> 512 # ('tile.miningWellBlock', 'tile.miningWellBlock', 'exact') 
 151 -> 505 # ('tile.plainPipeBlock', 'tile.plainPipeBlock', 'exact') 
 152 -> 502 # ('tile.autoWorkbenchBlock', 'tile.autoWorkbenchBlock', 'exact') 
@@ -71,7 +98,7 @@
 176 -> 2633 # Forgottne Nature -- (None, 'tile.sapling_', None, 'no match')
 177 -> 2634 # Forgotten Nature -- (None, 'tile.sapling__', None, 'no match')
 178 -> 2635 # Forgotten Nature -- (None, 'tile.sapling___', None, 'no match')
-# 179 -> removed, Additional Buildcraft Objects. chunk loader? (None, 'tile.Teleport Tether', None, 'no match')
+179 -> 1053 # convert to Railcraft World Anchor # removed, Additional Buildcraft Objects. chunk loader? (None, 'tile.Teleport Tether', None, 'no match')
 180 -> 2878 # BiblioCraft Oak Shelf - risugami shelf, removed. Bibliocraft? (None, 'tile.shelf', None, 'no match') # NOTE: loses items, not converting TE, but oh well
 181 -> 975 # ('tile.IronChest', 'tile.IronChest', 'exact') 
 182 -> 762 # RP2 frame.id=762 -- (None, 'tile.rpframe', None, 'no match')
@@ -90,7 +117,7 @@
 190 -> 2850 # Power Converters -- (None, 'tile.powerConverter', None, 'no match')
 191 -> 645 # AdvancedMachines AS -- (None, 'tile.advMachine', None, 'no match')
 192 -> 665 # ('tile.blockThermalMonitor', 'tile.blockThermalMonitor', 'exact') 
-# 193 -> removed (None, 'tile.seedManager', None, 'no match')
+193 -> 702:4 # convert to GregTech Computer Cube..hey it has a seed planner right? # removed (None, 'tile.seedManager', None, 'no match')
 194 -> 1150 # TubeStuff -- (None, 'immibis.tubestuff.BlockTubestuff', None, 'no match')
 195 -> 756 # RP2  peripheralFlat.id=756 -- (None, 'eloraam.core.BlockMultipart_', None, 'no match')
 196 -> 2009 # convert to Thermal Expansion - Glowstone Illuminator # 760 # RP2 lampOn.id=760 -- (None, 'tile.rplampon', None, 'no match')
@@ -114,8 +141,7 @@
 215 -> 2563 # Trees++ ('tile.Flowers', 'tile.Flowers', 'exact') 
 216 -> 614 # ('tile.blockIronScaffold', 'blockIronScaffold', 'replace') 
 217 -> 602 # IC2 I:blockBarrel=602 -- (None, 'ic2.common.BlockBarrel', None, 'no match')
-#218 -> 604 # ('tile.blockCrop', 'blockCrop', 'replace')  # TODO
-218 -> 3 # XXX temporarily replace crops with dirt until crash fixed https://gist.github.com/agaricusb/5457143 http://bt.industrial-craft.net/view.php?id=376
+218 -> 3 # XXX temporarily replace crops with dirt until crash fixed https://gist.github.com/agaricusb/5457143 http://bt.industrial-craft.net/view.php?id=376 #218 -> 604 # ('tile.blockCrop', 'blockCrop', 'replace')  # TODO
 219 -> 616 # IC2 I:blockLuminatorDark=616 -- (None, 'tile.blockLuminatorD', None, 'no match')
 220 -> 629 # ('tile.blockScaffold', 'blockScaffold', 'replace') 
 221 -> 630 # ('tile.blockWall', 'blockWall', 'replace') 
@@ -148,7 +174,7 @@
 248 -> 2001:1 # convert to Thermal Expansion tin ore (None, 'tile.blockOreTin', None, 'no match')
 249 -> 2000:0 # convert to Thermal Expansion copper ore (None, 'tile.blockOreCopper', None, 'no match')
 250 -> 617 # IC2 (None, 'ic2.common.BlockMachine', None, 'no match')
-251 -> 763 # RP2 machine.id=763 -- (None, 'tile.rpmachine', None, 'no match')
+251 -> 763 # RP2 machine.id=763 -- (None, 'tile.rpmachine', None, 'no match') # TODO
 # Railcraft structures - 252 -> Railcraft (None, 'tile.structureBlock', None, 'no match') - balancer, block, box, post, signal, switch
 252:1 -> 1058:1 # RC duel[sic]-head block signal
 252:2 -> 1058:2 # RC switch motor
