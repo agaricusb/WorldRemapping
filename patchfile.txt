@@ -351,23 +351,24 @@
 # 1258 -> (None, 'eloraam.core.ItemParts__', None, 'no match')
 # 1259 -> (None, 'eloraam.base.ItemDyeIndigo', None, 'no match')
 # RP2 tools
-# 1260 -> (None, 'item.handsawIron', None, 'no match') # TODO: immibis microblocks
-# 1261 -> (None, 'item.handsawDiamond', None, 'no match')
+# convert handsaw to immibis microblocks' hacksaw
+1260 -> 13782 # Hacksaw (None, 'item.handsawIron', None, 'no match')
+1261 -> 13782 # Hacksaw (None, 'item.handsawDiamond', None, 'no match')
 # 1262 -> (None, 'item.screwdriver', None, 'no match')
 # 1263 -> (None, 'eloraam.core.ItemParts___', None, 'no match')
-# 1264 -> (None, 'item.handsawRuby', None, 'no match')
-# 1265 -> (None, 'item.handsawEmerald', None, 'no match')
-# 1266 -> (None, 'item.handsawSapphire', None, 'no match')
+1264 -> 13782 # Hacksaw (None, 'item.handsawRuby', None, 'no match')
+1265 -> 13782 # Hacksaw (None, 'item.handsawEmerald', None, 'no match')
+1266 -> 13782 # Hacksaw (None, 'item.handsawSapphire', None, 'no match')
 
 # convert sickle to Extra Utilities 
 1267 -> 10264 # Foliage Axe (None, 'item.sickleWood', None, 'no match')
-1268 -> 10264 # (None, 'item.sickleStone', None, 'no match')
-1269 -> 10264 # (None, 'item.sickleIron', None, 'no match')
-1270 -> 10264 # (None, 'item.sickleDiamond', None, 'no match')
-1271 -> 10264 # (None, 'item.sickleGold', None, 'no match')
-1272 -> 10264 # (None, 'item.sickleRuby', None, 'no match')
-1273 -> 10264 # (None, 'item.sickleEmerald', None, 'no match')
-1274 -> 10264 # (None, 'item.sickleSapphire', None, 'no match')
+1268 -> 10264 # Foliage Axe (None, 'item.sickleStone', None, 'no match')
+1269 -> 10264 # Foliage Axe (None, 'item.sickleIron', None, 'no match')
+1270 -> 10264 # Foliage Axe (None, 'item.sickleDiamond', None, 'no match')
+1271 -> 10264 # Foliage Axe (None, 'item.sickleGold', None, 'no match')
+1272 -> 10264 # Foliage Axe (None, 'item.sickleRuby', None, 'no match')
+1273 -> 10264 # Foliage Axe (None, 'item.sickleEmerald', None, 'no match')
+1274 -> 10264 # Foliage Axe (None, 'item.sickleSapphire', None, 'no match')
 
 # RP2 gem tools
 # 278 = vanilla diamond pickaxe = 1562 Uses, vs. gems = 500 uses
