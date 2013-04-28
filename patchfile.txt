@@ -349,7 +349,7 @@
 1257:6 -> 1151:3 # TubeStuff nikolite block # RP2 nikolite
 
 # 1258 -> (None, 'eloraam.core.ItemParts__', None, 'no match')
-# 1259 -> (None, 'eloraam.base.ItemDyeIndigo', None, 'no match')
+1259 -> 21256:9 # GregTech indigo dye (None, 'eloraam.base.ItemDyeIndigo', None, 'no match')
 # RP2 tools
 # convert handsaw to immibis microblocks' hacksaw
 1260 -> 13782 # Hacksaw (None, 'item.handsawIron', None, 'no match')
