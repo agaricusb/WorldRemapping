@@ -903,10 +903,10 @@
 7614 -> 11307 # TubeStuff ('item.tubestuff.uselessItem', 'item.tubestuff.uselessItem', 'exact') 
 
 # Greg's Lighting
-# 10556 -> (None, 'item.gcewing.item.calciumCarbide', None, 'no match')
-# 10557 -> (None, 'item.gcewing.item.bonemealAndCharcoal', None, 'no match')
-# 10558 -> (None, 'item.gcewing.item.gaslightMantle', None, 'no match')
-# 10559 -> (None, 'item.gcewing.item.glowstoneBulb', None, 'no match')
+10556 -> 351:15 # vanilla bone meal (None, 'item.gcewing.item.calciumCarbide', None, 'no match')
+10557 -> 12269 # sugar charcoal (None, 'item.gcewing.item.bonemealAndCharcoal', None, 'no match')
+10558 -> 5256 # jfm light bulb (None, 'item.gcewing.item.gaslightMantle', None, 'no match')
+10559 -> 2009 # te glowstone illuminator (None, 'item.gcewing.item.glowstoneBulb', None, 'no match')
 
 # MFFS - convert from v1 (now immibis Advanced Repulsion Systems ARS) to MFFS v2 Classic, various items
 11366 -> 685 # MFFS projector (None, 'item.itemMFDReaktorlink', None, 'no match')
