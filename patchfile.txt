@@ -102,7 +102,7 @@
 180 -> 2878 # BiblioCraft Oak Shelf - risugami shelf, removed. Bibliocraft? (None, 'tile.shelf', None, 'no match') # NOTE: loses items, not converting TE, but oh well
 181 -> 975 # ('tile.IronChest', 'tile.IronChest', 'exact') 
 182 -> 762 # RP2 frame.id=762 -- (None, 'tile.rpframe', None, 'no match')
-183 -> 650 # ('tile.CompactSolar', 'tile.CompactSolar', 'exact') 
+183 -> 649 # ('tile.CompactSolar', 'tile.CompactSolar', 'exact') 
 184 -> 2630 # Forgotten Nature -- (None, 'tile.plank', None, 'no match')
 185 -> 2606 # Forgotten Nature -- ('tile.fence_', 'tile.fence_', 'exact') 
 186 -> 2640 # Forgotten Nature - torchID (None, 'tile.crystal torch', None, 'no match')
