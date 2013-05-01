@@ -9,7 +9,6 @@
 133 -> 2609 # ('tile.leaves_', 'tile.leaves_', 'exact') 
 134 -> 2610 # (None, 'tile.leaves__', None, 'no match')
 135 -> 2611 # (None, 'tile.leaves___', None, 'no match')
-136 -> 751 # RP2 microblock.id=751 -- (None, 'tile.rpwire', None, 'no match') # TODO - immibis microblock is 1439 but can't straight convert
 
 # RedPower2 appliances RP2 appliance.id=750 -- (None, 'eloraam.base.BlockAppliance', None, 'no match')
 137:0 -> 750:0 # alloy furnace  TODO
@@ -40,7 +39,6 @@
 143 -> 627 # convert to IC2 rubberwood log 212 # RP2 log.id=212 -- (None, 'tile.rplog', None, 'no match')
 144 -> 2565:1 # convert to FN corn block # 210 # RP2 crops.id=210 -- (None, 'eloraam.world.BlockCustomCrops', None, 'no match') # flax
 146 -> 252 #  tile.extrabiomes.crackedsand -- (None, 'tile.crackedsand', None, 'no match')
-147 -> 251 # tile.extrabiomes.redrock -- (None, 'tile.redrock', None, 'no match')
 148 -> 1226:2 # convert to ComputerCraft monitor.. close enough # 754 # RP2 backplane.id=754 -- (None, 'eloraam.core.BlockMultipart', None, 'no match') # TODO
 149 -> 1225 # convert to ComputerCraft computer.. yeah # 755 # RP2 peripheral.id=755 -- (None, 'eloraam.control.BlockPeripheral', None, 'no match') # TODO
 150 -> 512 # ('tile.miningWellBlock', 'tile.miningWellBlock', 'exact') 
@@ -87,7 +85,6 @@
 160 -> 508 # ('tile.frameBlock', 'tile.frameBlock', 'exact') 
 161 -> 506 # tile.engineBlock -- (None, 'buildcraft.energy.BlockEngine', None, 'no match')
 162 -> 254 # ('tile.oilMoving', 'tile.oilMoving', 'exact') 
-163 -> 255 # ('tile.oilStill', 'tile.oilStill', 'exact') 
 164 -> 515 # ('tile.pumpBlock', 'tile.pumpBlock', 'exact') 
 165 -> 518 # ('tile.tankBlock', 'tile.tankBlock', 'exact') 
 166 -> 505 # # tile.plainPipeBlock -- (None, 'buildcraft.transport.BlockGenericPipe', None, 'no match')
@@ -104,7 +101,7 @@
 179 -> 1053 # convert to Railcraft World Anchor # removed, Additional Buildcraft Objects. chunk loader? (None, 'tile.Teleport Tether', None, 'no match')
 180 -> 2878 # BiblioCraft Oak Shelf - risugami shelf, removed. Bibliocraft? (None, 'tile.shelf', None, 'no match') # NOTE: loses items, not converting TE, but oh well
 181 -> 975 # ('tile.IronChest', 'tile.IronChest', 'exact') 
-182 -> 762 # RP2 frame.id=762 -- (None, 'tile.rpframe', None, 'no match')
+#RP2 182 -> 762 # RP2 frame.id=762 -- (None, 'tile.rpframe', None, 'no match')
 183 -> 649 # ('tile.CompactSolar', 'tile.CompactSolar', 'exact') 
 184 -> 2630 # Forgotten Nature -- (None, 'tile.plank', None, 'no match')
 185 -> 2606 # Forgotten Nature -- ('tile.fence_', 'tile.fence_', 'exact') 
@@ -122,10 +119,9 @@
 192 -> 665 # ('tile.blockThermalMonitor', 'tile.blockThermalMonitor', 'exact') 
 193 -> 702:4 # convert to GregTech Computer Cube..hey it has a seed planner right? # removed (None, 'tile.seedManager', None, 'no match')
 194 -> 1150 # TubeStuff -- (None, 'immibis.tubestuff.BlockTubestuff', None, 'no match')
-195 -> 756 # RP2  peripheralFlat.id=756 -- (None, 'eloraam.core.BlockMultipart_', None, 'no match')
+#RP2 195 -> 756 # RP2  peripheralFlat.id=756 -- (None, 'eloraam.core.BlockMultipart_', None, 'no match')
 196 -> 2009:0 # convert to Thermal Expansion - Glowstone Illuminator # 760 # RP2 lampOn.id=760 -- (None, 'tile.rplampon', None, 'no match')
 197 -> 947 # ('tile.soil', 'tile.soil', 'exact') 
-198 -> 249 # ('tile.apatite', 'tile.apatite', 'exact') 
 199 -> 2001:0 # convert to Thermal Expansion copper (not 250) ('tile.oreCopper', 'tile.oreCopper', 'exact') 
 201 -> 942 # Forestry (None, 'tile.planter', None, 'no match')
 202 -> 930 # Forestry (None, 'tile.firsapling', None, 'no match')
@@ -176,8 +172,10 @@
 247 -> 245 # ('tile.blockOreUran', 'blockOreUran', 'replace') 
 248 -> 2001:1 # convert to Thermal Expansion tin ore (None, 'tile.blockOreTin', None, 'no match')
 249 -> 2000:0 # convert to Thermal Expansion copper ore (None, 'tile.blockOreCopper', None, 'no match')
+198 -> 249 # ('tile.apatite', 'tile.apatite', 'exact') 
 250 -> 617 # IC2 (None, 'ic2.common.BlockMachine', None, 'no match')
-251 -> 763 # RP2 machine.id=763 -- (None, 'tile.rpmachine', None, 'no match') # TODO
+#RP2 251 -> 763 # RP2 machine.id=763 -- (None, 'tile.rpmachine', None, 'no match')
+147 -> 251 # tile.extrabiomes.redrock -- (None, 'tile.redrock', None, 'no match')
 # Railcraft structures - 252 -> Railcraft (None, 'tile.structureBlock', None, 'no match') - balancer, block, box, post, signal, switch
 252:1 -> 1058:1 # RC duel[sic]-head block signal
 252:2 -> 1058:2 # RC switch motor
@@ -207,6 +205,7 @@
 254:15 -> 1053:15 # RC rock crusher
 
 255 -> 1051 # I:block.detector Railcraft (None, 'tile.cartDetector', None, 'no match')
+163 -> 255 # ('tile.oilStill', 'tile.oilStill', 'exact') 
 
 # Items
 
@@ -267,6 +266,7 @@
 749 -> 2320:9 # (None, 'tile.blindsClosed', None, 'no match')
 750 -> 2320:9 # (None, 'tile.blindsOpen', None, 'no match')
 751 -> 2307:4 # (None, 'tile.freezer', None, 'no match')
+136 -> 751 # RP2 microblock.id=751 -- (None, 'tile.rpwire', None, 'no match') # TODO - immibis microblock is 1439 but can't straight convert
 752 -> 2307 # (None, 'tile.fridge', None, 'no match')
 753 -> 2312:12 # (None, 'tile.dragonhead', None, 'no match')
 754 -> 2307:12 # (None, 'tile.rubbishbin', None, 'no match')
