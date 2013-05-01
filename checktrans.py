@@ -21,11 +21,14 @@ def readPatchFile(fn):
 def main():
     maps = readPatchFile("patchfile.txt")
     converted = {}
+    count = 0
     for before, after in maps:
         if converted.has_key(before): # TODO: check for metadata
             print "Transitive conversion: %s -> %s -> %s" % (converted[before], before, after)
+            count += 1
 
         converted[after] = before
+    print "Found %s transitive relations" % (count,)
 
 
 if __name__ == "__main__":

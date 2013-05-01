@@ -18,36 +18,6 @@
 137:3 -> 2830:0 # RedPower2 Project Bench -> bau5 Project Table # XXX also converts tile entity - ProjectBenchPlugin
 137:4 -> 750:4 # blulectric alloy furnace TODO
 
-# RedPower logic 138 -> 761 # RP2 logic.logic.id=761 -- (None, 'eloraam.logic.BlockLogic_', None, 'no match')
-138:0 -> # Timer
-138:1 -> # Sequencer
-138:2 -> # State Cell
-138:256 -> # RS Latch
-138:257 -> # NOR Gate
-138:258 -> # OR Gate
-138:259 -> # NAND Gate
-138:260 -> # AND Gate
-138:261 -> # XNOR Gate
-138:262 -> # XOR Gate
-138:263 -> # Pulse Former
-138:264 -> # Toggle Latch
-138:265 -> # NOT Gate
-138:266 -> # Buffer Gate
-138:267 -> # Multiplexer
-138:268 -> # Repeater
-138:269 -> # Synchronizer
-138:270 -> # Randomizer
-138:271 -> # Transparent Latch
-138:272 -> 151 # convert to vanilla daylight sensor # Light Sensor
-138:512 -> # Null Cell
-138:513 -> # Invert Cell
-138:514 -> # Non-Invert Cell
-138:768 -> # Counter
-138:1024 -> # Bus Transceiver
-# RedPower2 plants #139 -> 241 # RP2 plants.id=214 -- (None, 'tile.indigo', None, 'no match')
-139:0 -> 21256:8 # convert to GregTech indigo blossom # Indigo Flower
-139:1 -> 626 # convert to IC2 rubber sapling # Rubber Sapling
-
 # RedPower2 ores - 140 -> 240 # RP2 ores.id=140 -- (None, 'tile.rpores', None, 'no match')
 140:0 -> 703:3 # convert to GregTech ruby ore # RP2 ruby ore
 140:1 -> 129:0 # convert to vanilla emerald ore # RP2 green emerald ore
@@ -81,6 +51,39 @@
 155 -> 507 # ('tile.fillerBlock', 'tile.fillerBlock', 'exact') 
 157 -> 504 # ('tile.builderBlock', 'tile.builderBlock', 'exact') 
 158 -> 504 # buildcraft builder templates - removed(None, 'tile.templateBlock', None, 'no match')
+
+# RedPower logic 138 -> 761 # RP2 logic.logic.id=761 -- (None, 'eloraam.logic.BlockLogic_', None, 'no match')
+138:0 -> # Timer
+138:1 -> # Sequencer
+138:2 -> # State Cell
+138:256 -> # RS Latch
+138:257 -> # NOR Gate
+138:258 -> # OR Gate
+138:259 -> # NAND Gate
+138:260 -> # AND Gate
+138:261 -> # XNOR Gate
+138:262 -> # XOR Gate
+138:263 -> # Pulse Former
+138:264 -> # Toggle Latch
+138:265 -> # NOT Gate
+138:266 -> # Buffer Gate
+138:267 -> # Multiplexer
+138:268 -> # Repeater
+138:269 -> # Synchronizer
+138:270 -> # Randomizer
+138:271 -> # Transparent Latch
+138:272 -> 151 # convert to vanilla daylight sensor # Light Sensor
+138:512 -> # Null Cell
+138:513 -> # Invert Cell
+138:514 -> # Non-Invert Cell
+138:768 -> # Counter
+138:1024 -> # Bus Transceiver
+# RedPower2 plants #139 -> 241 # RP2 plants.id=214 -- (None, 'tile.indigo', None, 'no match')
+139:0 -> 21256:8 # convert to GregTech indigo blossom # Indigo Flower
+139:1 -> 626 # convert to IC2 rubber sapling # Rubber Sapling
+
+
+
 160 -> 508 # ('tile.frameBlock', 'tile.frameBlock', 'exact') 
 161 -> 506 # tile.engineBlock -- (None, 'buildcraft.energy.BlockEngine', None, 'no match')
 162 -> 254 # ('tile.oilMoving', 'tile.oilMoving', 'exact') 
