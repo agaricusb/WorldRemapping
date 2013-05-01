@@ -120,7 +120,7 @@
 193 -> 702:4 # convert to GregTech Computer Cube..hey it has a seed planner right? # removed (None, 'tile.seedManager', None, 'no match')
 194 -> 1150 # TubeStuff -- (None, 'immibis.tubestuff.BlockTubestuff', None, 'no match')
 195 -> 756 # RP2  peripheralFlat.id=756 -- (None, 'eloraam.core.BlockMultipart_', None, 'no match')
-196 -> 2009 # convert to Thermal Expansion - Glowstone Illuminator # 760 # RP2 lampOn.id=760 -- (None, 'tile.rplampon', None, 'no match')
+196 -> 2009:0 # convert to Thermal Expansion - Glowstone Illuminator # 760 # RP2 lampOn.id=760 -- (None, 'tile.rplampon', None, 'no match')
 197 -> 947 # ('tile.soil', 'tile.soil', 'exact') 
 198 -> 249 # ('tile.apatite', 'tile.apatite', 'exact') 
 199 -> 2001:0 # convert to Thermal Expansion copper (not 250) ('tile.oreCopper', 'tile.oreCopper', 'exact') 
@@ -129,7 +129,7 @@
 203 -> 931 # Forestry (None, 'tile.harvester', None, 'no match')
 204 -> 927 # Forestry engine (None, 'tile.engine', None, 'no match')
 205 -> 938 # Forestry (None, 'tile.machine', None, 'no match')
-206 -> 2009 # convert to Thermal Expansion - Glowstone Illuminator # 759 # RedPower (None, 'tile.rplampoff', None, 'no match')
+206 -> 2009:0 # convert to Thermal Expansion - Glowstone Illuminator # 759 # RedPower (None, 'tile.rplampoff', None, 'no match')
 207 -> 1052 # I:block.elevator Railcraft (None, 'tile.elevatorRail', None, 'no match')
 # 208 -> Railcraft (None, 'tile.mill', None, 'no match')
 209 -> 1050 # I:block.cube  Railcraft (None, 'tile.blockRailcraftCube', None, 'no match')
@@ -236,8 +236,8 @@
 720 -> 2320:14 # (None, 'tile.kitchenSide', None, 'no match')
 721 -> 2306:8 # (None, 'tile.kitchenSink', None, 'no match')
 722 -> 2322 # (None, 'tile.KitchenCupboardNoTop', None, 'no match')
-723 -> 2009 # TE lamp (None, 'tile.lamp', None, 'no match')
-724 -> 2009 # TE lamp (None, 'tile.lampOn', None, 'no match')
+723 -> 2009:0 # TE lamp (None, 'tile.lamp', None, 'no match')
+724 -> 2009:0 # TE lamp (None, 'tile.lampOn', None, 'no match')
 725 -> 213 # vanilla redstone lamp (None, 'tile.lightBulb', None, 'no match')
 726 -> 213 # vanilla redstone lamp (None, 'tile.lightBulb_', None, 'no match')
 727 -> 2311:4 # (None, 'tile.mantlepiece', None, 'no match')
@@ -632,10 +632,10 @@
 
 # Greg's Lighting
 # convert all to Thermal Expansion - Glowstone Illuminator
-1700 -> 2009 # (None, Greg's Lighting 'tile.gcewing.block.carbideFloodlight', None, 'no match')
-1701 -> 2009 # (None, 'tile.gcewing.block.floodlightBeam', None, 'no match')
-1702 -> 2009 # (None, 'tile.gcewing.block.floodlight', None, 'no match')
-1703 -> 2009 # (None, 'tile.gcewing.block.ic2ElectricFloodlight', None, 'no match')
+1700 -> 2009:0 # (None, Greg's Lighting 'tile.gcewing.block.carbideFloodlight', None, 'no match')
+1701 -> 2009:0 # (None, 'tile.gcewing.block.floodlightBeam', None, 'no match')
+1702 -> 2009:0 # (None, 'tile.gcewing.block.floodlight', None, 'no match')
+1703 -> 2009:0 # (None, 'tile.gcewing.block.ic2ElectricFloodlight', None, 'no match')
 
 3126 -> 13127 # (None, EXBL 'item.scarecrow', None, 'no match')
 
@@ -932,7 +932,7 @@
 10556 -> 351:15 # vanilla bone meal (None, 'item.gcewing.item.calciumCarbide', None, 'no match')
 10557 -> 12269 # sugar charcoal (None, 'item.gcewing.item.bonemealAndCharcoal', None, 'no match')
 10558 -> 5256 # jfm light bulb (None, 'item.gcewing.item.gaslightMantle', None, 'no match')
-10559 -> 2009 # te glowstone illuminator (None, 'item.gcewing.item.glowstoneBulb', None, 'no match')
+10559 -> 2009:0 # te glowstone illuminator (None, 'item.gcewing.item.glowstoneBulb', None, 'no match')
 
 # MFFS - convert from v1 (now immibis Advanced Repulsion Systems ARS) to MFFS v2 Classic, various items
 11366 -> 685 # MFFS projector (None, 'item.itemMFDReaktorlink', None, 'no match')
