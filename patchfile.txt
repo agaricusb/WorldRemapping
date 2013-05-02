@@ -164,7 +164,7 @@
 239 -> 613 # ('tile.blockITNT', 'blockITNT', 'replace') 
 240 -> 612 # ('tile.blockHarz', 'blockHarz', 'replace') 
 241 -> 626 # ('tile.blockRubSapling', 'blockRubSapling', 'replace') 
-242 -> 2615 # Forgotten Nature -- (None, 'tile.leaves_______', None, 'no match')
+242 -> 625 # IC2 rubbertree leaves -- (None, 'tile.leaves_______', None, 'no match')
 243 -> 627 # ('tile.blockRubWood', 'blockRubWood', 'replace') 
 244 -> 621 # ('tile.blockMiningTip', 'blockMiningTip', 'replace') 
 245 -> 620 # ('tile.blockMiningPipe', 'blockMiningPipe', 'replace') 
