@@ -1250,7 +1250,7 @@
 27021 -> 26025 # (None, 'item.wolfbike', None, 'no match')
 27022 -> 26024 # (None, 'item.squidbike', None, 'no match')
 27023 -> 26009 # (None, 'item.creeperbike', None, 'no match')
-27024 -> 260818 # (None, 'item.ponybike', None, 'no match')
+27024 -> 26018 # (None, 'item.ponybike', None, 'no match')
 27025 -> 26013 # (None, 'item.enderbike', None, 'no match')
 27026 -> 26012 # (None, 'item.dragonbike', None, 'no match')
 27027 -> 26016 # (None, 'item.notchbike', None, 'no match')
