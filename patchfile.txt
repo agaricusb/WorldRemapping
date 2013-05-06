@@ -631,7 +631,7 @@
 1611 -> 563 # (None, 'tile.malachiteBlock', None, 'no match')
 
 # EnderStorage
-1666 -> 54 # vanilla chest #1666 -> 1200 # ('tile.enderchest', 'tile.enderchest', 'exact') 
+1666 -> 0 # remove #1666 -> 1200 # ('tile.enderchest', 'tile.enderchest', 'exact') 
 
 # Greg's Lighting
 # convert all to Thermal Expansion - Glowstone Illuminator
