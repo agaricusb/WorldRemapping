@@ -76,14 +76,6 @@ def readNEIDump(fn):
 def matchAll(before, after, configsBefore, configsAfter):
     mapping = {}
 
-    after_lastToken = {}
-    for k in after.keys():
-        last = k.split(":")[-1]
-        while after_lastToken.has_key(last):
-            #print "Duplicate last token %s both %s and %s" % (last, after_lastToken[last], k)
-            last += "_"
-        after_lastToken[last] = (after[k], k)
-
     for oldName, oldID in before.iteritems():
         # check NEI dumps first
         if after.has_key(oldName):
@@ -109,14 +101,14 @@ def matchAll(before, after, configsBefore, configsAfter):
             del after[newName]
             continue
 
-        # TODO: try again matching on last token? kinda too ambiguous, now namespaced to mod, can overload
-        #lastToken = oldName.split(".")[-1]
-        #if after_lastToken.has_key(lastToken):
-        #    newID, newName = after_lastToken[lastToken]
-        #    mapping[oldID] = (newID, oldName, newName, "last")
-        #    print "Match", newName
-        #    del after[newName]
-        #    continue
+        if oldName.startswith("tile.bop.") or oldName.startswith("item.bop."):
+            newName = "BiomesOPlenty:" + oldName[len("tile.bop."):]
+
+        if after.has_key(newName):
+            newID = after[newName]
+            mapping[oldID] = (newID, oldName, newName, "namespace")
+            del after[newName]
+            continue
 
         # search configs for likely configuration names, by ID
         possibleOldNames = []
@@ -137,7 +129,7 @@ def matchAll(before, after, configsBefore, configsAfter):
                         possibleNewNames.append((config, key, id))
         
 
-        mapping[oldID] = (None, oldName, None, "no match")
+        mapping[oldID] = (None, oldName, newName, "no match")
 
     return mapping
 
