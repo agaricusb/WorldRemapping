@@ -99,6 +99,16 @@ replacePrefixes = {
     "item.Aquaculture": "Aquaculture:item.",
 }
 
+manual = {
+    "tile.fyriteOre": "netherrocks:fyrite_ore", "tile.fyriteBlock": "netherrocks:fyrite_block",
+    "tile.malachiteOre": "netherrocks:malachite_ore", "tile.malachiteBlock": "netherrocks:malachite_block",
+    "tile.ashstoneOre": "netherrocks:ashstone_ore", "tile.ashstoneBlock": "netherrocks:ashstone_block",
+    "tile.illumeniteOre": "netherrocks:illumenite_ore", "tile.illumeniteBlock": "netherrocks:illumenite_block",
+    "tile.dragonstoneOre": "netherrocks:dragonstone_ore", "tile.dragonstoneBlock": "netherrocks:dragonstone_block",
+    "tile.argoniteOre": "netherrocks:argonite_ore", "tile.argoniteBlock": "netherrocks:argonite_block",
+    "tile.netherFurnaceOn": "netherrocks:nether_furnace",
+}
+
 def ucfirst(s):
     return s[0].upper() + s[1:]
 
@@ -120,6 +130,14 @@ def matchAll(before, after, configsBefore, configsAfter):
             mapping[oldID] = (newID, oldName, newName, "exact")
             del after[newName]
             continue
+
+        if manual.has_key(oldName):
+            newName = manual[oldName]
+            newID = after[newName]
+            mapping[oldID] = (newID, oldName, newName, "manual")
+            del after[newName]
+            continue
+
 
         newName = oldName.replace("item.", "").replace("tile.", "")
         if after.has_key(newName):
