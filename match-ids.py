@@ -91,6 +91,7 @@ replacePrefixes = {
     "item.musketbayonet.": "weaponmod:musketbayonet.", "item.katana.": "weaponmod:katana.",
     "item.Atum:": "atum:item.", "tile.Atum:": "atum:tile.",
     "tile.Biblio": "BiblioCraft:Biblio",
+    "tile.MoC": "MoCreatures:MoC",
 }
 
 def ucfirst(s):
