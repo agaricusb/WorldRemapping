@@ -153,7 +153,7 @@ def matchAll(before, after, configsBefore, configsAfter):
             continue
 
 
-        if (oldName.startswith("item") and oldName[4].isupper()) or (oldName.startswith("block") and oldName[5].isupper()):
+        if (oldName.startswith("item") and oldName[4].isupper()) or (oldName.startswith("block") and oldName[5].isupper()) or oldName.startswith("reactor"):
             if after.has_key("IC2:" + oldName):
                 newName = "IC2:" + oldName
                 newID = after[newName]
