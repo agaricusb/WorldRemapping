@@ -85,7 +85,7 @@ replacePrefixes = {
     "tile.thermalexpansion.": "ThermalExpansion:",
     "tile.powerconverters.": "PowerConverters3:",
     "tile.openblocks.": "OpenBlocks:",
-    "tile.mfr.": "MineFactoryReloaded:",
+    "tile.mfr.": "MineFactoryReloaded:", "item.mfr.": "MineFactoryReloaded:",
     "item.spear.": "weaponmod:spear.", "item.halberd.": "weaponmod:halberd.", "item.battleaxe.": "weaponmod:battleaxe.",
     "item.knife.": "weaponmod:knife.", "item.flail.": "weaponmod:flail.", "item.boomerang.": "weaponmod:boomerang.",
     "item.musketbayonet.": "weaponmod:musketbayonet.", "item.katana.": "weaponmod:katana.",
