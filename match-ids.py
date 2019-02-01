@@ -94,6 +94,9 @@ replacePrefixes = {
 def ucfirst(s):
     return s[0].upper() + s[1:]
 
+def lcfirst(s):
+    return s[0].lower() + s[1:]
+
 def matchAll(before, after, configsBefore, configsAfter):
     mapping = {}
 
@@ -126,9 +129,9 @@ def matchAll(before, after, configsBefore, configsAfter):
             if oldName.startswith(k):
                 newName = v + oldName[len(k):]
                 break
-        if newName.startswith("Mystcraft:"):
-            n = newName.split(":")
-            newName = n[0] + ":" + "Block" + ucfirst(n[1])
+        n = newName.split(":")
+        if newName.startswith("Mystcraft:"): newName = n[0] + ":" + "Block" + ucfirst(n[1])
+        if newName.startswith("TConstruct:"): newName = n[0] + ":" + lcfirst(n[1])
 
         if after.has_key(newName):
             newID = after[newName]
