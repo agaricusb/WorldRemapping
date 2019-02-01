@@ -92,6 +92,7 @@ replacePrefixes = {
     "item.Atum:": "atum:item.", "tile.Atum:": "atum:tile.",
     "tile.Biblio": "BiblioCraft:Biblio",
     "tile.MoC": "MoCreatures:MoC",
+    "tile.enderIO:": "EnderIO:",
 }
 
 def ucfirst(s):
