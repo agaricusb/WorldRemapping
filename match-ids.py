@@ -105,6 +105,9 @@ def ucfirst(s):
 def lcfirst(s):
     return s[0].lower() + s[1:]
 
+def to_snakecase(s):
+    return re.sub("([A-Z])", lambda x: "_" + x.group(1).lower(), "fooBar")
+
 def matchAll(before, after, configsBefore, configsAfter):
     mapping = {}
 
@@ -164,7 +167,8 @@ def matchAll(before, after, configsBefore, configsAfter):
             unprefixed = ".".join(oldName.split(".")[1:])
             possible = []
             for k in after.keys():
-                if unprefixed == k.split(":")[1]:
+                other = k.split(":")[1]
+                if unprefixed == other or to_snakecase(unprefixed) == other:
                     possible.append(k)
             if len(possible) > 1:
                 pass
