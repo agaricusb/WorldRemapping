@@ -146,6 +146,17 @@ def matchAll(before, after, configsBefore, configsAfter):
             del after[newName]
             continue
 
+
+        if oldName.startswith("item") or oldName.startswith("tile") and oldName[4].isupper():
+            if after.has_key("IC2:" + oldName):
+                newName = "IC2:" + oldName
+                newID = after[newName]
+                mapping[oldID] = (newID, oldName, newName, "unprefix")
+                del after[newName]
+                continue
+
+
+
         if oldName.startswith("item.") or oldName.startswith("tile."):
             unprefixed = ".".join(oldName.split(".")[1:])
             possible = []
