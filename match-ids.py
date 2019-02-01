@@ -73,6 +73,24 @@ def readNEIDump(fn):
 
     return m
 
+replacePrefixes = {
+    "tile.bop.": "BiomesOPlenty:", "item.bop.": "BiomesOPlenty:",
+    "tile.extrabiomes.": "ExtrabiomesXL:",
+    "tile.immibis/redlogic:": "RedLogic:redlogic.",
+    "item.AppEng.": "appliedenergistics2:item.", "tile.AppEng.": "appliedenergistics2:tile.",
+    "tile.railcraft.": "Railcraft:", "item.railcraft.": "Railcraft:",
+    "tile.myst.": "Mystcraft:",
+    "tile.immibis.microblock.": "ImmibisMicroblocks:",
+    "tile.tconstruct.": "TConstruct:", "item.tconstruct.": "TConstruct:",
+    "tile.thermalexpansion.": "ThermalExpansion:",
+    "tile.powerconverters.": "PowerConverters3:",
+    "tile.openblocks.": "OpenBlocks:",
+    "tile.mfr.": "MineFactoryReloaded:",
+    "item.spear.": "weaponmod:spear.", "item.halberd.": "weaponmod:halberd.", "item.battleaxe.": "weaponmod:battleaxe.",
+    "item.knife.": "weaponmod:knife.", "item.flail.": "weaponmod:flail.", "item.boomerang.": "weaponmod:boomerang.",
+    "item.musketbayonet.": "weaponmod:musketbayonet.", "item.katana.": "weaponmod:katana.",
+}
+
 def matchAll(before, after, configsBefore, configsAfter):
     mapping = {}
 
@@ -101,8 +119,10 @@ def matchAll(before, after, configsBefore, configsAfter):
             del after[newName]
             continue
 
-        if oldName.startswith("tile.bop.") or oldName.startswith("item.bop."):
-            newName = "BiomesOPlenty:" + oldName[len("tile.bop."):]
+        for k, v in replacePrefixes.items():
+            if oldName.startswith(k):
+                newName = v + oldName[len(k):]
+                break
 
         if after.has_key(newName):
             newID = after[newName]
