@@ -164,11 +164,11 @@ def matchAll(before, after, configsBefore, configsAfter):
 
 
         if oldName.startswith("item.") or oldName.startswith("tile."):
-            unprefixed = ".".join(oldName.split(".")[1:])
+            unprefixed = ".".join(oldName.split(".")[1:]).lower()
             possible = []
             for k in after.keys():
                 other = k.split(":")[1]
-                if unprefixed == other:
+                if unprefixed == other.lower():
                     possible.append(k)
             if len(possible) > 1:
                 pass
