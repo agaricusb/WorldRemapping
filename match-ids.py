@@ -146,6 +146,24 @@ def matchAll(before, after, configsBefore, configsAfter):
             del after[newName]
             continue
 
+        if oldName.startswith("item.") or oldName.startswith("tile."):
+            unprefixed = ".".join(oldName.split(".")[1:])
+            possible = []
+            for k in after.keys():
+                if unprefixed == k.split(":")[1]:
+                    possible.append(k)
+            if len(possible) > 1:
+                pass
+                #print "# Ambiguous match",oldName,possible
+            elif len(possible) == 1:
+                newName = possible[0]
+
+                newID = after[newName]
+                mapping[oldID] = (newID, oldName, newName, "anyspace")
+                del after[newName]
+                continue
+
+
         # search configs for likely configuration names, by ID
         possibleOldNames = []
         for config, keys in configsBefore.iteritems():
