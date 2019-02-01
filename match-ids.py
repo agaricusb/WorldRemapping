@@ -95,6 +95,8 @@ replacePrefixes = {
     "tile.enderIO:": "EnderIO:",
     "tile.SC2": "StevesCarts:",
     "tile.TF": "TwilightForest:tile.TF", "item.TF": "TwilightForest:item.TF",
+    "tile.extrautils:": "ExtraUtilities:",
+    "item.Aquaculture": "Aquaculture:item.",
 }
 
 def ucfirst(s):
