@@ -89,6 +89,7 @@ replacePrefixes = {
     "item.spear.": "weaponmod:spear.", "item.halberd.": "weaponmod:halberd.", "item.battleaxe.": "weaponmod:battleaxe.",
     "item.knife.": "weaponmod:knife.", "item.flail.": "weaponmod:flail.", "item.boomerang.": "weaponmod:boomerang.",
     "item.musketbayonet.": "weaponmod:musketbayonet.", "item.katana.": "weaponmod:katana.",
+    "item.Atum:": "atum:item.", "tile.Atum:": "atum:tile.",
 }
 
 def ucfirst(s):
@@ -130,8 +131,10 @@ def matchAll(before, after, configsBefore, configsAfter):
                 newName = v + oldName[len(k):]
                 break
         n = newName.split(":")
+        if len(n) > 1: m = n[1].split(".")
         if newName.startswith("Mystcraft:"): newName = n[0] + ":" + "Block" + ucfirst(n[1])
         if newName.startswith("TConstruct:"): newName = n[0] + ":" + lcfirst(n[1])
+        if newName.startswith("atum:"): newName = n[0] + ":" + m[0] + "." + lcfirst(m[1])
 
         if after.has_key(newName):
             newID = after[newName]
