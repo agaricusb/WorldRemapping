@@ -168,7 +168,7 @@ def matchAll(before, after, configsBefore, configsAfter):
             possible = []
             for k in after.keys():
                 other = k.split(":")[1]
-                if unprefixed == other or to_snakecase(unprefixed) == other:
+                if unprefixed == other:
                     possible.append(k)
             if len(possible) > 1:
                 pass
