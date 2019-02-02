@@ -209,6 +209,12 @@ direct = {
     1150: (3697, "Immibis tubestuff.id/Tubestuff:machine"),
     1151: (3698, "Immibis tubestuff.storage.id/Tubestuff:storage"),
 
+    2510: (431, "AppliedEnergistics appeng.blockMulti/ME Cable"),
+    2511: (437, "AppliedEnergistics appeng.blockMulti2/ME Precision Export Bus/~tile.BlockIOPort"),
+    2512: (248, "AppliedEnergistics appeng.blockWorld/appliedenergistics2:tile.OreQuartz"),
+    2513: (430, "AppliedEnergistics appeng.blockMulti3/ME Fuzzy Export Bus/~tile.BlockSpatialIOPort"),
+    2514: (425, "AppliedEnergistics appeng.TinyTNT/tile.BlockTinyTNT/appliedenergistics2:tile.BlockTinyTNT"),
+
     ## Forgotten Nature
 
     # ambiguous with vanilla
