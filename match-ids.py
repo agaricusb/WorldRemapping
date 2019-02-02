@@ -239,6 +239,26 @@ manual = {
 
     "tile.mfr.liquid.chocolatemilk.still": "MineFactoryReloaded:chocolatemilk.still",
     "tile.mfr.decorativestone": "MineFactoryReloaded:stone",
+
+    # Jammy Furniture Mod -> Crayfish Furniture Mod
+    "tile.bathBlock": "cfm:freezer",
+    "tile.ceramicBlockOne": "cfm:fridge",
+    "tile.ironBlockOne": "cfm:coffetablestone",
+    "tile.ironBlocksTwo": "cfm:tablestone",
+    "tile.lightsOff": "cfm:lampoff",
+    "tile.lightsOn": "cfm:lampon",
+    #"tile.miscOne":
+    #"tile.MobHeadsOne":
+    #"tile.MobHeadsThree":
+    #"tile.roofingBlocksOne":
+    "tile.sofaCenter": "cfm:couch",
+    #"tile.sofaCorner": "cfm:couch",
+    #"tile.sofaLeft": "cfm:couch",
+    #"tile.sofaRight": "cfm:couch",
+    "tile.woodBlocks": "cfm:coffetablewood",
+    "tile.woodBlocksThree": "cfm:tablewood",
+    "tile.woodBlocksTwo": "cfm:chairwood",
+    #"tile.MobHeadsFour":
 }
 
 direct = {
