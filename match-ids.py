@@ -141,7 +141,12 @@ manual = {
     "tile.bop.wood3": "BiomesOPlenty:logs3",
     #"tile.bop.redCobbleStairs": "ExtrabiomesXL:stairsRedCobble",
     #"tile.bop.redBricksStairs": "Red Brick Stairs ID",
+    "tile.bop.leavesColorized": "BiomesOPlenty:leaves4",
+    "tile.bop.puddle": "thebetweenlands:puddle",
 
+    "tile.netherores.ore.0": "ProjRed|Exploration:projectred.exploration.ore",
+    "tile.netherores.ore.1": "miscutils:blockStoneoreFluorite",
+    "tile.netherores.hellfish": "miscutils:blockHellFire",
 
     # Forgotten Nature
     "tile.newCrops1": "ForgottenNature:newCrops1",
