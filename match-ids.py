@@ -110,6 +110,24 @@ manual = {
     "tile.netherFurnaceOn": "netherrocks:nether_furnace",
 
     "tile.thermalexpansion.ore": "ThermalFoundation:Ore",
+    "tile.thermalexpansion.machine": "ThermalExpansion:Machine",
+    "tile.thermalexpansion.engine": "ThermalExpansion:Device",
+    "tile.thermalexpansion.tank": "ThermalExpansion:Tank",
+    "tile.thermalexpansion.energycell": "ThermalExpansion:Cell",
+
+    "tile.thermalexpansion.conduit": "ThermalDynamics:ThermalDynamics_0",
+
+    "tile.thermalexpansion.tesseract": "ThermalExpansion:Tesseract",
+    "tile.thermalexpansion.plate": "ThermalExpansion:Plate",
+    "tile.thermalexpansion.lamp": "ThermalExpansion:Light",
+    "tile.thermalexpansion.glass": "ThermalExpansion:Glass",
+    "tile.thermalexpansion.rockwool": "ThermalExpansion:Rockwool",
+
+    "tile.liquid.redstone": "ThermalFoundation:FluidRedstone",
+    "tile.liquid.glowstone": "ThermalFoundation:FluidGlowstone",
+    "tile.liquid.ender": "ThermalFoundation:FluidEnder",
+
+    "tile.thermalexpansion.storage": "ThermalExpansion:Strongbox",
 
     #"tile.oilMoving": "BuildCraft|Energy:blockOil",
     "tile.oilStill": "BuildCraft|Energy:blockOil",
