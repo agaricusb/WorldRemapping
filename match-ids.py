@@ -111,7 +111,8 @@ manual = {
 
     "tile.thermalexpansion.ore": "ThermalFoundation:Ore",
 
-    "tile.extrabiomes.leaves": "ExtrabiomesXL:leaves_4",
+    "tile.extrabiomes.leaves": "ExtrabiomesXL:leaves_1",
+    "tile.extrabiomes.leaves_": "ExtrabiomesXL:leaves_4",
 
     # Forgotten Nature
     "tile.newCrops1": "ForgottenNature:newCrops1",
