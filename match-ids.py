@@ -111,10 +111,15 @@ manual = {
 
     "tile.thermalexpansion.ore": "ThermalFoundation:Ore",
 
+    #"tile.oilMoving": "BuildCraft|Energy:blockOil",
+    "tile.oilStill": "BuildCraft|Energy:blockOil",
+
     "tile.extrabiomes.cattail": "ExtrabiomesXL:plants4",
     "tile.extrabiomes.log": "ExtrabiomesXL:log1",
     "tile.extrabiomes.woodslab": "ExtrabiomesXL:woodslab",
     "tile.extrabiomes.leafpile": "ExtrabiomesXL:leaf_pile",
+    "tile.extrabiomes.redrock": "ExtrabiomesXL:terrain_blocks1",
+    "tile.extrabiomes.crackedsand": "ExtrabiomesXL:terrain_blocks2",
     "tile.extrabiomes.redrockslab": "ExtrabiomesXL:slabRedRock",
     "tile.extrabiomes.flower": "ExtrabiomesXL:leaves_3",
     "tile.extrabiomes.tallgrass": "ExtrabiomesXL:leaves_2",
@@ -124,7 +129,7 @@ manual = {
     "tile.extrabiomes.log.quarter_": "ExtrabiomesXL:cornerlog_rainboweucalyptus",
     "tile.extrabiomes.log.quarter__": "ExtrabiomesXL:cornerlog_oak",
     "tile.extrabiomes.log.quarter___": "ExtrabiomesXL:cornerlog_fir",
-    "tile.extrabiomes.stairs.redcobble": "ExtrabiomesXL:terrain_blocks1",
+    #"tile.extrabiomes.stairs.redcobble": "ExtrabiomesXL:terrain_blocks1",
     #"tile.extrabiomes.stairs.redrockbrick": "ExtrabiomesXL:terrain_blocks1",
     "tile.extrabiomes.redrockslab": "ExtrabiomesXL:slabRedRock",
     "tile.extrabiomes.sapling": "ExtrabiomesXL:saplings_1",
