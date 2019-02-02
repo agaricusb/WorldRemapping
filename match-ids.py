@@ -104,6 +104,8 @@ replacePrefixes = {
 manual = {
     "tile.IronChest": "IronChest:BlockIronChest",
 
+    "tile.bau5ProjectBench": "projectbench:pb_block",
+
     "tile.fyriteOre": "netherrocks:fyrite_ore", "tile.fyriteBlock": "netherrocks:fyrite_block",
     "tile.malachiteOre": "netherrocks:malachite_ore", "tile.malachiteBlock": "netherrocks:malachite_block",
     "tile.ashstoneOre": "netherrocks:ashstone_ore", "tile.ashstoneBlock": "netherrocks:ashstone_block",
