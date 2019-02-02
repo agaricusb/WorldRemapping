@@ -109,6 +109,95 @@ manual = {
     "tile.netherFurnaceOn": "netherrocks:nether_furnace",
 
     "tile.thermalexpansion.ore": "ThermalFoundation:Ore",
+
+    # Forgotten Nature
+    "tile.newCrops1": "ForgottenNature:newCrops1",
+    "tile.newCrops2": "ForgottenNature:newCrops2",
+    "tile.newCrops3": "ForgottenNature:newCrops3",
+    "tile.newCrops4": "ForgottenNature:newCrops4",
+    "tile.newCrops5": "ForgottenNature:newCrops5",
+
+    "tile.Crystal Mushroom Block": "ForgottenNature:cMushroomBlock",
+    "tile.Crystal Mushroom": "ForgottenNature:cMushroom",
+
+    "tile.Flowers": "ForgottenNature:newflowers",
+
+    "tile.Half Plank": "ForgottenNature:halfPlank",
+    "tile.Half Plank_": "ForgottenNature:halfPlank2",
+    "tile.Half block": "ForgottenNature:FNHalfStone",
+    "tile.flowerPot1": "ForgottenNature:flowerPot",
+    #"tile.flowerPot2": "ForgottenNature:flowerPot",
+    #"tile.flowerPot3": "ForgottenNature:flowerPot",
+    #"tile.flowerPot4": "ForgottenNature:flowerPot",
+
+
+    "tile.stairsWood0": "ForgottenNature:FNWStairs1",
+    "tile.stairsWood1": "ForgottenNature:FNWStairs2",
+    "tile.stairsWood2": "ForgottenNature:FNWStairs3",
+    "tile.stairsWood3": "ForgottenNature:FNWStairs4",
+    "tile.stairsWood4": "ForgottenNature:FNWStairs5",
+    "tile.stairsWood5": "ForgottenNature:FNWStairs6",
+    "tile.stairsWood6": "ForgottenNature:FNWStairs7",
+    "tile.stairsWood7": "ForgottenNature:FNWStairs8",
+    #"tile.stairsWood8": "ForgottenNature:FNWStairs9", # 9 is missing
+    "tile.stairsWood9": "ForgottenNature:FNWStairs10",
+    "tile.stairsWood10": "ForgottenNature:FNWStairs11",
+    "tile.stairsWood11": "ForgottenNature:FNWStairs12",
+    "tile.stairsWood12": "ForgottenNature:FNWStairs13",
+    "tile.stairsWood13": "ForgottenNature:FNWStairs14",
+    "tile.stairsWood14": "ForgottenNature:FNWStairs15",
+
+    "tile.stairsStone1": "ForgottenNature:FNSStairs1",
+    "tile.stairsStone2": "ForgottenNature:FNSStairs2",
+    "tile.stairsStone3": "ForgottenNature:FNSStairs3",
+    "tile.stairsStone4": "ForgottenNature:FNSStairs4",
+
+    "tile.Stone2": "ForgottenNature:FNStone",
+
+    "tile.crystalBlock": "ForgottenNature:crystalBlock",
+    "tile.crystalStone": "ForgottenNature:crystalStone",
+    "tile.crystalWood": "ForgottenNature:crystalWood",
+
+    "tile.fruit": "ForgottenNature:FNFruit",
+
+    "tile.Rope": "ForgottenNature:rope",
+
+}
+
+direct = {
+    ## Forgotten Nature
+
+    # ambiguous with vanilla
+    2573: (3821, "ForgottenNature:nGlass/tile.glass"), 
+    2606: (3792, "ForgottenNature:nFence/tile.fence"),
+
+    # tile.null
+    2608: (3823, "Forgotten Nature groundID/oneWayCamo?"),
+
+    2609: (3772, "Forgotten Nature leafIDIndex+0/red maple"),
+    2610: (3773, "Forgotten Nature leafIDIndex+1/sequoia"),
+    2611: (3774, "Forgotten Nature leafIDIndex+2/swamp willow"),
+    2612: (3775, "Forgotten Nature leafIDIndex+3/beech"),
+    2613: (3776, "Forgotten Nature leafIDIndex+4/lemon"),
+    2614: (3777, "Forgotten Nature leafIDIndex+5/huckleberry"),
+    
+    2615: (3792, "Forgotten Nature leafIDIndex+6/crystal"),
+    2616: (3779, "Forgotten Nature leafIDIndex+7/nether ash"),
+
+    2620: (3778, "Forgotten Nature logIDindex+0/cherry log"),
+    2621: (3779, "Forgotten Nature logIDindex+1/desert willow"),
+    2622: (3780, "Forgotten Nature logIDindex+2/bukkit log"),
+    2623: (3781, "Forgotten Nature logIDindex+3/cherry log*"),
+    2624: (3782, "Forgotten Nature logIDindex+4/nether ash log*"),
+
+    2630: (3786, "Forgotten Nature plankID/ForgottenNature:FNPlanks1"),
+    2631: (3787, "Forgotten Nature plankID2/ForgottenNature:FNPlanks2"),
+
+    2633: (3783, "Forgotten Nature sapIDindex+0/desert ironwood sapling"),
+    2634: (3784, "Forgotten Nature sapIDindex+1/palm sapling"),
+    2635: (3785, "Forgotten Nature sapIDindex+2/huckleberry bushling"),
+
+    2640: (3762, "Forgotten Nature torchID/ForgottenNature:Crystal Torch"),
 }
 
 def ucfirst(s):
@@ -140,6 +229,14 @@ def matchAll(before, after, configsBefore, configsAfter):
             del after[newName]
             continue
 
+        if direct.has_key(oldID):
+            newName = direct[oldID][1]
+            newID = direct[oldID][0]
+            mapping[oldID] = (newID, oldName, newName, "direct")
+            #del after[newName]
+            continue
+
+   
 
         newName = oldName.replace("item.", "").replace("tile.", "")
         if after.has_key(newName):
