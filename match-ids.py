@@ -135,6 +135,14 @@ manual = {
     "tile.extrabiomes.sapling": "ExtrabiomesXL:saplings_1",
     "tile.extrabiomes.woodslab_": "ExtrabiomesXL:woodslab2",
 
+    "tile.bop.leavesFruit": "BiomesOPlenty:leaves3",
+    "tile.bop.wood1": "BiomesOPlenty:logs1",
+    "tile.bop.wood2": "BiomesOPlenty:logs2",
+    "tile.bop.wood3": "BiomesOPlenty:logs3",
+    #"tile.bop.redCobbleStairs": "ExtrabiomesXL:stairsRedCobble",
+    #"tile.bop.redBricksStairs": "Red Brick Stairs ID",
+
+
     # Forgotten Nature
     "tile.newCrops1": "ForgottenNature:newCrops1",
     "tile.newCrops2": "ForgottenNature:newCrops2",
