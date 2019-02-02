@@ -111,8 +111,24 @@ manual = {
 
     "tile.thermalexpansion.ore": "ThermalFoundation:Ore",
 
+    "tile.extrabiomes.cattail": "ExtrabiomesXL:plants4",
+    "tile.extrabiomes.log": "ExtrabiomesXL:log1",
+    "tile.extrabiomes.woodslab": "ExtrabiomesXL:woodslab",
+    "tile.extrabiomes.leafpile": "ExtrabiomesXL:leaf_pile",
+    "tile.extrabiomes.redrockslab": "ExtrabiomesXL:slabRedRock",
+    "tile.extrabiomes.flower": "ExtrabiomesXL:leaves_3",
+    "tile.extrabiomes.tallgrass": "ExtrabiomesXL:leaves_2",
     "tile.extrabiomes.leaves": "ExtrabiomesXL:leaves_1",
     "tile.extrabiomes.leaves_": "ExtrabiomesXL:leaves_4",
+    "tile.extrabiomes.log.quarter": "ExtrabiomesXL:cornerlog_baldcypress",
+    "tile.extrabiomes.log.quarter_": "ExtrabiomesXL:cornerlog_rainboweucalyptus",
+    "tile.extrabiomes.log.quarter__": "ExtrabiomesXL:cornerlog_oak",
+    "tile.extrabiomes.log.quarter___": "ExtrabiomesXL:cornerlog_fir",
+    "tile.extrabiomes.stairs.redcobble": "ExtrabiomesXL:terrain_blocks1",
+    #"tile.extrabiomes.stairs.redrockbrick": "ExtrabiomesXL:terrain_blocks1",
+    "tile.extrabiomes.redrockslab": "ExtrabiomesXL:slabRedRock",
+    "tile.extrabiomes.sapling": "ExtrabiomesXL:saplings_1",
+    "tile.extrabiomes.woodslab_": "ExtrabiomesXL:woodslab2",
 
     # Forgotten Nature
     "tile.newCrops1": "ForgottenNature:newCrops1",
