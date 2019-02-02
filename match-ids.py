@@ -98,6 +98,7 @@ replacePrefixes = {
     "tile.TF": "TwilightForest:tile.TF", "item.TF": "TwilightForest:item.TF",
     "tile.extrautils:": "ExtraUtilities:",
     "item.Aquaculture": "Aquaculture:item.",
+    "tile.for.": "Forestry:",
 }
 
 manual = {
@@ -157,6 +158,20 @@ manual = {
     "tile.netherores.ore.0": "ProjRed|Exploration:projectred.exploration.ore",
     "tile.netherores.ore.1": "miscutils:blockStoneoreFluorite",
     "tile.netherores.hellfish": "miscutils:blockHellFire",
+
+    #"tile.for.slabs3": "Forestry:slabs",
+    #"tile.for.planks2": "Forestry:planks",
+    #tile.null. ID: 924
+    "tile.leaves": "Forestry:leaves",
+    "tile.for.log1": "Forestry:logs",
+    "tile.for.log2": "Forestry:logsFireproof",
+    #"tile.for.log3": "Forestry:logs",
+    #"tile.for.log4": "Forestry:logs",
+    "tile.for.planks": "Forestry:planks",
+    "tile.for.slabs1": "Forestry:slabs",
+    "tile.for.slabs2": "Forestry:slabsDouble",
+    #"tile.stained": 
+    "tile.ffarm": "Forestry:ffarm",
 
     # Forgotten Nature
     "tile.newCrops1": "ForgottenNature:newCrops1",
