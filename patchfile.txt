@@ -194,7 +194,7 @@
 960 -> 1210 # ('tile.hive', 'BiomesOPlenty:hive', 'anyspace') 
 # 961 -> (None, 'tile.ectoplasm', 'tile.ectoplasm', 'no match')
 # 965 -> (None, 'tile.extrabees.block.alveary', 'tile.extrabees.block.alveary', 'no match')
-# 975 -> (None, 'tile.IronChest', 'tile.IronChest', 'no match')
+975 -> 2706 # ('tile.IronChest', 'IronChest:BlockIronChest', 'manual') 
 1050 -> 1526 # ('tile.railcraft.cube', 'Railcraft:cube', 'namespace') 
 1051 -> 1550 # ('tile.railcraft.detector', 'Railcraft:detector', 'namespace') 
 1052 -> 1530 # ('tile.railcraft.track.elevator', 'Railcraft:track.elevator', 'namespace') 
