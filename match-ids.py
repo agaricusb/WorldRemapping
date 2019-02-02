@@ -126,6 +126,7 @@ manual = {
 
     #"tile.oilMoving": "BuildCraft|Energy:blockOil",
     "tile.oilStill": "BuildCraft|Energy:blockOil",
+    "tile.tankBlock": "BuildCraft|Factory:tankBlock",
 
     "tile.extrabiomes.cattail": "ExtrabiomesXL:plants4",
     "tile.extrabiomes.log": "ExtrabiomesXL:log1",
@@ -254,6 +255,8 @@ direct = {
     2512: (248, "AppliedEnergistics appeng.blockWorld/appliedenergistics2:tile.OreQuartz"),
     2513: (430, "AppliedEnergistics appeng.blockMulti3/ME Fuzzy Export Bus/~tile.BlockSpatialIOPort"),
     2514: (425, "AppliedEnergistics appeng.TinyTNT/tile.BlockTinyTNT/appliedenergistics2:tile.BlockTinyTNT"),
+
+    514: (1500, "BuildCraft pipe.id/BuildCraft|Transport:pipeBlock"),
 
     ## Forgotten Nature
 
