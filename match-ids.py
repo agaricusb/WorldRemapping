@@ -107,6 +107,8 @@ manual = {
     "tile.dragonstoneOre": "netherrocks:dragonstone_ore", "tile.dragonstoneBlock": "netherrocks:dragonstone_block",
     "tile.argoniteOre": "netherrocks:argonite_ore", "tile.argoniteBlock": "netherrocks:argonite_block",
     "tile.netherFurnaceOn": "netherrocks:nether_furnace",
+
+    "tile.thermalexpansion.ore": "ThermalFoundation:Ore",
 }
 
 def ucfirst(s):

@@ -434,7 +434,7 @@
 1979 -> 3753 # ('tile.transientDoor', 'dimdoors:transientDoor', 'anyspace') 
 # 1980 -> (None, 'tile.chaosDoor', 'tile.chaosDoor', 'no match')
 # 1981 -> (None, 'tile.dimDoorWarp', 'tile.dimDoorWarp', 'no match')
-# 2001 -> (None, 'tile.thermalexpansion.ore', 'ThermalExpansion:ore', 'no match')
+2001 -> 1470 # ('tile.thermalexpansion.ore', 'ThermalFoundation:Ore', 'manual') 
 # 2002 -> (None, 'tile.thermalexpansion.machine', 'ThermalExpansion:machine', 'no match')
 # 2003 -> (None, 'tile.thermalexpansion.engine', 'ThermalExpansion:engine', 'no match')
 # 2004 -> (None, 'tile.thermalexpansion.tank', 'ThermalExpansion:tank', 'no match')
