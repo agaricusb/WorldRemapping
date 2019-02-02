@@ -278,6 +278,11 @@ direct = {
 
     514: (1500, "BuildCraft pipe.id/BuildCraft|Transport:pipeBlock"),
 
+    2375: (3699, "UsefulFood:AppleCakeBlock"),
+    2376: (3702, "UsefulFood:CaramelCakeBlock"),
+    2377: (3700, "UsefulFood:ChocolateCakeBlock"),
+    2378: (3701, "UsefulFood:MagicCakeBlock"),
+
     ## Forgotten Nature
 
     # ambiguous with vanilla
