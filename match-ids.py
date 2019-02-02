@@ -103,6 +103,7 @@ replacePrefixes = {
 
 manual = {
     "tile.IronChest": "IronChest:BlockIronChest",
+    "tile.CompactSolar": "CompactSolars:CompactSolarBlock",
 
     "tile.bau5ProjectBench": "projectbench:pb_block",
 
@@ -125,6 +126,15 @@ manual = {
     "tile.liquid.ender": "ThermalFoundation:FluidEnder",
 
     "tile.thermalexpansion.storage": "ThermalExpansion:Strongbox",
+
+    "tile.MFFSControlSystem": "factorization:ArtifactForge",
+    "tile.MFFSForceEnergyConverter": "GalaxySpace:convertersurface",
+
+    "tile.easycraftingtable": "thebetweenlands:weedwoodCraftingTable",
+
+    "tile.mod_SRM.SecretPlayerPlate": "ForgottenNature:falseBlock",
+
+    "tile.enderIO:blockCustomFence": "thebetweenlands:weedwoodPlankFence",
 
     #"tile.oilMoving": "BuildCraft|Energy:blockOil",
     "tile.oilStill": "BuildCraft|Energy:blockOil",
