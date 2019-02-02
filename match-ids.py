@@ -110,18 +110,10 @@ manual = {
     "tile.netherFurnaceOn": "netherrocks:nether_furnace",
 
     "tile.thermalexpansion.ore": "ThermalFoundation:Ore",
-    "tile.thermalexpansion.machine": "ThermalExpansion:Machine",
     "tile.thermalexpansion.engine": "ThermalExpansion:Device",
-    "tile.thermalexpansion.tank": "ThermalExpansion:Tank",
     "tile.thermalexpansion.energycell": "ThermalExpansion:Cell",
-
     "tile.thermalexpansion.conduit": "ThermalDynamics:ThermalDynamics_0",
-
-    "tile.thermalexpansion.tesseract": "ThermalExpansion:Tesseract",
-    "tile.thermalexpansion.plate": "ThermalExpansion:Plate",
     "tile.thermalexpansion.lamp": "ThermalExpansion:Light",
-    "tile.thermalexpansion.glass": "ThermalExpansion:Glass",
-    "tile.thermalexpansion.rockwool": "ThermalExpansion:Rockwool",
 
     "tile.liquid.redstone": "ThermalFoundation:FluidRedstone",
     "tile.liquid.glowstone": "ThermalFoundation:FluidGlowstone",
@@ -343,6 +335,7 @@ def matchAll(before, after, configsBefore, configsAfter):
         if newName.startswith("Mystcraft:"): newName = n[0] + ":" + "Block" + ucfirst(n[1])
         if newName.startswith("TConstruct:"): newName = n[0] + ":" + lcfirst(n[1])
         if newName.startswith("atum:"): newName = n[0] + ":" + m[0] + "." + lcfirst(m[1])
+        if newName.startswith("ThermalExpansion:"): newName = n[0] + ":" + ucfirst(n[1])
 
         if after.has_key(newName):
             newID = after[newName]
