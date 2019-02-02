@@ -85,6 +85,7 @@ replacePrefixes = {
     "tile.thermalexpansion.": "ThermalExpansion:",
     "tile.powerconverters.": "PowerConverters3:",
     "tile.openblocks.": "OpenBlocks:",
+    "tile.mfr.liquid.": "MineFactoryReloaded:",
     "tile.mfr.": "MineFactoryReloaded:", "item.mfr.": "MineFactoryReloaded:",
     "item.spear.": "weaponmod:spear.", "item.halberd.": "weaponmod:halberd.", "item.battleaxe.": "weaponmod:battleaxe.",
     "item.knife.": "weaponmod:knife.", "item.flail.": "weaponmod:flail.", "item.boomerang.": "weaponmod:boomerang.",
@@ -163,10 +164,29 @@ manual = {
     "tile.fruit": "ForgottenNature:FNFruit",
 
     "tile.Rope": "ForgottenNature:rope",
+    
+    "tile.immibis/infinitubes:cable": "InfiniTubes:infinitubes.infinitube",
+    "tile.immibis/chunkloader:chunkloader": "DimensionalAnchors:chunkloader",
 
+    "tile.BlockMetaID_Block": "gregtech:gt.blockcasings4", # loose match, different meta (Advanced Machine Block :0 -> ?, Fusion Coil :1 -> :7)
+    "tile.GT_LightSource": "gregtech:gt.blockcasings5", # not really
+    "tile.BlockMetaID_Machine": "gregtech:gt.blockmachines",
+    "tile.BlockMetaID_Ore": "gregtech:gt.blockores",
+    "tile.BlockMetaID_Block2": "gregtech:gt.blockmetal1", # different metals
+
+    "tile.mfr.liquid.chocolatemilk.still": "MineFactoryReloaded:chocolatemilk.still",
+    "tile.mfr.decorativestone": "MineFactoryReloaded:stone",
 }
 
 direct = {
+    #1144: (, "Immibis peripherals.lan-wire.id"),
+    #1145: (, "Immibis peripherals.block.id"),
+    1146: (2705, "Immibis infinitubes.machine.id/InfiniTubes:infinitubes.machine"),
+    1148: (2708, "Immibis liquidxp.machine.id/LiquidXP:liquidxp.machine"),
+    
+    1150: (3697, "Immibis tubestuff.id/Tubestuff:machine"),
+    1151: (3698, "Immibis tubestuff.storage.id/Tubestuff:storage"),
+
     ## Forgotten Nature
 
     # ambiguous with vanilla
