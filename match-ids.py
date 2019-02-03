@@ -508,7 +508,7 @@ direct = {
     3709: (1316, "Forestry ExtraTrees gate Fir Gate/ExtrabiomesXL:fencegate_acacia"),
     3710: (2711, "Forestry ExtraTrees door Fir Door/malisisdoors:door_acacia"),
 
-    #4091: 
+    4091: (560, "MineFactoryReloaded ID.FakeLaser/MineFactoryReloaded:laserair"),
     4093: (2324, "Flan's Mod Weapons Box/flansmod:gunBox.american"),
 }
 
