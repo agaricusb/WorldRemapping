@@ -116,6 +116,8 @@ allow_multiple_substitutions = [
     "ExtrabiomesXL:cornerlog_rainboweucalyptus",
     "ExtrabiomesXL:woodslab",
     "ExtraUtilities:etherealglass",
+    "ForgottenNature:falseBlock",
+    "MineFactoryReloaded:stone",
 ]
 
 # Manually assigned old name to new name replacements
@@ -152,6 +154,7 @@ manual = {
     "tile.easycraftingtable": "thebetweenlands:weedwoodCraftingTable",
 
     "tile.mod_SRM.SecretPlayerPlate": "ForgottenNature:falseBlock",
+    "tile.mod_SRM.GhostBlock": "ForgottenNature:falseBlock",
 
     "tile.enderIO:blockCustomFence": "thebetweenlands:weedwoodPlankFence",
 
@@ -234,6 +237,12 @@ manual = {
     "tile.liquid.metalFlow": "TConstruct:fluid.molten.iron",
     "tile.liquid.metalStill": "TConstruct:fluid.molten.gold",
     "tile.Decoration.Brick": "TConstruct:MeatBlock",
+
+    "tile.Redstone.Machine": "OpenBlocks:drawingtable", # Tinker's Construct drawbridge/igniter
+
+    "tile.BiblioArmorStand": "BiblioCraft:Armor Stand",
+    "tile.BiblioPress": "BiblioCraft:Printing Press",
+    "tile.BiblioType": "BiblioCraft:Typesetting Machine",
 
     #"tile.for.slabs3": "Forestry:slabs",
     #"tile.for.planks2": "Forestry:planks",
@@ -321,6 +330,7 @@ manual = {
 
     "tile.mfr.liquid.chocolatemilk.still": "MineFactoryReloaded:chocolatemilk.still",
     "tile.mfr.decorativestone": "MineFactoryReloaded:stone",
+    "tile.mfr.decorativebrick": "MineFactoryReloaded:stone",
 
     # Jammy Furniture Mod -> Crayfish Furniture Mod
     "tile.bathBlock": "cfm:freezer",
