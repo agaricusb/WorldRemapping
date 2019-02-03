@@ -498,6 +498,8 @@ direct = {
     2635: (3785, "Forgotten Nature sapIDindex+2/huckleberry bushling"),
 
     2640: (3762, "Forgotten Nature torchID/ForgottenNature:Crystal Torch"),
+
+    3660: (486, "Atum Portal Block/atum:tile.portal"),
 }
 
 def ucfirst(s):
