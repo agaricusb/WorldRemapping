@@ -147,6 +147,14 @@ manual = {
 
     "tile.thermalexpansion.storage": "ThermalExpansion:Strongbox",
 
+    "tile.BlockLimbo": "dimdoors:Unraveled Fabric",
+    "tile.blockDimWallPerm": "dimdoors:Fabric of RealityPerm",
+    "tile.dimDoor": "dimdoors:Dimensional Door",
+    "tile.dimHatch": "dimdoors:Transdimensional Trapdoor",
+    "tile.blockDimWall": "dimdoors:Fabric of Reality",
+    "tile.chaosDoor": "dimdoors:Unstable Door",
+    "tile.dimDoorWarp": "dimdoors:Warp Door",
+
     "tile.MFFSControlSystem": "factorization:ArtifactForge",
     "tile.MFFSForceEnergyConverter": "GalaxySpace:convertersurface",
     "tile.MFFSMonazitOre": "ihl:oreDatolite",
