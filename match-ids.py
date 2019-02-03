@@ -140,6 +140,7 @@ manual = {
 
     "tile.MFFSControlSystem": "factorization:ArtifactForge",
     "tile.MFFSForceEnergyConverter": "GalaxySpace:convertersurface",
+    "tile.MFFSMonazitOre": "ihl:oreDatolite",
 
     "tile.easycraftingtable": "thebetweenlands:weedwoodCraftingTable",
 
@@ -184,6 +185,11 @@ manual = {
     "tile.netherores.ore.0": "ProjRed|Exploration:projectred.exploration.ore",
     "tile.netherores.ore.1": "miscutils:blockStoneoreFluorite",
     "tile.netherores.hellfish": "miscutils:blockHellFire",
+
+    "tile.tconstruct.gravelore": "TConstruct:GravelOre",
+    "tile.tconstruct.stoneore": "ihl:oreTrona",
+    "tile.TConstruct.Soil": "TConstruct:CraftedSoil",
+    "tile.tconstruct.metalblock": "TConstruct:MetalBlock",
 
     #"tile.for.slabs3": "Forestry:slabs",
     #"tile.for.planks2": "Forestry:planks",
