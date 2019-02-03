@@ -230,6 +230,10 @@ manual = {
     "tile.tconstruct.stoneore": "ihl:oreTrona",
     "tile.TConstruct.Soil": "TConstruct:CraftedSoil",
     "tile.tconstruct.metalblock": "TConstruct:MetalBlock",
+    "tile.ToolStation": "TConstruct:ToolStationBlock",
+    "tile.liquid.metalFlow": "TConstruct:fluid.molten.iron",
+    "tile.liquid.metalStill": "TConstruct:fluid.molten.gold",
+    "tile.Decoration.Brick": "TConstruct:MeatBlock",
 
     #"tile.for.slabs3": "Forestry:slabs",
     #"tile.for.planks2": "Forestry:planks",
@@ -268,6 +272,7 @@ manual = {
     "tile.Half Plank": "ForgottenNature:halfPlank",
     "tile.Half Plank_": "ForgottenNature:halfPlank2",
     "tile.Half block": "ForgottenNature:FNHalfStone",
+    "tile.Half block_": "ForgottenNature:FNdHalfStone",
     "tile.flowerPot1": "ForgottenNature:flowerPot",
     #"tile.flowerPot2": "ForgottenNature:flowerPot",
     #"tile.flowerPot3": "ForgottenNature:flowerPot",
