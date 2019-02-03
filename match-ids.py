@@ -293,6 +293,7 @@ manual = {
     "tile.for.slabs2": "Forestry:slabsDouble",
     #"tile.stained": 
     "tile.ffarm": "Forestry:ffarm",
+    "tile.apiaristMachine": "gendustry:IndustrialApiary",
    
     # Dartcraft substitutions
     "tile.hive_": "ihl:oreBischofite",
@@ -503,6 +504,12 @@ direct = {
     2640: (3762, "Forgotten Nature torchID/ForgottenNature:Crystal Torch"),
 
     3660: (486, "Atum Portal Block/atum:tile.portal"),
+
+    3709: (1316, "Forestry ExtraTrees gate Fir Gate/ExtrabiomesXL:fencegate_acacia"),
+    3710: (2711, "Forestry ExtraTrees door Fir Door/malisisdoors:door_acacia"),
+
+    #4091: 
+    4093: (2324, "Flan's Mod Weapons Box/flansmod:gunBox.american"),
 }
 
 def ucfirst(s):
