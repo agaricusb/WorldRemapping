@@ -109,6 +109,7 @@ allow_multiple_substitutions = [
     "ExtrabiomesXL:log1",
     "ExtrabiomesXL:leaves_1",
     "ExtrabiomesXL:saplings_1",
+    "chisel:holystone",
 ]
 
 # Manually assigned old name to new name replacements
@@ -173,6 +174,16 @@ manual = {
     "tile.extrabiomes.sapling": "ExtrabiomesXL:saplings_1",
     "tile.extrabiomes.woodslab_": "ExtrabiomesXL:woodslab2",
 
+    "tile.bop.holyStone": "chisel:holystone",
+    "tile.bop.generic.holy_dirt": "GalaxySpace:barnardaCdirt",
+    "tile.bop.generic.ash_stone": "BiomesOPlenty:ashStone",
+    "tile.bop.generic.crag_rock": "BiomesOPlenty:cragRock",
+    "tile.bop.generic.dried_dirt": "BiomesOPlenty:driedDirt",
+    "tile.bop.generic.hard_dirt": "BiomesOPlenty:hardDirt",
+    "tile.bop.generic.hard_ice": "BiomesOPlenty:hardIce",
+    "tile.bop.generic.hard_sand": "BiomesOPlenty:hardSand",
+    "tile.bop.holyGrass": "chisel:holystone",
+    "tile.bop.redRocks": "BiomesOPlenty:rocks",
     "tile.bop.leavesFruit": "BiomesOPlenty:leaves3",
     "tile.bop.wood1": "BiomesOPlenty:logs1",
     "tile.bop.wood2": "BiomesOPlenty:logs2",
