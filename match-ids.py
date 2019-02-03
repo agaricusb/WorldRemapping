@@ -110,6 +110,11 @@ allow_multiple_substitutions = [
     "ExtrabiomesXL:leaves_1",
     "ExtrabiomesXL:saplings_1",
     "chisel:holystone",
+    "BuildCraft|Energy:blockOil",
+    "ExtrabiomesXL:log_elbow_baldcypress",
+    "ExtrabiomesXL:cornerlog_rainboweucalyptus",
+    "ExtrabiomesXL:woodslab",
+    "ExtraUtilities:etherealglass",
 ]
 
 # Manually assigned old name to new name replacements
@@ -149,13 +154,16 @@ manual = {
 
     "tile.enderIO:blockCustomFence": "thebetweenlands:weedwoodPlankFence",
 
-    #"tile.oilMoving": "BuildCraft|Energy:blockOil",
+    "tile.oilMoving": "BuildCraft|Energy:blockOil",
     "tile.oilStill": "BuildCraft|Energy:blockOil",
     "tile.tankBlock": "BuildCraft|Factory:tankBlock",
 
     "tile.extrabiomes.cattail": "ExtrabiomesXL:plants4",
     "tile.extrabiomes.log": "ExtrabiomesXL:log1",
+    "tile.extrabiomes.log_": "ExtrabiomesXL:log2",
     "tile.extrabiomes.woodslab": "ExtrabiomesXL:woodslab",
+    "tile.extrabiomes.woodslab_": "ExtrabiomesXL:woodslab2",
+    "tile.extrabiomes.woodslab__": "ExtrabiomesXL:woodslab",
     "tile.extrabiomes.leafpile": "ExtrabiomesXL:leaf_pile",
     "tile.extrabiomes.redrock": "ExtrabiomesXL:terrain_blocks1",
     "tile.extrabiomes.crackedsand": "ExtrabiomesXL:terrain_blocks2",
@@ -164,6 +172,7 @@ manual = {
     "tile.extrabiomes.tallgrass": "ExtrabiomesXL:leaves_2",
     "tile.extrabiomes.leaves": "ExtrabiomesXL:leaves_1",
     "tile.extrabiomes.leaves_": "ExtrabiomesXL:leaves_4",
+    "tile.extrabiomes.leaves__": "ExtrabiomesXL:leaves_1",
     "tile.extrabiomes.log.quarter": "ExtrabiomesXL:cornerlog_baldcypress",
     "tile.extrabiomes.log.quarter_": "ExtrabiomesXL:cornerlog_rainboweucalyptus",
     "tile.extrabiomes.log.quarter__": "ExtrabiomesXL:cornerlog_oak",
@@ -172,6 +181,12 @@ manual = {
     #"tile.extrabiomes.stairs.redrockbrick": "ExtrabiomesXL:terrain_blocks1",
     "tile.extrabiomes.redrockslab": "ExtrabiomesXL:slabRedRock",
     "tile.extrabiomes.sapling": "ExtrabiomesXL:saplings_1",
+    "tile.extrabiomes.sapling_": "ExtrabiomesXL:saplings_2",
+    "tile.extrabiomes.baldcypressquarter": "ExtrabiomesXL:log_elbow_baldcypress",
+    "tile.extrabiomes.cypresskneelog": "ExtrabiomesXL:log_elbow_baldcypress",
+    "tile.extrabiomes.rainbowkneelog": "ExtrabiomesXL:log_elbow_rainbow_eucalyptus",
+    "tile.extrabiomes.rainboweucalyptusquarter": "ExtrabiomesXL:cornerlog_rainboweucalyptus",
+    "tile.extrabiomes.newlog": "ExtrabiomesXL:log1",
     "tile.extrabiomes.woodslab_": "ExtrabiomesXL:woodslab2",
 
     "tile.bop.holyStone": "chisel:holystone",
@@ -188,10 +203,21 @@ manual = {
     "tile.bop.wood1": "BiomesOPlenty:logs1",
     "tile.bop.wood2": "BiomesOPlenty:logs2",
     "tile.bop.wood3": "BiomesOPlenty:logs3",
+    "tile.bop.wood4": "BiomesOPlenty:logs4",
     #"tile.bop.redCobbleStairs": "ExtrabiomesXL:stairsRedCobble",
     #"tile.bop.redBricksStairs": "Red Brick Stairs ID",
     "tile.bop.leavesColorized": "BiomesOPlenty:leaves4",
     "tile.bop.puddle": "thebetweenlands:puddle",
+    "tile.bop.glass": "ExtraUtilities:etherealglass",
+    "tile.bop.altar": "Botania:altar",
+    "tile.bop.springWater": "IC2:fluidDistilledWater",
+    "tile.bop.liquidPoison": "ihl:fluidBlueVitriolDissolvedInWater",
+    "tile.bop.amethystOre": "ihl:orePotassiumFeldspar",
+
+    "tile.blockSurreal": "ihl:oreGypsum", # Legendary Beasts
+
+    "tile.crudeOilMoving": "BuildCraft|Energy:blockOil",
+    "tile.crudeOilStill": "BuildCraft|Energy:blockOil",
 
     "tile.netherores.ore.0": "ProjRed|Exploration:projectred.exploration.ore",
     "tile.netherores.ore.1": "miscutils:blockStoneoreFluorite",
@@ -434,7 +460,8 @@ def matchAll(before, after, configsBefore, configsAfter):
         if after.has_key(newName):
             newID = after[newName]
             mapping[oldID] = (newID, oldName, newName, "namespace")
-            del after[newName]
+            if newName not in allow_multiple_substitutions:
+                del after[newName]
             continue
 
 
