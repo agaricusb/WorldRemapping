@@ -73,6 +73,7 @@ def readNEIDump(fn):
 
     return m
 
+# Try replacing the old name with these prefixes to obtain new name
 replacePrefixes = {
     "tile.bop.": "BiomesOPlenty:", "item.bop.": "BiomesOPlenty:",
     "tile.extrabiomes.": "ExtrabiomesXL:",
@@ -101,6 +102,16 @@ replacePrefixes = {
     "tile.for.": "Forestry:",
 }
 
+# Normally, the old:new is 1:1 mapping, but allow n:1 (multiple blocks mapping to same block) _to_ this
+# if is included in this list, e.g., lossy conversion since cannot be reversed. Useful for removed mods.
+allow_multiple_substitutions = [
+    "ForgottenNature:FNWStairs1",
+    "ExtrabiomesXL:log1",
+    "ExtrabiomesXL:leaves_1",
+    "ExtrabiomesXL:saplings_1",
+]
+
+# Manually assigned old name to new name replacements
 manual = {
     "tile.IronChest": "IronChest:BlockIronChest",
     "tile.CompactSolar": "CompactSolars:CompactSolarBlock",
@@ -187,6 +198,14 @@ manual = {
     "tile.for.slabs2": "Forestry:slabsDouble",
     #"tile.stained": 
     "tile.ffarm": "Forestry:ffarm",
+   
+    # Dartcraft substitutions
+    "tile.hive_": "ihl:oreBischofite",
+    "tile.powerOre": "ihl:oreMica",
+    "tile.forceStairs": "ForgottenNature:FNWStairs1",
+    "tile.forceLog": "ExtrabiomesXL:log1",
+    "tile.forceLeaves": "ExtrabiomesXL:leaves_1",
+    "tile.forceSapling": "ExtrabiomesXL:saplings_1",
 
     # Forgotten Nature
     "tile.newCrops1": "ForgottenNature:newCrops1",
@@ -356,7 +375,8 @@ def matchAll(before, after, configsBefore, configsAfter):
             newName = manual[oldName]
             newID = after[newName]
             mapping[oldID] = (newID, oldName, newName, "manual")
-            del after[newName]
+            if newName not in allow_multiple_substitutions:
+                del after[newName]
             continue
 
         if direct.has_key(oldID):
