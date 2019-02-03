@@ -104,7 +104,7 @@ replacePrefixes = {
 
 # Normally, the old:new is 1:1 mapping, but allow n:1 (multiple blocks mapping to same block) _to_ this
 # if is included in this list, e.g., lossy conversion since cannot be reversed. Useful for removed mods.
-allow_multiple_substitutions = [
+overloaded_allow_multiple_substitutions = [
     "ForgottenNature:FNWStairs1",
     "ExtrabiomesXL:log1",
     "ExtrabiomesXL:leaves_1",
@@ -118,6 +118,11 @@ allow_multiple_substitutions = [
     "ExtraUtilities:etherealglass",
     "ForgottenNature:falseBlock",
     "MineFactoryReloaded:stone",
+    "Forestry:logs",
+    "MineFactoryReloaded:stainedglass.pane",
+    "thaumicenergistics:thaumicenergistics.block.infusion.provider",
+    "Thaumcraft:blockCosmeticSolid",
+    "ThaumicTinkerer:nitorGas",
 ]
 
 # Manually assigned old name to new name replacements
@@ -163,6 +168,21 @@ manual = {
 
     "tile.mod_SRM.SecretPlayerPlate": "ForgottenNature:falseBlock",
     "tile.mod_SRM.GhostBlock": "ForgottenNature:falseBlock",
+    "tile.mod_SRM.SecretButton": "ForgottenNature:falseBlock",
+    "tile.mod_SRM.SecretIronDoorBlock": "ForgottenNature:falseBlock",
+    "tile.mod_SRM.SecretRedstone": "ForgottenNature:falseBlock",
+    "tile.mod_SRM.SecretTrapDoor": "ForgottenNature:falseBlock",
+    "tile.mod_SRM.OneWayGlass": "ExtraUtilities:etherealglass",
+    "tile.mod_SRM.TorchLever": "ForgottenNature:falseBlock",
+
+    "tile.PortalMod": "PortalGun:Portal_BlockPortal",
+
+    "tile.cccomputer": "OpenComputers:case1", # ComputerCraft substitute with OpenComputers
+    "tile.ccturtle": "OpenComputers:robot",
+
+    "tile.myst.writing_desk": "Mystcraft:WritingDesk",
+    "tile.myst.inkmixer": "Mystcraft:BlockInkMixer",
+    "tile.myst.bookbinder": "Mystcraft:BlockBookBinder",
 
     "tile.enderIO:blockCustomFence": "thebetweenlands:weedwoodPlankFence",
 
@@ -245,6 +265,7 @@ manual = {
     "tile.liquid.metalFlow": "TConstruct:fluid.molten.iron",
     "tile.liquid.metalStill": "TConstruct:fluid.molten.gold",
     "tile.Decoration.Brick": "TConstruct:MeatBlock",
+    "tile.tconstruct.glasspanestained": "MineFactoryReloaded:stainedglass.pane",
 
     "tile.Redstone.Machine": "OpenBlocks:drawingtable", # Tinker's Construct drawbridge/igniter
 
@@ -258,8 +279,8 @@ manual = {
     "tile.leaves": "Forestry:leaves",
     "tile.for.log1": "Forestry:logs",
     "tile.for.log2": "Forestry:logsFireproof",
-    #"tile.for.log3": "Forestry:logs",
-    #"tile.for.log4": "Forestry:logs",
+    "tile.for.log3": "Forestry:logs",
+    "tile.for.log4": "Forestry:logs",
     "tile.for.planks": "Forestry:planks",
     "tile.for.slabs1": "Forestry:slabs",
     "tile.for.slabs2": "Forestry:slabsDouble",
@@ -329,6 +350,7 @@ manual = {
     
     "tile.immibis/infinitubes:cable": "InfiniTubes:infinitubes.infinitube",
     "tile.immibis/chunkloader:chunkloader": "DimensionalAnchors:chunkloader",
+    "tile.immibis.microblock.container": "ImmibisMicroblocks:MicroblockContainer",
 
     "tile.BlockMetaID_Block": "gregtech:gt.blockcasings4", # loose match, different meta (Advanced Machine Block :0 -> ?, Fusion Coil :1 -> :7)
     "tile.GT_LightSource": "gregtech:gt.blockcasings5", # not really
@@ -359,9 +381,36 @@ manual = {
     "tile.woodBlocksThree": "cfm:tablewood",
     "tile.woodBlocksTwo": "cfm:chairwood",
     #"tile.MobHeadsFour":
+
+
+    "tile.machineBlock": "BuildCraft|Builders:machineBlock",
+
+    "tile.blockThermalMonitor": "IC2NuclearControl:blockNuclearControlMain",
+
+    "tile.chargePad": "IC2:blockChargepad",
+
+    "tile.glassBell": "ihl:glassBoxBlock", # EE3 substitution
+    "tile.aludel": "ihl:electrolysisBath", # EE3 substitution
+
+    "tile.cage": "thebetweenlands:geckoCage", # SoulShards substitution
+
+    # Thaumcraft
+    "tile.blockCrucible": "Thaumcraft:blockMetalDevice",
+    "tile.blockInfusionWorkbench": "thaumicenergistics:thaumicenergistics.block.infusion.provider",
+    "tile.blockWooden": "Thaumcraft:blockCosmeticSolid",
+    "tile.blockNitor": "ThaumicTinkerer:nitorGas",
 }
 
 direct = {
+    501: (2004, "BuildCraft assemblyTable.id/OpenComputers:assembler"),
+
+    645: (242, "Immibis AdvancedMachines/AdvancedMachines:advancedmachines.block"),
+
+    683: (0, "ModularForceFieldSystem MFFSFieldblock/air"),
+
+    743: (1990, "redlogic.wire.id/RedLogic:redlogic.wire"),
+    749: (1989, "redlogic.gates.id/RedLogic:redlogic.gates"),
+
     #1144: (, "Immibis peripherals.lan-wire.id"),
     #1145: (, "Immibis peripherals.block.id"),
     1146: (2705, "Immibis infinitubes.machine.id/InfiniTubes:infinitubes.machine"),
@@ -369,6 +418,8 @@ direct = {
     
     1150: (3697, "Immibis tubestuff.id/Tubestuff:machine"),
     1151: (3698, "Immibis tubestuff.storage.id/Tubestuff:storage"),
+
+    1555: (2842, "ObsidiPlates obsidianPlate/ObsidiPlates:ObsidianPressurePlate"),
 
     2510: (431, "AppliedEnergistics appeng.blockMulti/ME Cable"),
     2511: (437, "AppliedEnergistics appeng.blockMulti2/ME Precision Export Bus/~tile.BlockIOPort"),
@@ -444,7 +495,7 @@ def matchAll(before, after, configsBefore, configsAfter):
             newName = manual[oldName]
             newID = after[newName]
             mapping[oldID] = (newID, oldName, newName, "manual")
-            if newName not in allow_multiple_substitutions:
+            if newName not in overloaded_allow_multiple_substitutions:
                 del after[newName]
             continue
 
@@ -486,7 +537,7 @@ def matchAll(before, after, configsBefore, configsAfter):
         if after.has_key(newName):
             newID = after[newName]
             mapping[oldID] = (newID, oldName, newName, "namespace")
-            if newName not in allow_multiple_substitutions:
+            if newName not in overloaded_allow_multiple_substitutions:
                 del after[newName]
             continue
 
@@ -516,7 +567,8 @@ def matchAll(before, after, configsBefore, configsAfter):
 
                 newID = after[newName]
                 mapping[oldID] = (newID, oldName, newName, "anyspace")
-                del after[newName]
+                if newName not in overloaded_allow_multiple_substitutions:
+                    del after[newName]
                 continue
 
 
