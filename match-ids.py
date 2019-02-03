@@ -193,6 +193,10 @@ manual = {
     "tile.bop.leavesColorized": "BiomesOPlenty:leaves4",
     "tile.bop.puddle": "thebetweenlands:puddle",
 
+    "tile.moonBlock": "GalacticraftCore:tile.moonBlock",
+    "tile.spaceStationBase": "GalacticraftCore:tile.spaceStationBase",
+    "tile.treasureChest": "GalacticraftCore:tile.treasureChest",
+
     "tile.netherores.ore.0": "ProjRed|Exploration:projectred.exploration.ore",
     "tile.netherores.ore.1": "miscutils:blockStoneoreFluorite",
     "tile.netherores.hellfish": "miscutils:blockHellFire",
