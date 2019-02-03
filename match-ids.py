@@ -430,6 +430,9 @@ manual = {
     "tile.Atum:FlaxBlock": "atum:tile.flax",
     "tile.Atum:AtumIron": "atum:tile.ironOre",
     "tile.AtumPharaohChest": "atum:tile.pharaohChest",
+    "tile.Atum:AtumBrickSmall": "atum:tile.smallBrick",
+    "tile.Atum:SmallStoneStair": "atum:tile.smallStairs",
+    "tile.Atum:AtumSand": "atum:tile.sand",
 }
 
 direct = {
