@@ -437,6 +437,8 @@ manual = {
 }
 
 direct = {
+    390: (390, "minecraft flower pot (not a block)"),
+
     501: (2004, "BuildCraft assemblyTable.id/OpenComputers:assembler"),
 
     645: (242, "Immibis AdvancedMachines/AdvancedMachines:advancedmachines.block"),
