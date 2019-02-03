@@ -193,10 +193,6 @@ manual = {
     "tile.bop.leavesColorized": "BiomesOPlenty:leaves4",
     "tile.bop.puddle": "thebetweenlands:puddle",
 
-    "tile.moonBlock": "GalacticraftCore:tile.moonBlock",
-    "tile.spaceStationBase": "GalacticraftCore:tile.spaceStationBase",
-    "tile.treasureChest": "GalacticraftCore:tile.treasureChest",
-
     "tile.netherores.ore.0": "ProjRed|Exploration:projectred.exploration.ore",
     "tile.netherores.ore.1": "miscutils:blockStoneoreFluorite",
     "tile.netherores.hellfish": "miscutils:blockHellFire",
@@ -457,7 +453,7 @@ def matchAll(before, after, configsBefore, configsAfter):
             possible = []
             for k in after.keys():
                 other = k.split(":")[1]
-                if unprefixed == other.lower():
+                if unprefixed == other.lower() or "tile." + unprefixed == other.lower():
                     possible.append(k)
             if len(possible) > 1:
                 pass
