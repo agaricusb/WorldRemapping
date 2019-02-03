@@ -123,6 +123,10 @@ overloaded_allow_multiple_substitutions = [
     "thaumicenergistics:thaumicenergistics.block.infusion.provider",
     "Thaumcraft:blockCosmeticSolid",
     "ThaumicTinkerer:nitorGas",
+    "cfm:couch",
+    "ExtraUtilities:chandelier",
+    "OpenBlocks:trophy",
+    "cfm:freezer",
 ]
 
 # Manually assigned old name to new name replacements
@@ -247,7 +251,10 @@ manual = {
     "tile.bop.springWater": "IC2:fluidDistilledWater",
     "tile.bop.liquidPoison": "ihl:fluidBlueVitriolDissolvedInWater",
     "tile.bop.amethystOre": "ihl:orePotassiumFeldspar",
-
+    "tile.bop.cloud": "chisel:cloud",
+    "tile.bop.generic.mud_brick": "thebetweenlands:mud",
+    "tile.bop.promisedPortal": "thebetweenlands:portalBark",
+   
     "tile.blockSurreal": "ihl:oreGypsum", # Legendary Beasts
 
     "tile.crudeOilMoving": "BuildCraft|Energy:blockOil",
@@ -361,6 +368,7 @@ manual = {
     "tile.mfr.liquid.chocolatemilk.still": "MineFactoryReloaded:chocolatemilk.still",
     "tile.mfr.decorativestone": "MineFactoryReloaded:stone",
     "tile.mfr.decorativebrick": "MineFactoryReloaded:stone",
+    "tile.mfr.liquid.essence.still": "MineFactoryReloaded:mobessence.still",
 
     # Jammy Furniture Mod -> Crayfish Furniture Mod
     "tile.bathBlock": "cfm:freezer",
@@ -369,18 +377,19 @@ manual = {
     "tile.ironBlocksTwo": "cfm:tablestone",
     "tile.lightsOff": "cfm:lampoff",
     "tile.lightsOn": "cfm:lampon",
-    #"tile.miscOne":
-    #"tile.MobHeadsOne":
-    #"tile.MobHeadsThree":
-    #"tile.roofingBlocksOne":
+    "tile.miscOne": "ihl:goldChimneyKnee",
+    "tile.MobHeadsOne": "Botania:gaiaHeadBlock",
+    "tile.MobHeadsTwo": "cfm:showerheadoff",
+    "tile.MobHeadsThree": "HardcoreEnderExpansion:enderman_head_block",
+    "tile.MobHeadsFour": "cfm:showerheadon",
+    "tile.roofingBlocksOne": "erebus:siloRoof",
     "tile.sofaCenter": "cfm:couch",
-    #"tile.sofaCorner": "cfm:couch",
-    #"tile.sofaLeft": "cfm:couch",
-    #"tile.sofaRight": "cfm:couch",
+    "tile.sofaCorner": "cfm:couch",
+    "tile.sofaLeft": "cfm:couch",
+    "tile.sofaRight": "cfm:couch",
     "tile.woodBlocks": "cfm:coffetablewood",
     "tile.woodBlocksThree": "cfm:tablewood",
     "tile.woodBlocksTwo": "cfm:chairwood",
-    #"tile.MobHeadsFour":
 
 
     "tile.machineBlock": "BuildCraft|Builders:machineBlock",
@@ -394,11 +403,33 @@ manual = {
 
     "tile.cage": "thebetweenlands:geckoCage", # SoulShards substitution
 
+    "tile.extrautils:chandelier_invis": "ExtraUtilities:chandelier",
+
+    "tile.openblocks.trophy": "OpenBlocks:trophy",
+
     # Thaumcraft
     "tile.blockCrucible": "Thaumcraft:blockMetalDevice",
     "tile.blockInfusionWorkbench": "thaumicenergistics:thaumicenergistics.block.infusion.provider",
     "tile.blockWooden": "Thaumcraft:blockCosmeticSolid",
     "tile.blockNitor": "ThaumicTinkerer:nitorGas",
+
+    # Camping Mod substitutions
+    "tile.campfire": "erebus:fireBloom",
+    "tile.tent": "cfm:freezer",
+    "tile.ghostBlock": "ForgottenNature:falseBlock",
+    "tile.radishCrop": "thebetweenlands:fungusCrop",
+
+    "tile.markShip": "ArchimedesShips:marker",
+    "tile.archiFloater": "ArchimedesShips:floater",
+    "tile.archiBalloon": "ArchimedesShips:balloon",
+    "tile.archiGauge": "ArchimedesShips:gauge",
+    
+    "tile.Atum:AtumCoal": "atum:tile.coalOre",
+    "tile.Atum:AtumCobble": "atum:tile.cobble",
+    "tile.Atum:AtumCrystalGlass": "atum:tile.crystalGlass",
+    "tile.Atum:FlaxBlock": "atum:tile.flax",
+    "tile.Atum:AtumIron": "atum:tile.ironOre",
+    "tile.AtumPharaohChest": "atum:tile.pharaohChest",
 }
 
 direct = {
