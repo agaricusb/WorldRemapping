@@ -437,8 +437,6 @@ manual = {
 }
 
 direct = {
-    390: (390, "minecraft flower pot (not a block)"),
-
     501: (2004, "BuildCraft assemblyTable.id/OpenComputers:assembler"),
 
     645: (242, "Immibis AdvancedMachines/AdvancedMachines:advancedmachines.block"),
@@ -512,6 +510,31 @@ direct = {
 
     4091: (560, "MineFactoryReloaded ID.FakeLaser/MineFactoryReloaded:laserair"),
     4093: (2324, "Flan's Mod Weapons Box/flansmod:gunBox.american"),
+}
+
+force_direct = {
+    # Legacy substitutions
+    # Missing blocks not in 1.5.2 but they were in 1.2.5 (or 1.5.1), and they
+    # were leftover by 1.7.10, so would be empty if loaded. Fix it here.
+    182: (1915, "1.2.5/RedPower2 tile.rpframe/GalacticraftCore:tile.airLockFrame"),
+    208: (2510, "1.2.5/Railcraft tile.mill/ihl:wireMill"),
+    213: (3289, "1.2.5/Plugins for Forestry tile.Thatch/thebetweenlands:thatch"),
+    244: (3959, "1.2.5/BuildCraft tile.blockMiningTip/miscutils:blockMiningExplosives"),
+    390: (140, "1.2.5/tile.plantpot/minecraft:flower_pot"),
+    750: (2492, "1.2.5/RedPower2 appliance.id eloraam.base.BlockAppliance (alloy furnace, blulectric)/ihl:vacuumInductionMeltingFurnace"),
+    751: (2773, "1.2.5/tile.freezer/cfm.freezer"),
+    765: (2502, "1.2.5/RedPower2 eloraam.machine.BlockMachinePanel/ihl:gaedesMercuryRotaryPump"),
+    930: (1271, "1.5.1/Forestry tile.firsapling/ExtrabiomesXL:saplings_1"),
+    931: (2503, "1.5.1/Forestry tile.harvester/ihl:labElectrolyzer"),
+    942: (2521, "1.5.1/Forestry tile.planter/ihl:leadOven,2521"),
+    943: (2524, "1.5.1/Forestry forestry.cultivation.BlockSaplings/ihl:achesonFurnance"),
+    1086: (3822, "1.5.1/SecretRoomsMod tile.Secret Wooden Door/ForgottenNature:falseBlock"),
+    1401: (1290, "1.2.5/Kaevator SuperSlopes tile.BlockKaevWoodCorners/ExtrabiomesXL:woodslab"),
+    1432: (1290, "1.2.5/Kaevator SuperSlopes tile.BlockKaevWoodIntCorners/ExtrabiomesXL:woodslab"),
+    1433: (1290, "1.2.5/Kaevator SuperSlopes tile.BlockKaevCobblestoneIntCorners"),
+    1437: (1290, "1.2.5/Kaevator SuperSlopes tile.BlockKaevStoneIntCorners"),
+    1478: (1290, "1.2.5/Kaevator SuperSlopes tile.BlockKaevWhiteWoolSlopes"),
+    2000: (3514, "1.2.5/1.5.1/RedPower2 Copper Ore/erebus:oreCopper"),
 }
 
 def ucfirst(s):
@@ -678,6 +701,9 @@ def main():
     configsAfter = scanConfigs(sys.argv[4])
 
     mapping = matchAll(before, after, configsBefore, configsAfter)
+
+    for k, v in force_direct.items():
+        mapping[k] = (v[0], "None", v[1], "forced")
 
     for k in sorted(mapping.keys()):
         v = mapping[k]
