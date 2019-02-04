@@ -478,15 +478,15 @@ direct = {
     # tile.null
     2608: (3823, "Forgotten Nature groundID/oneWayCamo?"),
 
-    2609: (3772, "Forgotten Nature leafIDIndex+0/red maple"),
-    2610: (3773, "Forgotten Nature leafIDIndex+1/sequoia"),
-    2611: (3774, "Forgotten Nature leafIDIndex+2/swamp willow"),
-    2612: (3775, "Forgotten Nature leafIDIndex+3/beech"),
-    2613: (3776, "Forgotten Nature leafIDIndex+4/lemon"),
-    2614: (3777, "Forgotten Nature leafIDIndex+5/huckleberry"),
+    2609: (3771, "Forgotten Nature leafIDIndex+0/red maple"),
+    2610: (3772, "Forgotten Nature leafIDIndex+1/sequoia"),
+    2611: (3773, "Forgotten Nature leafIDIndex+2/swamp willow"),
+    2612: (3774, "Forgotten Nature leafIDIndex+3/beech"),
+    2613: (3775, "Forgotten Nature leafIDIndex+4/lemon"),
+    2614: (3776, "Forgotten Nature leafIDIndex+5/huckleberry"),
     
-    2615: (3792, "Forgotten Nature leafIDIndex+6/crystal"),
-    2616: (3779, "Forgotten Nature leafIDIndex+7/nether ash"),
+    2615: (3791, "Forgotten Nature leafIDIndex+6/crystal"),
+    2616: (3777, "Forgotten Nature leafIDIndex+7/nether ash"),
 
     2620: (3778, "Forgotten Nature logIDindex+0/cherry log"),
     2621: (3779, "Forgotten Nature logIDindex+1/desert willow"),
@@ -494,8 +494,8 @@ direct = {
     2623: (3781, "Forgotten Nature logIDindex+3/cherry log*"),
     2624: (3782, "Forgotten Nature logIDindex+4/nether ash log*"),
 
-    2630: (3786, "Forgotten Nature plankID/ForgottenNature:FNPlanks1"),
-    2631: (3787, "Forgotten Nature plankID2/ForgottenNature:FNPlanks2"),
+    2630: (3786, "Forgotten Nature plankID/ForgottenNature:FNPlanks1/brown plank"),
+    2631: (3787, "Forgotten Nature plankID2/ForgottenNature:FNPlanks2/herringbone"),
 
     2633: (3783, "Forgotten Nature sapIDindex+0/desert ironwood sapling"),
     2634: (3784, "Forgotten Nature sapIDindex+1/palm sapling"),
