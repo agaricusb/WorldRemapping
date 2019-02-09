@@ -845,7 +845,7 @@ def matchAll(before, after, configsBefore, configsAfter):
                     possible.append(k)
             if len(possible) > 1:
                 pass
-                #print "# Ambiguous match",oldName,possible
+                print "# Ambiguous match",oldID,oldName,possible
             elif len(possible) == 1:
                 newName = possible[0]
 
