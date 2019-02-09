@@ -5,6 +5,7 @@
 import sys
 import os
 import re
+import types
 
 VANILLA_BLOCK_END = 158 # 1.5.2 dropper
 VANILLA_ITEM_END = 408 # 1.5.2
@@ -144,6 +145,7 @@ overloaded_allow_multiple_substitutions = [
 # Normally vanilla content is completely ignored, but sometimes having these
 # items available for substitutions is useful; if so add them here
 force_available_substitutions = {
+    "minecraft:air": 0,
     "minecraft:leather": 334,
     "minecraft:iron_horse_armor": 417,
 }
@@ -596,81 +598,84 @@ manual = {
     "item.cannon": "weaponmod:cannon",
 }
 
+# Direct ID mappings where the name is inadequate so the numeric identifier has to be used,
+# sometimes the name is useless like "tile.null", or ambiguous
+# old id: (new name or id, better informative old name note)
 direct = {
-    501: (2004, "BuildCraft assemblyTable.id/OpenComputers:assembler"),
+    501: ("OpenComputers:assembler", "BuildCraft assemblyTable.id"),
 
-    645: (242, "Immibis AdvancedMachines/AdvancedMachines:advancedmachines.block"),
+    645: ("AdvancedMachines:advancedmachines.block", "Immibis AdvancedMachines"),
 
-    683: (0, "ModularForceFieldSystem MFFSFieldblock/air"),
+    683: ("minecraft:air", "ModularForceFieldSystem MFFSFieldblock"),
 
-    743: (1990, "redlogic.wire.id/RedLogic:redlogic.wire"),
-    749: (1989, "redlogic.gates.id/RedLogic:redlogic.gates"),
+    743: ("RedLogic:redlogic.wire", "redlogic.wire.id"),
+    749: ("RedLogic:redlogic.gates", "redlogic.gates.id"),
 
     #1144: (, "Immibis peripherals.lan-wire.id"),
     #1145: (, "Immibis peripherals.block.id"),
-    1146: (2705, "Immibis infinitubes.machine.id/InfiniTubes:infinitubes.machine"),
-    1148: (2708, "Immibis liquidxp.machine.id/LiquidXP:liquidxp.machine"),
+    1146: ("InfiniTubes:infinitubes.machine", "Immibis infinitubes.machine.id"),
+    1148: ("LiquidXP:liquidxp.machine", "Immibis liquidxp.machine.id"),
     
-    1150: (3697, "Immibis tubestuff.id/Tubestuff:machine"),
-    1151: (3698, "Immibis tubestuff.storage.id/Tubestuff:storage"),
+    1150: ("Tubestuff:machine", "Immibis tubestuff.id"),
+    1151: ("Tubestuff:storage", "Immibis tubestuff.storage.id"),
 
-    1555: (2842, "ObsidiPlates obsidianPlate/ObsidiPlates:ObsidianPressurePlate"),
+    1555: ("ObsidiPlates:ObsidianPressurePlate", "ObsidiPlates obsidianPlate"),
 
-    2510: (431, "AppliedEnergistics appeng.blockMulti/ME Cable"),
-    2511: (437, "AppliedEnergistics appeng.blockMulti2/ME Precision Export Bus/~tile.BlockIOPort"),
-    2512: (248, "AppliedEnergistics appeng.blockWorld/appliedenergistics2:tile.OreQuartz"),
-    2513: (430, "AppliedEnergistics appeng.blockMulti3/ME Fuzzy Export Bus/~tile.BlockSpatialIOPort"),
-    2514: (425, "AppliedEnergistics appeng.TinyTNT/tile.BlockTinyTNT/appliedenergistics2:tile.BlockTinyTNT"),
+    2510: ("appliedenergistics2:tile.BlockCableBus", "AppliedEnergistics appeng.blockMulti/ME Cable"),
+    2511: ("appliedenergistics2:tile.BlockIOPort", "AppliedEnergistics appeng.blockMulti2/ME Precision Export Bus/~tile.BlockIOPort"),
+    2512: ("appliedenergistics2:tile.OreQuartz", "AppliedEnergistics appeng.blockWorld"),
+    2513: ("appliedenergistics2:tile.BlockSpatialIOPort", "AppliedEnergistics appeng.blockMulti3/ME Fuzzy Export Bus"),
+    2514: ("appliedenergistics2:tile.BlockTinyTNT", "AppliedEnergistics appeng.TinyTNT/tile.BlockTinyTNT"),
 
-    514: (1500, "BuildCraft pipe.id/BuildCraft|Transport:pipeBlock"),
+    514: ("BuildCraft|Transport:pipeBlock", "BuildCraft pipe.id/BuildCraft|Transport:pipeBlock"),
 
-    2375: (3699, "UsefulFood:AppleCakeBlock"),
-    2376: (3702, "UsefulFood:CaramelCakeBlock"),
-    2377: (3700, "UsefulFood:ChocolateCakeBlock"),
-    2378: (3701, "UsefulFood:MagicCakeBlock"),
+    2375: ("UsefulFood:AppleCakeBlock", "UsefulFood:AppleCakeBlock"),
+    2376: ("UsefulFood:CaramelCakeBlock", "UsefulFood:CaramelCakeBlock"),
+    2377: ("UsefulFood:ChocolateCakeBlock", "UsefulFood:ChocolateCakeBlock"),
+    2378: ("UsefulFood:MagicCakeBlock", "UsefulFood:MagicCakeBlock"),
 
     ## Forgotten Nature
 
     # ambiguous with vanilla
-    2573: (3821, "ForgottenNature:nGlass/tile.glass"), 
-    2606: (3792, "ForgottenNature:nFence/tile.fence"),
+    2573: ("ForgottenNature:nGlass", "tile.glass"), 
+    2606: ("ForgottenNature:nFence", "tile.fence"),
 
     # tile.null
-    2608: (3823, "Forgotten Nature groundID/oneWayCamo?"),
+    2608: ("ForgottenNature:oneWayCamo", "Forgotten Nature groundID/oneWayCamo?"),
 
-    2609: (3771, "Forgotten Nature leafIDIndex+0/red maple"),
-    2610: (3772, "Forgotten Nature leafIDIndex+1/sequoia"),
-    2611: (3773, "Forgotten Nature leafIDIndex+2/swamp willow"),
-    2612: (3774, "Forgotten Nature leafIDIndex+3/beech"),
-    2613: (3775, "Forgotten Nature leafIDIndex+4/lemon"),
-    2614: (3776, "Forgotten Nature leafIDIndex+5/huckleberry"),
+    2609: ("ForgottenNature:FNLeaves1", "Forgotten Nature leafIDIndex+0/red maple"),
+    2610: ("ForgottenNature:FNLeaves2", "Forgotten Nature leafIDIndex+1/sequoia"),
+    2611: ("ForgottenNature:FNLeaves3", "Forgotten Nature leafIDIndex+2/swamp willow"),
+    2612: ("ForgottenNature:FNLeaves4", "Forgotten Nature leafIDIndex+3/beech"),
+    2613: ("ForgottenNature:FNLeaves5", "Forgotten Nature leafIDIndex+4/lemon"),
+    2614: ("ForgottenNature:FNLeaves6", "Forgotten Nature leafIDIndex+5/huckleberry"),
     
-    2615: (3791, "Forgotten Nature leafIDIndex+6/crystal"),
-    2616: (3777, "Forgotten Nature leafIDIndex+7/nether ash"),
+    2615: ("ForgottenNature:crystalLeaves", "Forgotten Nature leafIDIndex+6/crystal"),
+    2616: ("ForgottenNature:netherLeaves", "Forgotten Nature leafIDIndex+7/nether ash"),
 
-    2620: (3778, "Forgotten Nature logIDindex+0/cherry log"),
-    2621: (3779, "Forgotten Nature logIDindex+1/desert willow"),
-    2622: (3780, "Forgotten Nature logIDindex+2/bukkit log"),
-    2623: (3781, "Forgotten Nature logIDindex+3/cherry log*"),
-    2624: (3782, "Forgotten Nature logIDindex+4/nether ash log*"),
+    2620: ("ForgottenNature:FNLogs1", "Forgotten Nature logIDindex+0/cherry log"),
+    2621: ("ForgottenNature:FNLogs2", "Forgotten Nature logIDindex+1/desert willow"),
+    2622: ("ForgottenNature:FNLogs3", "Forgotten Nature logIDindex+2/bukkit log"),
+    2623: ("ForgottenNature:FNLogs4", "Forgotten Nature logIDindex+3/cherry log*"),
+    2624: ("ForgottenNature:netherFNLogs", "Forgotten Nature logIDindex+4/nether ash log*"),
 
-    2630: (3786, "Forgotten Nature plankID/ForgottenNature:FNPlanks1/brown plank"),
-    2631: (3787, "Forgotten Nature plankID2/ForgottenNature:FNPlanks2/herringbone"),
+    2630: ("ForgottenNature:FNPlanks1", "Forgotten Nature plankID/ForgottenNature:FNPlanks1/brown plank"),
+    2631: ("ForgottenNature:FNPlanks2", "Forgotten Nature plankID2/ForgottenNature:FNPlanks2/herringbone"),
 
-    2633: (3783, "Forgotten Nature sapIDindex+0/desert ironwood sapling"),
-    2634: (3784, "Forgotten Nature sapIDindex+1/palm sapling"),
-    2635: (3785, "Forgotten Nature sapIDindex+2/huckleberry bushling"),
+    2633: ("ForgottenNature:FNSapling1", "Forgotten Nature sapIDindex+0/desert ironwood sapling"),
+    2634: ("ForgottenNature:FNSapling2", "Forgotten Nature sapIDindex+1/palm sapling"),
+    2635: ("ForgottenNature:FNSapling3", "Forgotten Nature sapIDindex+2/huckleberry bushling"),
 
-    2640: (3762, "Forgotten Nature torchID/ForgottenNature:Crystal Torch"),
+    2640: ("ForgottenNature:Crystal Torch", "Forgotten Nature torchID"),
 
-    3660: (486, "Atum Portal Block/atum:tile.portal"),
+    3660: ("atum:tile.portal", "Atum Portal Block"),
 
-    3709: (1316, "Forestry ExtraTrees gate Fir Gate/ExtrabiomesXL:fencegate_acacia"),
-    3710: (2711, "Forestry ExtraTrees door Fir Door/malisisdoors:door_acacia"),
-    13256: (5179, "Forestry Adventurer's Backpack/Forestry:adventurerBag"),
+    3709: ("ExtrabiomesXL:fencegate_acacia", "Forestry ExtraTrees gate Fir Gate"),
+    3710: ("malisisdoors:door_acacia", "Forestry ExtraTrees door Fir Door"),
+    13256: ("Forestry:adventurerBag", "Forestry Adventurer's Backpack"),
 
-    4091: (560, "MineFactoryReloaded ID.FakeLaser/MineFactoryReloaded:laserair"),
-    4093: (2324, "Flan's Mod Weapons Box/flansmod:gunBox.american"),
+    4091: ("MineFactoryReloaded:laserair", "MineFactoryReloaded ID.FakeLaser"),
+    4093: ("flansmod:gunBox.american", "Flan's Mod Weapons Box"),
 }
 
 force_direct = {
@@ -747,9 +752,17 @@ def matchAll(before, after, configsBefore, configsAfter):
             continue
 
         if direct.has_key(oldID):
-            newName = direct[oldID][1]
-            newID = direct[oldID][0]
-            mapping[oldID] = (newID, oldName, newName, "direct")
+            newNameNotes = direct[oldID][1]
+            newIDorName = direct[oldID][0]
+            if type(newIDorName) == types.IntType:
+                newID = newIDorName
+            else:
+                newID = after[newIDorName]
+                oldName += "/" + newNameNotes
+                newNameNotes = newIDorName
+                if newName not in overloaded_allow_multiple_substitutions:
+                    del after[newIDorName]
+            mapping[oldID] = (newID, oldName, newNameNotes, "direct")
             #del after[newName]
             continue
 
