@@ -81,6 +81,7 @@ replacePrefixes = {
     "item.AppEng.": "appliedenergistics2:item.", "tile.AppEng.": "appliedenergistics2:tile.",
     "tile.railcraft.": "Railcraft:", "item.railcraft.": "Railcraft:",
     "tile.myst.": "Mystcraft:",
+    "item.myst.": "Mystcraft:",
     "tile.immibis.microblock.": "ImmibisMicroblocks:",
     "tile.tconstruct.": "TConstruct:", "item.tconstruct.": "TConstruct:",
     "tile.thermalexpansion.": "ThermalExpansion:",
@@ -131,6 +132,9 @@ overloaded_allow_multiple_substitutions = [
     "ExtrabiomesXL:terrain_blocks1",
     "ExtrabiomesXL:slabRedRock",
     "GalacticraftCore:tile.landingPad",
+    "Railcraft:part.circuit",
+    "UsefulFood:RawMarshmallow",
+    "MoCreatures:furchest",
 ]
 
 # Manually assigned old name to new name replacements
@@ -139,6 +143,50 @@ manual = {
     "tile.CompactSolar": "CompactSolars:CompactSolarBlock",
 
     "tile.bau5ProjectBench": "projectbench:pb_block",
+
+    "AppEng.Items.*": "appliedenergistics2:item.ItemBasicStorageCell.64k",
+    "AppEng.Items.*_": "appliedenergistics2:item.ItemMultiPart",
+    "item.AppEng.Tools.QuartzCuttingKnife": "appliedenergistics2:item.ToolCertusQuartzCuttingKnife",
+
+    "item.enderStaff": "xreliquary:ender_staff",
+    "item.sacredEye": "xreliquary:salamander_eye",
+    "item.artifact": "factorization:brokenArtifact",
+
+    # Mo' Creatures
+    "item.moc_egg": "MoCreatures:mocegg",
+    "item.turtlemeat": "MoCreatures:turtleraw",
+    "item.key": "MoCreatures:key",
+    "item.furplate": "MoCreatures:furchest",
+    "item.stingdirt": "MoCreatures:scorpstingdirt",
+    "item.harness": "MoCreatures:elephantharness",
+    "item.chestset": "MoCreatures:furchest",
+    "item.swordsilver": "MoCreatures:silversword",
+
+    # ChessCraft
+    "item.Piece Mover": "JABBA:mover",
+
+    # Dartcraft substitutions
+    "item.gemForce": "thebetweenlands:aquaMiddleGemOre",
+    "item.ingotForce": "HardcoreEnderExpansion:endium_ingot",
+    "item.forceShard": "Automagy:shardSliver",
+    "item.forceRod": "ProjectE:item.pe_divining_rod_1",
+    "item.forceStick": "thebetweenlands:crabstick",
+    "item.forceAxe": "thebetweenlands:swiftPickaxe",
+    "item.forceShears": "WitchingGadgets:item.WG_ThaumiumShears",
+    "item.forceBucket": "thebetweenlands:weedwoodBucketStagnantWater",
+    "item.forceWrench": "PneumaticCraft:pneumaticWrench",
+    "item.forceMitts": "miscutils:TungstenCarbideMultipick",
+    "item.lootBag": "Thaumcraft:ItemLootBag",
+    "item.itemTear": "TwilightForest:item.fieryTears",
+    "item.itemClaw": "xreliquary:infernal_claws",
+    "item.tileBox": "IC2:itemToolbox",
+
+    "item.railcraft.liquid.creosote.bottle": "Railcraft:fluid.creosote.bottle",
+    "item.railcraft.part.gear": "Railcraft:part.circuit",
+    "item.railcraft.cart.loco.steam": "Railcraft:cart.loco.steam.solid",
+    
+    "item.rawLambchop": "UsefulFood:RawMutton",
+    "item.cookedLambchop": "UsefulFood:CookedMutton",
 
     "tile.fyriteOre": "netherrocks:fyrite_ore", "tile.fyriteBlock": "netherrocks:fyrite_block",
     "tile.malachiteOre": "netherrocks:malachite_ore", "tile.malachiteBlock": "netherrocks:malachite_block",
@@ -215,6 +263,7 @@ manual = {
     "tile.myst.bookbinder": "Mystcraft:BlockBookBinder",
 
     "tile.enderIO:blockCustomFence": "thebetweenlands:weedwoodPlankFence",
+    "item.enderIO:itemRedstoneConduit": "EnderIO:itemRedstoneConduit",
 
     "tile.oilMoving": "BuildCraft|Energy:blockOil",
     "tile.builderBlock": "BuildCraft|Builders:builderBlock",
@@ -344,6 +393,7 @@ manual = {
     #"tile.stained": 
     "tile.ffarm": "Forestry:ffarm",
     "tile.apiaristMachine": "gendustry:IndustrialApiary",
+    "item.hiveFrame__": "Forestry:frameProven",
    
     # Dartcraft substitutions
     "tile.hive_": "ihl:oreBischofite",
@@ -492,6 +542,22 @@ manual = {
     "tile.Atum:AtumStoneWall": "atum:tile.walls",
 
     "tile.decorationblock": "GalacticraftCore:tile.landingPad",
+    "item.oxygenTankLightFull": "GalacticraftCore:item.oxygenTankLightFull",
+    "item.oxygenTankHeavyFull": "GalacticraftCore:item.oxygenTankHeavyFull",
+    "item.airVent": "GalacticraftCore:item.airVent",
+    "item.oxygenConcentrator": "GalacticraftCore:item.oxygenConcentrator",
+    "item.airFan": "GalacticraftCore:item.airFan",
+    "item.parachute": "GalacticraftCore:item.parachute",
+    "item.oilExtractor": "GalacticraftCore:item.oilExtractor",
+    "item.oilCanisterPartial": "GalacticraftCore:item.oilCanisterPartial",
+    "item.steel_pickaxe": "GalacticraftCore:item.steel_pickaxe",
+
+    # UsefulFood
+    "item.marshmallowFood": "UsefulFood:RawMarshmallow",
+
+    # ExtraUtilities
+    "item.extrautils:defoliageAxe": "ExtraUtilities:defoliageAxe",
+    "item.extrautils:divisionSigil": "ExtraUtilities:divisionSigil",
 }
 
 direct = {
