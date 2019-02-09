@@ -128,6 +128,8 @@ overloaded_allow_multiple_substitutions = [
     "OpenBlocks:trophy",
     "cfm:freezer",
     "OpenBlocks:paintcan",
+    "ExtrabiomesXL:terrain_blocks1",
+    "ExtrabiomesXL:slabRedRock",
 ]
 
 # Manually assigned old name to new name replacements
@@ -209,6 +211,7 @@ manual = {
     "tile.extrabiomes.redrock": "ExtrabiomesXL:terrain_blocks1",
     "tile.extrabiomes.crackedsand": "ExtrabiomesXL:terrain_blocks2",
     "tile.extrabiomes.redrockslab": "ExtrabiomesXL:slabRedRock",
+    "tile.extrabiomes.redrockslab_": "ExtrabiomesXL:slabRedRock",
     "tile.extrabiomes.flower": "ExtrabiomesXL:leaves_3",
     "tile.extrabiomes.tallgrass": "ExtrabiomesXL:leaves_2",
     "tile.extrabiomes.leaves": "ExtrabiomesXL:leaves_1",
@@ -219,8 +222,8 @@ manual = {
     "tile.extrabiomes.log.quarter_": "ExtrabiomesXL:cornerlog_rainboweucalyptus",
     "tile.extrabiomes.log.quarter__": "ExtrabiomesXL:cornerlog_oak",
     "tile.extrabiomes.log.quarter___": "ExtrabiomesXL:cornerlog_fir",
-    #"tile.extrabiomes.stairs.redcobble": "ExtrabiomesXL:terrain_blocks1",
-    #"tile.extrabiomes.stairs.redrockbrick": "ExtrabiomesXL:terrain_blocks1",
+    "tile.extrabiomes.stairs.redcobble": "ExtrabiomesXL:terrain_blocks1",
+    "tile.extrabiomes.stairs.redrockbrick": "ExtrabiomesXL:terrain_blocks1",
     "tile.extrabiomes.redrockslab": "ExtrabiomesXL:slabRedRock",
     "tile.extrabiomes.sapling": "ExtrabiomesXL:saplings_1",
     "tile.extrabiomes.sapling_": "ExtrabiomesXL:saplings_2",
