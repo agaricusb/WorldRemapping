@@ -142,6 +142,8 @@ overloaded_allow_multiple_substitutions = [
     "ExtraTiC:shuriken",
     "Forestry:honeyDrop",
     "Forestry:apatite",
+    "UsefulFood:CookedMarshmallow",
+    "Thaumcraft:blockWoodenDevice",
 ]
 
 # Normally vanilla content is completely ignored, but sometimes having these
@@ -177,6 +179,7 @@ manual = {
     "item.chestset": "MoCreatures:furchest",
     "item.swordsilver": "MoCreatures:silversword",
     "item.armormetal": "minecraft:iron_horse_armor",
+    "item.platform": "MoCreatures:mammothplatform",
 
     # ChessCraft
     "item.Piece Mover": "JABBA:mover",
@@ -197,12 +200,17 @@ manual = {
     "item.itemClaw": "xreliquary:infernal_claws",
     "item.tileBox": "IC2:itemToolbox",
 
+    "item.trophy": "TwilightForest:item.trophy",
+
     "item.railcraft.liquid.creosote.bottle": "Railcraft:fluid.creosote.bottle",
     "item.railcraft.part.gear": "Railcraft:part.circuit",
     "item.railcraft.cart.loco.steam": "Railcraft:cart.loco.steam.solid",
     
+    # UsefulFood
     "item.rawLambchop": "UsefulFood:RawMutton",
     "item.cookedLambchop": "UsefulFood:CookedMutton",
+    "item.marshmallow": "UsefulFood:RawMarshmallow",
+    "item.marshmallowFood": "UsefulFood:CookedMarshmallow",
 
     "tile.fyriteOre": "netherrocks:fyrite_ore", "tile.fyriteBlock": "netherrocks:fyrite_block",
     "tile.malachiteOre": "netherrocks:malachite_ore", "tile.malachiteBlock": "netherrocks:malachite_block",
@@ -229,11 +237,13 @@ manual = {
     "item.dragonstoneGem": "netherrocks:dragonstone_gem",
     "item.argoniteIngot": "netherrocks:argonite_ingot",
 
+    # Thermal Expansion
     "tile.thermalexpansion.ore": "ThermalFoundation:Ore",
     "tile.thermalexpansion.engine": "ThermalExpansion:Device",
     "tile.thermalexpansion.energycell": "ThermalExpansion:Cell",
     "tile.thermalexpansion.conduit": "ThermalDynamics:ThermalDynamics_0",
     "tile.thermalexpansion.lamp": "ThermalExpansion:Light",
+    "item.material": "ThermalFoundation:material",
 
     "tile.liquid.redstone": "ThermalFoundation:FluidRedstone",
     "tile.liquid.glowstone": "ThermalFoundation:FluidGlowstone",
@@ -292,6 +302,8 @@ manual = {
     "tile.builderBlock": "BuildCraft|Builders:builderBlock",
     "tile.oilStill": "BuildCraft|Energy:blockOil",
     "tile.tankBlock": "BuildCraft|Factory:tankBlock",
+
+    "item.itemUpgrade": "LogisticsPipes:item.itemUpgrade",
 
     "item.woodenGearItem": "flansmod:woodenPropeller",
     "item.stoneGearItem": "TravellersGear:simpleGear",
@@ -398,14 +410,22 @@ manual = {
 
     "tile.Redstone.Machine": "OpenBlocks:drawingtable", # Tinker's Construct drawbridge/igniter
 
+    # BiblioCraft
     "tile.BiblioArmorStand": "BiblioCraft:Armor Stand",
     "tile.BiblioPress": "BiblioCraft:Printing Press",
     "tile.BiblioType": "BiblioCraft:Typesetting Machine",
+    "item.tape": "BiblioCraft:item.tape",
+    "tile.BiblioWoodBookcase": "BiblioWoodsNatura:BiblioWoodBookcase",
+    "tile.BiblioWooddesk": "BiblioWoodsNatura:BiblioWooddesk",
+    "tile.BiblioWoodlabel": "BiblioWoodsNatura:BiblioWoodlabel",
+    "tile.BiblioWoodpotshelf": "BiblioWoodsNatura:BiblioWoodpotshelf",
+    "tile.BiblioWoodshelf": "BiblioWoodsNatura:BiblioWoodshelf",
+    "tile.BiblioWoodtable": "BiblioWoodsNatura:BiblioWoodtable",
+    "tile.BiblioWoodrack": "BiblioWoodsNatura:BiblioWoodrack",
 
     # Forestry
     #"tile.for.slabs3": "Forestry:slabs",
     #"tile.for.planks2": "Forestry:planks",
-    #tile.null. ID: 924
     "tile.leaves": "Forestry:leaves",
     "tile.for.log1": "Forestry:logs",
     "tile.for.log2": "Forestry:logsFireproof",
@@ -422,12 +442,14 @@ manual = {
     "item.ash": "Forestry:ash",
     "item.biofuelCan": "GalaxySpace:item.ItemBioFuelCanister",
     "item.honeyDrop_": "Forestry:honeyDrop",
+    "item.honeyDrop": "Forestry:honeyDrop",
     "item.infuser": "Forestry:infuser",
     "item.peat": "Forestry:peat",
     "item.propolis_": "Forestry:propolis",
     "item.shortMead": "Forestry:canShortMead",
     "item.waterCan": "Forestry:canWater",
     "item.wrench": "Forestry:wrench",
+    "item.imprinter": "Forestry:imprinter",
    
     # Dartcraft substitutions
     "tile.hive_": "ihl:oreBischofite",
@@ -436,13 +458,20 @@ manual = {
     "tile.forceLog": "ExtrabiomesXL:log1",
     "tile.forceLeaves": "ExtrabiomesXL:leaves_1",
     "tile.forceSapling": "ExtrabiomesXL:saplings_1",
+    
+    "item.hammer": "CarpentersBlocks:itemCarpentersHammer",
+
+    "item.scythe": "ForgottenNature:scythe",
 
     # Forgotten Nature
+
     "tile.newCrops1": "ForgottenNature:newCrops1",
     "tile.newCrops2": "ForgottenNature:newCrops2",
     "tile.newCrops3": "ForgottenNature:newCrops3",
     "tile.newCrops4": "ForgottenNature:newCrops4",
     "tile.newCrops5": "ForgottenNature:newCrops5",
+    "item.food": "ForgottenNature:fruit",
+    "item.Crystal": "ForgottenNature:crystal",
 
     "tile.Crystal Mushroom Block": "ForgottenNature:cMushroomBlock",
     "tile.Crystal Mushroom": "ForgottenNature:cMushroom",
@@ -548,11 +577,18 @@ manual = {
 
     "tile.openblocks.trophy": "OpenBlocks:trophy",
 
-    # Thaumcraft
+    # Thaumcraft / Thaumic Tinkerer
     "tile.blockCrucible": "Thaumcraft:blockMetalDevice",
     "tile.blockInfusionWorkbench": "thaumicenergistics:thaumicenergistics.block.infusion.provider",
     "tile.blockWooden": "Thaumcraft:blockCosmeticSolid",
     "tile.blockNitor": "ThaumicTinkerer:nitorGas",
+    "tile.blockCrystal": "Thaumcraft:blockCrystal",
+    "tile.planks": "Thaumcraft:blockWoodenDevice",
+    "item.spellCloth": "ThaumicTinkerer:spellCloth",
+    "tile.interface": "ThaumicTinkerer:interface",
+    "tile.magnet": "ThaumicTinkerer:magnet",
+
+    "item.rune": "Botania:rune",
 
     # Camping Mod substitutions
     "tile.campfire": "erebus:fireBloom",
@@ -587,9 +623,14 @@ manual = {
     "item.oilExtractor": "GalacticraftCore:item.oilExtractor",
     "item.oilCanisterPartial": "GalacticraftCore:item.oilCanisterPartial",
     "item.steel_pickaxe": "GalacticraftCore:item.steel_pickaxe",
-
-    # UsefulFood
-    "item.marshmallowFood": "UsefulFood:RawMarshmallow",
+    "item.canister": "GalacticraftCore:item.canister",
+    "item.engine": "GalacticraftCore:item.engine",
+    "item.canvas": "GalacticraftCore:item.canvas",
+    "item.schematic": "GalacticraftCore:item.schematic",
+    "tile.distributor": "GalacticraftCore:tile.distributor",
+    "tile.refinery": "GalacticraftCore:tile.refinery",
+    "item.bucketOil": "GalacticraftCore:item.bucketOil",
+    "item.bucketFuel": "GalacticraftCore:item.bucketFuel",
 
     # ExtraUtilities
     "item.extrautils:defoliageAxe": "ExtraUtilities:defoliageAxe",
@@ -611,6 +652,10 @@ manual = {
     "item.dart": "weaponmod:dart",
     "item.firerod": "weaponmod:firerod",
     "item.cannon": "weaponmod:cannon",
+    "item.javelin": "weaponmod:javelin",
+
+    # Flan's Mod
+    "item.Crossbow": "flansmod:crossbow",
 }
 
 # Direct ID mappings where the name is inadequate so the numeric identifier has to be used,
@@ -641,6 +686,7 @@ direct = {
     2512: ("appliedenergistics2:tile.OreQuartz", "AppliedEnergistics appeng.blockWorld"),
     2513: ("appliedenergistics2:tile.BlockSpatialIOPort", "AppliedEnergistics appeng.blockMulti3/ME Fuzzy Export Bus"),
     2514: ("appliedenergistics2:tile.BlockTinyTNT", "AppliedEnergistics appeng.TinyTNT/tile.BlockTinyTNT"),
+    4462: ("appliedenergistics2:tile.BlockFluix", "AppliedEnergistics conversion matrix etc"),
 
     514: ("BuildCraft|Transport:pipeBlock", "BuildCraft pipe.id/BuildCraft|Transport:pipeBlock"),
 
