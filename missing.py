@@ -37,4 +37,8 @@ for id in sorted(ids):
     else:
         maybe125 = ""
 
+    if id >= 2256 and id <= 2267:
+        # skip vanilla records
+        continue
+
     print id, count, found, rdump152.get(id), maybe125
