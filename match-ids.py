@@ -167,6 +167,8 @@ manual = {
     "tile.MFFSControlSystem": "factorization:ArtifactForge",
     "tile.MFFSForceEnergyConverter": "GalaxySpace:convertersurface",
     "tile.MFFSMonazitOre": "ihl:oreDatolite",
+    "tile.MFFSCapacitor": "OpenComputers:capacitor",
+    "tile.MFFSSecurityStation": "PneumaticCraft:securityStation",
 
     "tile.easycraftingtable": "thebetweenlands:weedwoodCraftingTable",
 
