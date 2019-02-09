@@ -283,6 +283,9 @@ manual = {
     "item.mod_SRM.SecretWoodenDoorItem": "ExtraUtilities:etherealglass",
 
     "tile.PortalMod": "PortalGun:Portal_BlockPortal",
+    "item.PortalSpawner": "PortalGun:PortalGunSpawner",
+    "item.PortalMultiItem": "PortalGun:PortalMulti",
+    "item.PortalDust": "PortalGun:EnderPearlDust",
 
     "tile.cccomputer": "OpenComputers:case1", # ComputerCraft substitute with OpenComputers
     "tile.ccturtle": "OpenComputers:robot",
@@ -302,6 +305,7 @@ manual = {
     "tile.builderBlock": "BuildCraft|Builders:builderBlock",
     "tile.oilStill": "BuildCraft|Energy:blockOil",
     "tile.tankBlock": "BuildCraft|Factory:tankBlock",
+    "item.PipeItemsPropolis": "BuildCraft|Compat:item.buildcraftPipe.pipeitemspropolis",
 
     "item.itemUpgrade": "LogisticsPipes:item.itemUpgrade",
 
@@ -398,6 +402,7 @@ manual = {
     "tile.netherores.ore.1": "miscutils:blockStoneoreFluorite",
     "tile.netherores.hellfish": "miscutils:blockHellFire",
 
+    # Tinker's Construct
     "tile.tconstruct.gravelore": "TConstruct:GravelOre",
     "tile.tconstruct.stoneore": "ihl:oreTrona",
     "tile.TConstruct.Soil": "TConstruct:CraftedSoil",
@@ -407,6 +412,27 @@ manual = {
     "tile.liquid.metalStill": "TConstruct:fluid.molten.gold",
     "tile.Decoration.Brick": "TConstruct:MeatBlock",
     "tile.tconstruct.glasspanestained": "MineFactoryReloaded:stainedglass.pane",
+    "item.tconstruct.manual": "TConstruct:manualBook",
+    "item.tconstruct.Pattern": "TConstruct:Pattern",
+    "item.tconstruct.Pattern_": "TConstruct:metalPattern",
+    "item.tconstruct.AxeHead": "TConstruct:broadAxeHead",
+    "item.tconstruct.LargeGuard": "TGregworks:tGregToolPartLargeGuard",
+    "item.tconstruct.MediumGuard": "TGregworks:tGregToolPartMediumGuard",
+    "item.tconstruct.ThickBinding": "TConstruct:toughBinding",
+    "item.tconstruct.ThickRod": "TConstruct:toughRod",
+    "item.tconstruct.LargePlate": "TConstruct:heavyPlate",
+    "item.InfiTool.Pickaxe": "TConstruct:pickaxe",
+    "item.InfiTool.Longsword": "TConstruct:longsword",
+    "item.InfiTool.Mattock": "TConstruct:mattock",
+    "item.InfiTool.Chisel": "TConstruct:chisel",
+    "item.InfiTool.Excavator": "TConstruct:excavator",
+    "item.InfiTool.Hammer": "TConstruct:hammer",
+    "item.InfiTool.Arrow": "TConstruct:arrowhead",
+    "item.tconstruct.bucket": "TConstruct:buckets",
+    "item.tconstruct.strangefood": "TConstruct:strangeFood",
+    "item.oreberry": "TConstruct:oreBerries",
+    "item.tconstruct.canister": "TConstruct:heartCanister",
+    "item.tconstruct.storage": "TConstruct:knapsack",
 
     "tile.Redstone.Machine": "OpenBlocks:drawingtable", # Tinker's Construct drawbridge/igniter
 
@@ -522,6 +548,7 @@ manual = {
     "tile.immibis/infinitubes:cable": "InfiniTubes:infinitubes.infinitube",
     "tile.immibis/chunkloader:chunkloader": "DimensionalAnchors:chunkloader",
     "tile.immibis.microblock.container": "ImmibisMicroblocks:MicroblockContainer",
+    "item.immibis.microblocks.saw": "ImmibisMicroblocks:immibis.microblocksaw",
 
     "tile.BlockMetaID_Block": "gregtech:gt.blockcasings4", # loose match, different meta (Advanced Machine Block :0 -> ?, Fusion Coil :1 -> :7)
     "tile.GT_LightSource": "gregtech:gt.blockcasings5", # not really
