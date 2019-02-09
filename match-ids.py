@@ -141,8 +141,11 @@ overloaded_allow_multiple_substitutions = [
     "ExtraTiC:shuriken",
 ]
 
+# Normally vanilla content is completely ignored, but sometimes having these
+# items available for substitutions is useful; if so add them here
 force_available_substitutions = {
     "minecraft:leather": 334,
+    "minecraft:iron_horse_armor": 417,
 }
 
 # Manually assigned old name to new name replacements
@@ -169,6 +172,7 @@ manual = {
     "item.harness": "MoCreatures:elephantharness",
     "item.chestset": "MoCreatures:furchest",
     "item.swordsilver": "MoCreatures:silversword",
+    "item.armormetal": "minecraft:iron_horse_armor",
 
     # ChessCraft
     "item.Piece Mover": "JABBA:mover",

@@ -1247,7 +1247,7 @@
 # 8963 -> (None, 'item.myst.unlinkedbook', 'Mystcraft:BlockUnlinkedbook', 'no match')
 9028 -> 5969 # ('item.recordshuffle', 'MoCreatures:recordshuffle', 'anyspace') 
 9029 -> 5970 # ('item.horsesaddle', 'MoCreatures:horsesaddle', 'anyspace') 
-# 9030 -> (None, 'item.armormetal', 'armormetal', 'no match')
+9030 -> 417 # ('item.armormetal', 'minecraft:iron_horse_armor', 'manual') 
 9031 -> 5971 # ('item.sharkteeth', 'MoCreatures:sharkteeth', 'anyspace') 
 9032 -> 5972 # ('item.haystack', 'MoCreatures:haystack', 'anyspace') 
 9033 -> 5973 # ('item.sugarlump', 'MoCreatures:sugarlump', 'anyspace') 
