@@ -37,7 +37,7 @@
 501 -> 2004 # ('tile.null', 'BuildCraft assemblyTable.id/OpenComputers:assembler', 'direct') 
 502 -> 1503 # ('tile.autoWorkbenchBlock', 'BuildCraft|Factory:autoWorkbenchBlock', 'anyspace') 
 503 -> 1522 # ('tile.libraryBlock', 'BuildCraft|Builders:libraryBlock', 'anyspace') 
-# 504 -> (None, 'tile.builderBlock', 'tile.builderBlock', 'no match')
+504 -> 1520 # ('tile.builderBlock', 'BuildCraft|Builders:builderBlock', 'manual') 
 505 -> 1502 # ('tile.plainPipeBlock', 'BuildCraft|Factory:plainPipeBlock', 'anyspace') 
 506 -> 1496 # ('tile.engineBlock', 'BuildCraft|Core:engineBlock', 'anyspace') 
 507 -> 1518 # ('tile.fillerBlock', 'BuildCraft|Builders:fillerBlock', 'anyspace') 

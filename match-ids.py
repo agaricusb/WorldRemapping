@@ -191,6 +191,7 @@ manual = {
     "tile.enderIO:blockCustomFence": "thebetweenlands:weedwoodPlankFence",
 
     "tile.oilMoving": "BuildCraft|Energy:blockOil",
+    "tile.builderBlock": "BuildCraft|Builders:builderBlock",
     "tile.oilStill": "BuildCraft|Energy:blockOil",
     "tile.tankBlock": "BuildCraft|Factory:tankBlock",
 
