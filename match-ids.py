@@ -146,6 +146,22 @@ overloaded_allow_multiple_substitutions = [
     "Thaumcraft:blockWoodenDevice",
     "ForgottenNature:fruit",
     "ForgottenNature:newFood",
+    "BuildCraft|Transport:item.buildcraftPipe.pipeitemsstone",
+    "TConstruct:hammer",
+    "GalacticraftCore:item.canister",
+    "IC2:itemDust",
+    "IC2:fluidUuMatter",
+    "IC2:itemIngot",
+    "IC2:itemDust",
+    "IC2:itemDust2",
+    "IC2:itemUran",
+    "Forestry:scoop",
+    "IC2:itemPartCoalBlock",
+    "Automagy:shardSliver",
+    "erebus:wand_of_preservation",
+    "IC2:itemDustSmall",
+    "IC2:itemCellEmpty",
+    "IC2:fluidDistilledWater",
 ]
 
 # Normally vanilla content is completely ignored, but sometimes having these
@@ -240,13 +256,15 @@ manual = {
     "item.dragonstoneGem": "netherrocks:dragonstone_gem",
     "item.argoniteIngot": "netherrocks:argonite_ingot",
 
-    # Thermal Expansion
+    # Thermal Expansion / Thermal Foundation / Thermal Dynamics
     "tile.thermalexpansion.ore": "ThermalFoundation:Ore",
     "tile.thermalexpansion.engine": "ThermalExpansion:Device",
     "tile.thermalexpansion.energycell": "ThermalExpansion:Cell",
     "tile.thermalexpansion.conduit": "ThermalDynamics:ThermalDynamics_0",
     "tile.thermalexpansion.lamp": "ThermalExpansion:Light",
     "item.material": "ThermalFoundation:material",
+    "item.tool_": "ThermalFoundation:bucket",
+    "item.component": "ThermalExpansion:Frame",
 
     "tile.liquid.redstone": "ThermalFoundation:FluidRedstone",
     "tile.liquid.glowstone": "ThermalFoundation:FluidGlowstone",
@@ -322,6 +340,7 @@ manual = {
     "item.PipeItemsWood": "BuildCraft|Transport:item.buildcraftPipe.pipeitemswood",
     "item.PipeItemsCobblestone": "BuildCraft|Transport:item.buildcraftPipe.pipeitemscobblestone",
     "item.PipeItemsStone": "BuildCraft|Transport:item.buildcraftPipe.pipeitemsstone",
+    "item.PipeItemsRedstone": "BuildCraft|Transport:item.buildcraftPipe.pipeitemsstone",
     "item.PipeItemsIron": "BuildCraft|Transport:item.buildcraftPipe.pipeitemsiron",
     "item.PipeItemsGold": "BuildCraft|Transport:item.buildcraftPipe.pipeitemsgold",
     "item.PipeItemsDiamond": "BuildCraft|Transport:item.buildcraftPipe.pipeitemsdiamond",
@@ -481,6 +500,9 @@ manual = {
     "item.waterCan": "Forestry:canWater",
     "item.wrench": "Forestry:wrench",
     "item.imprinter": "Forestry:imprinter",
+    "item.comb": "Forestry:beeCombs",
+    "item.frameOblivion": "miscutils:frameAccelerated",
+    "item.magicbees:thaumiumScoop": "Forestry:scoop",
    
     # Dartcraft substitutions
     "tile.hive_": "ihl:oreBischofite",
@@ -554,6 +576,7 @@ manual = {
     "tile.immibis/chunkloader:chunkloader": "DimensionalAnchors:chunkloader",
     "tile.immibis.microblock.container": "ImmibisMicroblocks:MicroblockContainer",
     "item.immibis.microblocks.saw": "ImmibisMicroblocks:immibis.microblocksaw",
+    "item.immibis/lxp:bucket": "LiquidXP:liquidxp.bucket",
 
     "tile.BlockMetaID_Block": "gregtech:gt.blockcasings4", # loose match, different meta (Advanced Machine Block :0 -> ?, Fusion Coil :1 -> :7)
     "tile.GT_LightSource": "gregtech:gt.blockcasings5", # not really
@@ -599,11 +622,72 @@ manual = {
     # IndustrialCraft IC2
     "tile.chargePad": "IC2:blockChargepad",
     "item.cratedUUM": "IC2:fluidUuMatter",
+    "itemCellAir": "IC2:itemCellEmpty",
+    "itemPartDCP": "IC2:itemDensePlates",
+    "upgradeModule": "IC2:upgradeModule",
+    "itemArmorLappack": "GraviSuiteReloaded:ItemArmorLappack",
+    "itemDustSilver": "IC2:itemDust",
+    "itemDustClay": "IC2:itemDust",
+    "itemNanoSaberOff": "IC2:itemNanoSaber",
+    "itemCellWaterElectro": "miscutils:itemCellLithium",
+    "itemMatter": "IC2:fluidUuMatter",
+    "itemCellUranEmpty": "IC2:itemUran",
+    "itemCellUranEnriched": "IC2:itemTritiumCell",
+    "reactorIsotopeCell": "IC2:reactorMOXSimple",
+    "itemCellWater": "IC2:fluidDistilledWater",
+    "itemFuelCoalCmpr": "ExtraUtilities:color_blockCoal",
+    "itemFuelCoalDust": "IC2:itemPartCoalBlock",
+    "itemCellBioRef": "IC2:itemBiochaff",
+    "itemFuelCanEmpty": "IC2:itemFuelRod",
+    "itemCellLava": "IC2:fluidPahoehoeLava",
+    "itemOreUran": "IC2:itemUran",
+    "itemIngotUran": "IC2:itemUran235",
+    "itemIngotAlloy": "IC2:itemPartAlloy",
+    "itemIngotBronze": "IC2:itemIngot",
+    "itemIngotTin": "IC2:itemIngot",
+    "itemIngotCopper": "IC2:itemIngot",
+    "itemIngotAdvIron": "IC2:itemAdvIronBlockCuttingBlade",
+    "itemDustIronSmall": "IC2:itemDustSmall",
+    "itemDustTin": "IC2:itemDust",
+    "itemDustCopper": "IC2:itemDust2",
+    "itemDustGold": "IC2:itemDust",
+    "itemDustIron": "IC2:itemDust2",
+    "itemDustCoal": "IC2:itemDust",
 
-    "tile.glassBell": "ihl:glassBoxBlock", # EE3 substitution
-    "tile.aludel": "ihl:electrolysisBath", # EE3 substitution
+    # GregTech, loose matches
+    "item.GT_Materials": "gregtech:gt.metaitem.01",
+    "item.GT_Dusts": "IC2:itemDust",
+    "item.GT_Cells": "gregtech:gt.ThoriumcellDep",
+    "item.GT_Components": "gregtech:gt.metaitem.03",
+    "item.GT_SmallDusts": "IC2:itemDustSmall",
+    "item.GT_Nuggets": "miscutils:itemNuggetIodine",
+    "item.Bronze_Jack_Hammer": "TConstruct:hammer",
+    "item.Diamond_Jack_Hammer": "gregtech:gt.metatool.01",
+    "item.Rockcutter": "IC2:itemToolCutter",
+    "item.Lithium_Batpack": "thaumicenergistics:golem.wifi.backpack",
+    "item.GT_Scanner": "ExtraUtilities:scanner",
+    "item.GT_Spray_Ice": "ProjectBlue:sprayCan",
+    "item.GT_Spray_Hydration": "erebus:sprayCan",
+    "item.GT_Hammer_Iron": "TConstruct:hammer",
+    "item.GT_Wrench_Bronze": "rftools:smartWrenchItem",
+    "item.GT_Wrench_Steel": "RedstoneArsenal:tool.wrenchFlux",
 
-    "tile.cage": "thebetweenlands:geckoCage", # SoulShards substitution
+    # EE3 Equivalent Exchange 3 substitutions
+    "tile.glassBell": "ihl:glassBoxBlock",
+    "tile.aludel": "ihl:electrolysisBath",
+    "item.shardMinium": "Automagy:shardSliver",
+    "item.stoneMinium": "ProjectE:item.pe_philosophers_stone",
+
+    # Xeno's Reliquary
+    "item.emperorChalice": "xreliquary:emperor_chalice",
+    "item.reliquaryPotion": "xreliquary:fertile_potion",
+
+    # Steven's Carts
+    "item.SC2unknownmodule": "StevesCarts:CartModule",
+    "item.SC2unknowncomponent": "StevesCarts:ModuleComponents",
+
+    # SoulShards substitution
+    "tile.cage": "thebetweenlands:geckoCage",
 
     "tile.extrautils:chandelier_invis": "ExtraUtilities:chandelier",
 
@@ -619,8 +703,16 @@ manual = {
     "item.spellCloth": "ThaumicTinkerer:spellCloth",
     "tile.interface": "ThaumicTinkerer:interface",
     "tile.magnet": "ThaumicTinkerer:magnet",
+    "item.WandCastingApprentice": "Thaumcraft:WandCasting",
+    "item.WandLightning": "erebus:wand_of_preservation",
+    "item.WandFire": "erebus:wandOfAnimation",
+    "item.WandFrost": "Thaumcraft:WandRod",
+
+    "item.fossil": "erebus:oreFossil",
 
     "item.rune": "Botania:rune",
+
+    "item.wandUprising": "erebus:wand_of_preservation",
 
     # Camping Mod substitutions
     "tile.campfire": "erebus:fireBloom",
@@ -689,6 +781,13 @@ manual = {
 
     # Flan's Mod
     "item.Crossbow": "flansmod:crossbow",
+    "item.TwoSeaterBiplane": "flansmod:TwoSeatBiplane",
+
+    # Aquacuilture
+    "item.Aquaculture:Algae": "thebetweenlands:algae",
+    "item.Aquaculture:Driftwood": "Aquaculture:item.loot",
+    "item.Aquaculture:TinCan": "GalacticraftCore:item.canister",
+    "item.Aquaculture:IronFishingRod": "Aquaculture:item.IronFishingRod",
 }
 
 # Direct ID mappings where the name is inadequate so the numeric identifier has to be used,
@@ -794,6 +893,10 @@ direct = {
     #20029
     20030: ("ForgottenNature:obsidianShovel", "Forgotten Nature obsidian shovel"),
 
+    22256: ("Aquaculture:item.Fish", "Aquaculture fish bluegill"),
+
+    26791: ("LiquidXP:liquidxp.medallion", "LiquidXP empty medallion"),
+
     3660: ("atum:tile.portal", "Atum Portal Block"),
     17275: ("atum:item.loot", "Atum Dirty Idol"),
 
@@ -876,7 +979,8 @@ def matchAll(before, after, configsBefore, configsAfter):
             newName = oldName
             newID = after[newName]
             mapping[oldID] = (newID, oldName, newName, "exact")
-            del after[newName]
+            if newName not in overloaded_allow_multiple_substitutions:
+                del after[newName]
             continue
 
         if manual.has_key(oldName):
@@ -909,14 +1013,16 @@ def matchAll(before, after, configsBefore, configsAfter):
             # IC2 dropped the loc prefixes..don't know why
             newID = after[newName]
             mapping[oldID] = (newID, oldName, newName, "replace")
-            del after[newName]
+            if newName not in overloaded_allow_multiple_substitutions:
+                del after[newName]
             continue
 
         newName = oldName.replace("item.", "").replace("item.", "")
         if after.has_key(newName):
             newID = after[newName]
             mapping[oldID] = (newID, oldName, newName, "replace")
-            del after[newName]
+            if newName not in overloaded_allow_multiple_substitutions:
+                del after[newName]
             continue
 
         for k, v in replacePrefixes.items():
@@ -943,7 +1049,8 @@ def matchAll(before, after, configsBefore, configsAfter):
                 newName = "IC2:" + oldName
                 newID = after[newName]
                 mapping[oldID] = (newID, oldName, newName, "unprefix")
-                del after[newName]
+                if newName not in overloaded_allow_multiple_substitutions:
+                    del after[newName]
                 continue
 
 
