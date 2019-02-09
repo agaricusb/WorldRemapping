@@ -170,6 +170,9 @@ overloaded_allow_multiple_substitutions = [
     "erebus:oreCopper",
     "UsefulFood:ChickenSandwich",
     "UsefulFood:Biscuit",
+    "UsefulFood:VanillaIceCream",
+    "weaponmod:musket",
+    "thebetweenlands:crabstick",
 ]
 
 # Normally vanilla content is completely ignored, but sometimes having these
@@ -997,6 +1000,23 @@ force_direct = {
     5333: ("UsefulFood:Biscuit", "1.2.5/item.Bisquit"),
     5336: ("UsefulFood:CookedMutton", "1.2.5/item.Cooked Mutton"),
     5337: ("UsefulFood:RawMutton", "1.2.5/item.Raw Mutton"),
+    5267: ("rftools:creativeDimensionBuilderBlock", "1.2.5/NoneNoneNonex23"), # could find in 1.2.5/3, 1.1... what is this? TODO mystery x 23
+    5571: ("rftools:spaceChamberControllerBlock", "1.2.5/item.multiItem"), # not quite sure what this was
+    5572: ("thebetweenlands:peat", "1.2.5/item.liquidsugarypeat Plugins for Forestry (pff) denoflionsx"),
+    5575: ("thebetweenlands:dampTorch", "1.2.5/item.solidfuel pff"),
+    6357: ("PneumaticCraft:seismicSensor", "1.2.5/WRCBE codechicken.wirelessredstone.addons.ItemWirelessTriangulator"),
+    6358: ("PneumaticCraft:remote", "1.2.5/WRCBE codechicken.wirelessredstone.addons.ItemWirelessRemote"),
+    6359: ("RandomThings:biomeCapsule", "1.2.5/WRCBE item.sniffer"),
+    6360: ("thaumicenergistics:wireless.essentia.terminal", "1.2.5/WRCBE item.wirelessmap"),
+    6363: ("thaumicenergistics:knowledge.core", "1.2.5/WRCBE item.psniffer"),
+    6406: ("thebetweenlands:crabstick", "1.2.5/WRCBE item.obsidianStick"),
+    6407: ("UsefulFood:VanillaIceCream", "1.2.5/WRCBE item.stoneBowl"),
+    6408: ("Automagy:avaricePearl", "1.2.5/WRCBE item.retherPearl"),
+    6409: ("PracticalLogistics:Transceiver", "1.2.5/WRCBE item.wirelessTransceiver"),
+    7493: ("HardcoreEnderExpansion:charm_pouch", "1.2.5/WRCBE item.enderpouch"),
+    11552: ("weaponmod:musket", "1.2.5/weaponmod in between musket and musket-ironpart"),
+    21266: ("miscutils:gt.plusplus.metatool.01", "1.2.5/unknown x 2 in between GregTech"),
+    23347: ("miscutils:QuantumMultipick", "1.2.5/Cake's Miners Apocalypse loot 1.2.5/plugins/CakesMinerApocalypse/config.yml 1x23347 ic2more"),
 }
 
 def ucfirst(s):
