@@ -144,6 +144,8 @@ overloaded_allow_multiple_substitutions = [
     "Forestry:apatite",
     "UsefulFood:CookedMarshmallow",
     "Thaumcraft:blockWoodenDevice",
+    "ForgottenNature:fruit",
+    "ForgottenNature:newFood",
 ]
 
 # Normally vanilla content is completely ignored, but sometimes having these
@@ -211,6 +213,7 @@ manual = {
     "item.cookedLambchop": "UsefulFood:CookedMutton",
     "item.marshmallow": "UsefulFood:RawMarshmallow",
     "item.marshmallowFood": "UsefulFood:CookedMarshmallow",
+    "item.AppleBiscuit": "UsefulFood:AppleJamBiscuit",
 
     "tile.fyriteOre": "netherrocks:fyrite_ore", "tile.fyriteBlock": "netherrocks:fyrite_block",
     "tile.malachiteOre": "netherrocks:malachite_ore", "tile.malachiteBlock": "netherrocks:malachite_block",
@@ -286,6 +289,8 @@ manual = {
     "item.PortalSpawner": "PortalGun:PortalGunSpawner",
     "item.PortalMultiItem": "PortalGun:PortalMulti",
     "item.PortalDust": "PortalGun:EnderPearlDust",
+
+    "item.Trailmix": "TrailMix:TrailMixMix",
 
     "tile.cccomputer": "OpenComputers:case1", # ComputerCraft substitute with OpenComputers
     "tile.ccturtle": "OpenComputers:robot",
@@ -622,6 +627,7 @@ manual = {
     "tile.tent": "cfm:freezer",
     "tile.ghostBlock": "ForgottenNature:falseBlock",
     "tile.radishCrop": "thebetweenlands:fungusCrop",
+    "item.tentPart": "thebetweenlands:krakenTentacle",
 
     "tile.markShip": "ArchimedesShips:marker",
     "tile.archiFloater": "ArchimedesShips:floater",
@@ -756,7 +762,40 @@ direct = {
 
     2640: ("ForgottenNature:Crystal Torch", "Forgotten Nature torchID"),
 
+    20000: ("ForgottenNature:fruit", "Forgotten Nature fruit item banana"),
+    20001: ("ForgottenNature:nuts", "Forgotten Nature ginko nuts"),
+    20002: ("ForgottenNature:newFood", "Forgotten Nature bread"),
+    20003: ("ForgottenNature:newItems", "Forgotten Nature brown stain"),
+    20004: ("ForgottenNature:cPickaxe", "Forgotten Nature crystal pickaxe"),
+    20005: ("ForgottenNature:cAxe", "Forgotten Nature crystal axe"),
+    20006: ("ForgottenNature:cShovel", "Forgotten Nature crystal shovel"),
+    20007: ("ForgottenNature:cSword", "Forgotten Nature crystal sword"),
+    20008: ("ForgottenNature:cHoe", "Forgotten Nature crystal hoe"),
+    20009: ("ForgottenNature:dcPickaxe", "Forgotten Nature dark crystal pickaxe"),
+    20010: ("ForgottenNature:dcAxe", "Forgotten Nature dark crystal axe"),
+    20011: ("ForgottenNature:dcHoe", "Forgotten Nature dark crystal hoe"),
+    20012: ("ForgottenNature:dcShovel", "Forgotten Nature dark crystal shovel"),
+    20013: ("ForgottenNature:dcSword", "Forgotten Nature dark crystal sword"),
+    20014: ("ForgottenNature:crystal", "Forgotten Nature crystal chunk"),
+    20015: ("ForgottenNature:saw", "Forgotten Nature saw"),
+    20016: ("ForgottenNature:sawItems", "Forgotten Nature saw parts"),
+    #20017: ("ForgottenNature:powders", "Forgotten Nature powders"),
+    20018: ("ForgottenNature:newFood2", "Forgotten Nature fruit salad"),
+    20019: ("ForgottenNature:cup", "Forgotten Nature coconut milk"),
+    20020: ("ForgottenNature:newFood3", "Forgotten Nature animal oil"),
+    20021: ("ForgottenNature:powders", "Forgotten Nature powders"),
+    #20022
+    #20023
+    20024: ("ForgottenNature:FNGoods", "Forgotten Nature cotton balls"),
+    #20025
+    #20026
+    20027: ("ForgottenNature:obsidianPickaxe", "Forgotten Nature obsidian pickaxe"),
+    #20028
+    #20029
+    20030: ("ForgottenNature:obsidianShovel", "Forgotten Nature obsidian shovel"),
+
     3660: ("atum:tile.portal", "Atum Portal Block"),
+    17275: ("atum:item.loot", "Atum Dirty Idol"),
 
     3709: ("ExtrabiomesXL:fencegate_acacia", "Forestry ExtraTrees gate Fir Gate"),
     3710: ("malisisdoors:door_acacia", "Forestry ExtraTrees door Fir Door"),
