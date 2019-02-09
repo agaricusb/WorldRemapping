@@ -135,7 +135,15 @@ overloaded_allow_multiple_substitutions = [
     "Railcraft:part.circuit",
     "UsefulFood:RawMarshmallow",
     "MoCreatures:furchest",
+    "minecraft:leather",
+    "atum:item.bow",
+    "MoCreatures:katana",
+    "ExtraTiC:shuriken",
 ]
+
+force_available_substitutions = {
+    "minecraft:leather": 334,
+}
 
 # Manually assigned old name to new name replacements
 manual = {
@@ -261,6 +269,10 @@ manual = {
     "tile.myst.writing_desk": "Mystcraft:WritingDesk",
     "tile.myst.inkmixer": "Mystcraft:BlockInkMixer",
     "tile.myst.bookbinder": "Mystcraft:BlockBookBinder",
+    "item.myst.agebook": "Mystcraft:agebook",
+    "item.myst.linkbook": "Mystcraft:linkbook",
+    "item.myst.page": "Mystcraft:page",
+    "item.myst.vial": "Mystcraft:vial",
 
     "tile.enderIO:blockCustomFence": "thebetweenlands:weedwoodPlankFence",
     "item.enderIO:itemRedstoneConduit": "EnderIO:itemRedstoneConduit",
@@ -558,6 +570,16 @@ manual = {
     # ExtraUtilities
     "item.extrautils:defoliageAxe": "ExtraUtilities:defoliageAxe",
     "item.extrautils:divisionSigil": "ExtraUtilities:divisionSigil",
+
+    # RanCraft Penguins
+    "item.PSLBLU": "minecraft:leather", # light blue penguin skin
+    "item.PSBLK": "minecraft:leather",
+    "item.PSBLU": "minecraft:leather",
+    "item.PSKR": "minecraft:leather",
+    "item.PSBR": "minecraft:leather",
+    "item.PB": "atum:item.bow", # penguin bow
+    "item.PKD": "MoCreatures:katana", # penguin katana
+    "item.PS": "ExtraTiC:shuriken", # penguin shuriken
 }
 
 direct = {
@@ -838,6 +860,9 @@ def main():
 
     before = readNEIDump(sys.argv[1])
     after = readNEIDump(sys.argv[2])
+
+    for k, v in force_available_substitutions.items():
+        after[k] = v
 
     configsBefore = scanConfigs(sys.argv[3])
     configsAfter = scanConfigs(sys.argv[4])
