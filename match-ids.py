@@ -162,6 +162,13 @@ overloaded_allow_multiple_substitutions = [
     "IC2:itemDustSmall",
     "IC2:itemCellEmpty",
     "IC2:fluidDistilledWater",
+    "atum:tile.flax",
+    "UsefulFood:BreadSlice",
+    "GalacticraftCore:tile.airLockFrame",
+    "UsefulFood:CookedMutton",
+    "erebus:oreCopper",
+    "UsefulFood:ChickenSandwich",
+    "UsefulFood:Biscuit",
 ]
 
 # Normally vanilla content is completely ignored, but sometimes having these
@@ -170,6 +177,7 @@ force_available_substitutions = {
     "minecraft:air": 0,
     "minecraft:leather": 334,
     "minecraft:iron_horse_armor": 417,
+    "minecraft:flower_pot": 140,
 }
 
 # Manually assigned old name to new name replacements
@@ -934,59 +942,59 @@ force_direct = {
     # Legacy substitutions
     # Missing blocks not in 1.5.2 but they were in 1.2.5 (or 1.5.1), and they
     # were leftover by 1.7.10, so would be empty if loaded. Fix it here.
-    182: (1915, "1.2.5/RedPower2 tile.rpframe/GalacticraftCore:tile.airLockFrame"),
-    208: (2510, "1.2.5/Railcraft tile.mill/ihl:wireMill"),
-    213: (3289, "1.2.5/Plugins for Forestry tile.Thatch/thebetweenlands:thatch"),
-    244: (3959, "1.2.5/BuildCraft tile.blockMiningTip/miscutils:blockMiningExplosives"),
-    390: (140, "1.2.5/tile.plantpot/minecraft:flower_pot"),
-    750: (2492, "1.2.5/RedPower2 appliance.id eloraam.base.BlockAppliance (alloy furnace, blulectric)/ihl:vacuumInductionMeltingFurnace"),
-    751: (2773, "1.2.5/tile.freezer/cfm.freezer"),
-    765: (2502, "1.2.5/RedPower2 eloraam.machine.BlockMachinePanel/ihl:gaedesMercuryRotaryPump"),
-    930: (1271, "1.5.1/Forestry tile.firsapling/ExtrabiomesXL:saplings_1"),
-    931: (2503, "1.5.1/Forestry tile.harvester/ihl:labElectrolyzer"),
-    942: (2521, "1.5.1/Forestry tile.planter/ihl:leadOven,2521"),
-    943: (2524, "1.5.1/Forestry forestry.cultivation.BlockSaplings/ihl:achesonFurnance"),
-    1086: (3822, "1.5.1/SecretRoomsMod tile.Secret Wooden Door/ForgottenNature:falseBlock"),
-    1401: (1290, "1.2.5/Kaevator SuperSlopes tile.BlockKaevWoodCorners/ExtrabiomesXL:woodslab"),
-    1432: (1290, "1.2.5/Kaevator SuperSlopes tile.BlockKaevWoodIntCorners/ExtrabiomesXL:woodslab"),
-    1433: (1290, "1.2.5/Kaevator SuperSlopes tile.BlockKaevCobblestoneIntCorners"),
-    1437: (1290, "1.2.5/Kaevator SuperSlopes tile.BlockKaevStoneIntCorners"),
-    1478: (1290, "1.2.5/Kaevator SuperSlopes tile.BlockKaevWhiteWoolSlopes"),
-    2000: (3514, "1.2.5/1.5.1/RedPower2 Copper Ore/erebus:oreCopper"),
+    182: ("GalacticraftCore:tile.airLockFrame", "1.2.5/RedPower2 tile.rpframe"),
+    208: ("ihl:wireMill", "1.2.5/Railcraft tile.mill"),
+    213: ("thebetweenlands:thatch", "1.2.5/Plugins for Forestry tile.Thatch"),
+    244: ("miscutils:blockMiningExplosives", "1.2.5/BuildCraft tile.blockMiningTip"),
+    390: ("minecraft:flower_pot", "1.2.5/tile.plantpot"),
+    750: ("ihl:vacuumInductionMeltingFurnace", "1.2.5/RedPower2 appliance.id eloraam.base.BlockAppliance (alloy furnace, blulectric)"),
+    751: ("cfm:freezer", "1.2.5/tile.freezer"),
+    765: ("ihl:gaedesMercuryRotaryPump", "1.2.5/RedPower2 eloraam.machine.BlockMachinePanel"),
+    930: ("ExtrabiomesXL:saplings_1", "1.5.1/Forestry tile.firsapling"),
+    931: ("ihl:labElectrolyzer", "1.5.1/Forestry tile.harvester"),
+    942: ("ihl:leadOven", "1.5.1/Forestry tile.planter"),
+    943: ("ihl:achesonFurnance", "1.5.1/Forestry forestry.cultivation.BlockSaplings"),
+    1086: ("ForgottenNature:falseBlock", "1.5.1/SecretRoomsMod tile.Secret Wooden Door"),
+    1401: ("ExtrabiomesXL:woodslab", "1.2.5/Kaevator SuperSlopes tile.BlockKaevWoodCorners"),
+    1432: ("ExtrabiomesXL:woodslab", "1.2.5/Kaevator SuperSlopes tile.BlockKaevWoodIntCorners"),
+    1433: ("ExtrabiomesXL:woodslab", "1.2.5/Kaevator SuperSlopes tile.BlockKaevCobblestoneIntCorners"),
+    1437: ("ExtrabiomesXL:woodslab", "1.2.5/Kaevator SuperSlopes tile.BlockKaevStoneIntCorners"),
+    1478: ("ExtrabiomesXL:woodslab", "1.2.5/Kaevator SuperSlopes tile.BlockKaevWhiteWoolSlopes"),
+    2000: ("erebus:oreCopper", "1.2.5/1.5.1/RedPower2 Copper Ore"),
 
     # RedPower2 from 1.2.5, substitutions
     # TODO: add NBT tag for custom name, historical item?
-    1256: (7765, "1.2.5/RedPower2 eloraam.core.ItemParts/ProjRed|Core:projectred.core.part"),
-    1258: (3832, "1.2.5/RedPower2 eloraam.core.ItemParts__/framez:motorcore"),
-    1262: (7767, "1.2.5/RedPower2 item.screwdriver/ProjRed|Core:projectred.core.screwdriver"),
-    1263: (5905, "1.2.5/RedPower2 eloraam.core.ItemParts___/RedLogic:redlogic.chip"),
-    1290: (507, "1.2.5/RedPower2 eloraam.world.ItemCustomSeeds/flax/atum:tile.flax"),
-    1293: (2873, "1.2.5/RedPower2 item.paintcan.orange/OpenBlocks:paintcan"),
-    1296: (2873, "1.2.5/RedPower2 item.paintcan.yellow/OpenBlocks:paintcan"),
-    1297: (2873, "1.2.5/RedPower2 item.paintcan.lime/OpenBlocks:paintcan"),
-    1299: (2873, "1.2.5/RedPower2 item.paintcan.gray/OpenBlocks:paintcan"),
-    1323: (2873, "1.2.5/RedPower2 item.paintbrush.red/OpenBlocks:paintcan"),
-    1325: (6327, "1.2.5/RedPower2 item.voltmeter/factorization:tool/charge_meter"),
-    1326: (6653, "1.2.5/RedPower2 item.btbattery/ihl:item.battery"),
-    1327: (7031, "1.2.5/RedPower2 item.sonicDriver/OpenBlocks:sonicglasses"),
-    1329: (9218, "1.2.5/RedPower2 item.athame/ProjRed|Exploration:projectred.exploration.athame"),
-    1331: (7766, "1.2.5/RedPower2 item.drawplateDiamond/ProjRed|Core:projectred.core.drawplate"),
+    1256: ("ProjRed|Core:projectred.core.part", "1.2.5/RedPower2 eloraam.core.ItemParts"),
+    1258: ("framez:motorcore", "1.2.5/RedPower2 eloraam.core.ItemParts__"),
+    1262: ("ProjRed|Core:projectred.core.screwdriver", "1.2.5/RedPower2 item.screwdriver"),
+    1263: ("RedLogic:redlogic.chip", "1.2.5/RedPower2 eloraam.core.ItemParts___"),
+    1290: ("atum:tile.flax", "1.2.5/RedPower2 eloraam.world.ItemCustomSeeds/flax"),
+    1293: ("OpenBlocks:paintcan", "1.2.5/RedPower2 item.paintcan.orange"),
+    1296: ("OpenBlocks:paintcan", "1.2.5/RedPower2 item.paintcan.yellow"),
+    1297: ("OpenBlocks:paintcan", "1.2.5/RedPower2 item.paintcan.lime"),
+    1299: ("OpenBlocks:paintcan", "1.2.5/RedPower2 item.paintcan.gray"),
+    1323: ("OpenBlocks:paintcan", "1.2.5/RedPower2 item.paintbrush.red"),
+    1325: ("factorization:tool/charge_meter", "1.2.5/RedPower2 item.voltmeter"),
+    1326: ("ihl:item.battery", "1.2.5/RedPower2 item.btbattery"),
+    1327: ("OpenBlocks:sonicglasses", "1.2.5/RedPower2 item.sonicDriver"),
+    1329: ("ProjRed|Exploration:projectred.exploration.athame", "1.2.5/RedPower2 item.athame"),
+    1331: ("ProjRed|Core:projectred.core.drawplate", "1.2.5/RedPower2 item.drawplateDiamond"),
 
     # Items from 1.2.5
-    4300: (6906, "1.2.5/item.PipeItemsAdvancedInsertion/LogisticsPipes:item.PipeFluidInsertion"),
-    4301: (6905, "1.2.5/item.PipeItemsAdvancedWood/LogisticsPipes:item.PipeFluidBasic"),
-    4302: (6881, "1.2.5/item.PipeItemsDistributor/LogisticsPipes:item.pipeController"),
-    4303: (6913, "1.2.5/item.PipeItemTeleport/LogisticsPipes:item.PipeItemsBasicTransport"),
-    4304: (6913, "1.2.5/item.PipeLiquidsTeleport/LogisticsPipes:item.PipeItemsBasicTransport"),
-    4305: (6913, "1.2.5/item.PipePowerTeleport/LogisticsPipes:item.PipeItemsBasicTransport"),
-    4507: (334, "1.2.5/item.Black Penguin Skin/minecraft:leather"),
-    4508: (334, "1.2.5/item.Blue Penguin Skin/minecraft:leather"),
-    4509: (334, "1.2.5/item.Red Penguin Skin/minecraft:leather"),
-    4356: (7509, "1.2.5/item.Penguin Crown/erebus:helmetJade"),
-    5325: (7595, "1.2.5/item.Breadslice/UsefulFood:BreadSlice"),
-    5329: (7599, "1.2.5/item.Chicken Sandwich/UsefulFood:ChickenSandwich"),
-    5333: (7601, "1.2.5/item.Bisquit/UsefulFood:Biscuit"),
-    5336: (7606, "1.2.5//UsefulFood:CookedMutton"),
+    4300: ("LogisticsPipes:item.PipeFluidInsertion", "1.2.5/item.PipeItemsAdvancedInsertion"),
+    4301: ("LogisticsPipes:item.PipeFluidBasic", "1.2.5/item.PipeItemsAdvancedWood"),
+    4302: ("LogisticsPipes:item.pipeController", "1.2.5/item.PipeItemsDistributor"),
+    4303: ("LogisticsPipes:item.PipeItemsBasicTransport", "1.2.5/item.PipeItemTeleport"),
+    4304: ("LogisticsPipes:item.PipeItemsBasicTransport", "1.2.5/item.PipeLiquidsTeleport"),
+    4305: ("LogisticsPipes:item.PipeItemsBasicTransport", "1.2.5/item.PipePowerTeleport"),
+    4507: ("minecraft:leather", "1.2.5/item.Black Penguin Skin"),
+    4508: ("minecraft:leather", "1.2.5/item.Blue Penguin Skin"),
+    4509: ("minecraft:leather", "1.2.5/item.Red Penguin Skin"),
+    4356: ("erebus:helmetJade", "1.2.5/item.Penguin Crown"),
+    5325: ("UsefulFood:BreadSlice", "1.2.5/item.Breadslice"),
+    5329: ("UsefulFood:ChickenSandwich", "1.2.5/item.Chicken Sandwich"),
+    5333: ("UsefulFood:Biscuit", "1.2.5/item.Bisquit"),
+    5336: ("UsefulFood:CookedMutton", "1.2.5//UsefulFood:CookedMutton"),
 }
 
 def ucfirst(s):
@@ -1170,7 +1178,13 @@ def main():
     mapping = matchAll(before, after, configsBefore, configsAfter)
 
     for k, v in force_direct.items():
-        mapping[k] = (v[0], "None", v[1], "forced")
+        newIDorName, oldName = v
+        if type(newIDorName) == types.IntType:
+            newID = newIDorName
+        else:
+            newID = after[newIDorName]
+
+        mapping[k] = (newID, "None " + oldName, v[1], "forced")
 
     for k in sorted(mapping.keys()):
         v = mapping[k]
