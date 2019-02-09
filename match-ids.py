@@ -130,6 +130,7 @@ overloaded_allow_multiple_substitutions = [
     "OpenBlocks:paintcan",
     "ExtrabiomesXL:terrain_blocks1",
     "ExtrabiomesXL:slabRedRock",
+    "GalacticraftCore:tile.landingPad",
 ]
 
 # Manually assigned old name to new name replacements
@@ -146,6 +147,23 @@ manual = {
     "tile.dragonstoneOre": "netherrocks:dragonstone_ore", "tile.dragonstoneBlock": "netherrocks:dragonstone_block",
     "tile.argoniteOre": "netherrocks:argonite_ore", "tile.argoniteBlock": "netherrocks:argonite_block",
     "tile.netherFurnaceOn": "netherrocks:nether_furnace",
+    "item.malachitePick": "netherrocks:malachite_pickaxe",
+    "item.malachiteSword": "netherrocks:malachite_sword",
+    "item.ashstonePick": "netherrocks:ashstone_pickaxe",
+    "item.ashstoneAxe": "netherrocks:ashstone_axe",
+    "item.dragonstonePick": "netherrocks:dragonstone_pickaxe",
+    "item.dragonstoneAxe": "netherrocks:dragonstone_axe",
+    "item.dragonstoneSword": "netherrocks:dragonstone_sword",
+    "item.argonitePick": "netherrocks:argonite_pickaxe",
+    "item.argoniteShovel": "netherrocks:argonite_shovel",
+    "item.malachiteChest": "netherrocks:malachite_chestplate",
+    "item.illumeniteBoots": "netherrocks:malachite_boots",
+    "item.fyriteIngot": "netherrocks:fyrite_ingot",
+    "item.malachiteIngot": "netherrocks:malachite_ingot",
+    "item.ashstoneGem": "netherrocks:ashstone_gem",
+    "item.illumeniteIngot": "netherrocks:illumenite_ingot",
+    "item.dragonstoneGem": "netherrocks:dragonstone_gem",
+    "item.argoniteIngot": "netherrocks:argonite_ingot",
 
     "tile.thermalexpansion.ore": "ThermalFoundation:Ore",
     "tile.thermalexpansion.engine": "ThermalExpansion:Device",
@@ -176,13 +194,16 @@ manual = {
     "tile.easycraftingtable": "thebetweenlands:weedwoodCraftingTable",
 
     "tile.mod_SRM.SecretPlayerPlate": "ForgottenNature:falseBlock",
+    "item.mod_SRM.SecretIronDoorItem": "ForgottenNature:falseBlock",
+    "item.mod_SRM.CamoflaugePaste": "ForgottenNature:falseBlock",
     "tile.mod_SRM.GhostBlock": "ForgottenNature:falseBlock",
     "tile.mod_SRM.SecretButton": "ForgottenNature:falseBlock",
-    "tile.mod_SRM.SecretIronDoorBlock": "ForgottenNature:falseBlock",
+    "tile.mod_SRM.SecretIronDoorBlock": "ExtraUtilities:etherealglass",
     "tile.mod_SRM.SecretRedstone": "ForgottenNature:falseBlock",
-    "tile.mod_SRM.SecretTrapDoor": "ForgottenNature:falseBlock",
+    "tile.mod_SRM.SecretTrapDoor": "ExtraUtilities:etherealglass",
     "tile.mod_SRM.OneWayGlass": "ExtraUtilities:etherealglass",
     "tile.mod_SRM.TorchLever": "ForgottenNature:falseBlock",
+    "item.mod_SRM.SecretWoodenDoorItem": "ExtraUtilities:etherealglass",
 
     "tile.PortalMod": "PortalGun:Portal_BlockPortal",
 
@@ -199,6 +220,27 @@ manual = {
     "tile.builderBlock": "BuildCraft|Builders:builderBlock",
     "tile.oilStill": "BuildCraft|Energy:blockOil",
     "tile.tankBlock": "BuildCraft|Factory:tankBlock",
+
+    "item.woodenGearItem": "flansmod:woodenPropeller",
+    "item.stoneGearItem": "TravellersGear:simpleGear",
+    "item.ironGearItem": "miscutils:itemGearSelenium",
+    "item.goldGearItem": "miscutils:itemGearZirconium",
+    "item.diamondGearItem": "miscutils:itemGearRuthenium",
+    "item.PipeItemsWood": "BuildCraft|Transport:item.buildcraftPipe.pipeitemswood",
+    "item.PipeItemsCobblestone": "BuildCraft|Transport:item.buildcraftPipe.pipeitemscobblestone",
+    "item.PipeItemsStone": "BuildCraft|Transport:item.buildcraftPipe.pipeitemsstone",
+    "item.PipeItemsIron": "BuildCraft|Transport:item.buildcraftPipe.pipeitemsiron",
+    "item.PipeItemsGold": "BuildCraft|Transport:item.buildcraftPipe.pipeitemsgold",
+    "item.PipeItemsDiamond": "BuildCraft|Transport:item.buildcraftPipe.pipeitemsdiamond",
+    "item.PipeItemsObsidian": "BuildCraft|Transport:item.buildcraftPipe.pipeitemsobsidian",
+    "item.PipeLiquidsWood": "BuildCraft|Transport:item.buildcraftPipe.pipefluidswood",
+    "item.PipeLiquidsCobblestone": "BuildCraft|Transport:item.buildcraftPipe.pipefluidscobblestone",
+    "item.PipeLiquidsStone": "BuildCraft|Transport:item.buildcraftPipe.pipefluidsstone",
+    "item.PipeLiquidsIron": "BuildCraft|Transport:item.buildcraftPipe.pipefluidsiron",
+    "item.PipeLiquidsGold": "BuildCraft|Transport:item.buildcraftPipe.pipefluidsgold",
+    "item.PipePowerWood": "BuildCraft|Transport:item.buildcraftPipe.pipepowerwood",
+    "item.PipePowerStone": "BuildCraft|Transport:item.buildcraftPipe.pipepowerstone",
+    "item.PipePowerGold": "BuildCraft|Transport:item.buildcraftPipe.pipepowergold",
 
     "tile.extrabiomes.cattail": "ExtrabiomesXL:plants4",
     "tile.extrabiomes.log": "ExtrabiomesXL:log1",
@@ -261,6 +303,7 @@ manual = {
     "tile.bop.cloud": "chisel:cloud",
     "tile.bop.generic.mud_brick": "thebetweenlands:mud",
     "tile.bop.promisedPortal": "thebetweenlands:portalBark",
+    "tile.bop.generic.crystal": "GalaxySpace:enceladuscrystal",
    
     "tile.blockSurreal": "ihl:oreGypsum", # Legendary Beasts
 
@@ -398,6 +441,10 @@ manual = {
     "tile.woodBlocks": "cfm:coffetablewood",
     "tile.woodBlocksThree": "cfm:tablewood",
     "tile.woodBlocksTwo": "cfm:chairwood",
+    "item.itemLightBulb": "cfm:ceilinglighton",
+    "item.mantlePieceUnf": "cfm:mailbox",
+    "item.itemCeramicPanel": "cfm:printer",
+    "item.itemBlindPart": "cfm:blindon",
 
 
     "tile.machineBlock": "BuildCraft|Builders:machineBlock",
@@ -441,6 +488,10 @@ manual = {
     "tile.Atum:AtumBrickSmall": "atum:tile.smallBrick",
     "tile.Atum:SmallStoneStair": "atum:tile.smallStairs",
     "tile.Atum:AtumSand": "atum:tile.sand",
+    "tile.Atum:AtumSlab": "atum:tile.slab",
+    "tile.Atum:AtumStoneWall": "atum:tile.walls",
+
+    "tile.decorationblock": "GalacticraftCore:tile.landingPad",
 }
 
 direct = {
