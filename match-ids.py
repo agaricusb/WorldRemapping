@@ -580,6 +580,13 @@ manual = {
     "item.PB": "atum:item.bow", # penguin bow
     "item.PKD": "MoCreatures:katana", # penguin katana
     "item.PS": "ExtraTiC:shuriken", # penguin shuriken
+
+    # Balkon's WeaponMod
+    "item.bullet": "weaponmod:bullet",
+    "item.crossbow": "weaponmod:crossbow",
+    "item.dart": "weaponmod:dart",
+    "item.firerod": "weaponmod:firerod",
+    "item.cannon": "weaponmod:cannon",
 }
 
 direct = {
