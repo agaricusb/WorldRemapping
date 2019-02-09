@@ -245,11 +245,14 @@ manual = {
     "tile.chaosDoor": "dimdoors:Unstable Door",
     "tile.dimDoorWarp": "dimdoors:Warp Door",
 
+    # Modular Forcefields System
     "tile.MFFSControlSystem": "factorization:ArtifactForge",
     "tile.MFFSForceEnergyConverter": "GalaxySpace:convertersurface",
     "tile.MFFSMonazitOre": "ihl:oreDatolite",
     "tile.MFFSCapacitor": "OpenComputers:capacitor",
     "tile.MFFSSecurityStation": "PneumaticCraft:securityStation",
+    "item.itemCardEmpty": "enhancedportals:location_card",
+    "item.itemCardPowerLink": "enhancedportals:portal_module",
 
     "tile.easycraftingtable": "thebetweenlands:weedwoodCraftingTable",
 
@@ -664,6 +667,7 @@ direct = {
 
     3709: (1316, "Forestry ExtraTrees gate Fir Gate/ExtrabiomesXL:fencegate_acacia"),
     3710: (2711, "Forestry ExtraTrees door Fir Door/malisisdoors:door_acacia"),
+    13256: (5179, "Forestry Adventurer's Backpack/Forestry:adventurerBag"),
 
     4091: (560, "MineFactoryReloaded ID.FakeLaser/MineFactoryReloaded:laserair"),
     4093: (2324, "Flan's Mod Weapons Box/flansmod:gunBox.american"),
