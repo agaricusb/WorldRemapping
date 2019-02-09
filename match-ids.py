@@ -767,7 +767,7 @@ def matchAll(before, after, configsBefore, configsAfter):
             possible = []
             for k in after.keys():
                 other = k.split(":")[1]
-                if unprefixed == other.lower() or "tile." + unprefixed == other.lower():
+                if unprefixed == other.lower() or "tile." + unprefixed == other.lower() or "item." + unprefixed == other.lower():
                     possible.append(k)
             if len(possible) > 1:
                 pass
