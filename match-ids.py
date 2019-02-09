@@ -140,6 +140,8 @@ overloaded_allow_multiple_substitutions = [
     "atum:item.bow",
     "MoCreatures:katana",
     "ExtraTiC:shuriken",
+    "Forestry:honeyDrop",
+    "Forestry:apatite",
 ]
 
 # Normally vanilla content is completely ignored, but sometimes having these
@@ -400,6 +402,7 @@ manual = {
     "tile.BiblioPress": "BiblioCraft:Printing Press",
     "tile.BiblioType": "BiblioCraft:Typesetting Machine",
 
+    # Forestry
     #"tile.for.slabs3": "Forestry:slabs",
     #"tile.for.planks2": "Forestry:planks",
     #tile.null. ID: 924
@@ -415,6 +418,16 @@ manual = {
     "tile.ffarm": "Forestry:ffarm",
     "tile.apiaristMachine": "gendustry:IndustrialApiary",
     "item.hiveFrame__": "Forestry:frameProven",
+    "item.apatite": "Forestry:apatite",
+    "item.ash": "Forestry:ash",
+    "item.biofuelCan": "GalaxySpace:item.ItemBioFuelCanister",
+    "item.honeyDrop_": "Forestry:honeyDrop",
+    "item.infuser": "Forestry:infuser",
+    "item.peat": "Forestry:peat",
+    "item.propolis_": "Forestry:propolis",
+    "item.shortMead": "Forestry:canShortMead",
+    "item.waterCan": "Forestry:canWater",
+    "item.wrench": "Forestry:wrench",
    
     # Dartcraft substitutions
     "tile.hive_": "ihl:oreBischofite",
@@ -522,7 +535,9 @@ manual = {
 
     "tile.blockThermalMonitor": "IC2NuclearControl:blockNuclearControlMain",
 
+    # IndustrialCraft IC2
     "tile.chargePad": "IC2:blockChargepad",
+    "item.cratedUUM": "IC2:fluidUuMatter",
 
     "tile.glassBell": "ihl:glassBoxBlock", # EE3 substitution
     "tile.aludel": "ihl:electrolysisBath", # EE3 substitution
@@ -673,6 +688,15 @@ direct = {
     3709: ("ExtrabiomesXL:fencegate_acacia", "Forestry ExtraTrees gate Fir Gate"),
     3710: ("malisisdoors:door_acacia", "Forestry ExtraTrees door Fir Door"),
     13256: ("Forestry:adventurerBag", "Forestry Adventurer's Backpack"),
+    13285: ("Forestry:builderBag", "Forestry Builder's Backpack"),
+    13357: ("Forestry:diggerBag", "Forestry Digger's Backpack"),
+    13358: ("Forestry:diggerBagT2", "Forestry Woven Digger's Backpack"),
+    13361: ("Forestry:foresterBag", "Forestry Forester's Backpack"),
+    13362: ("Forestry:foresterBagT2", "Forestry Woven Forester's Backpack"),
+    13374: ("Forestry:hunterBag", "Forestry Hunter's Backpack"),
+    13375: ("Forestry:hunterBagT2", "Forestry Woven Hunter's Backpack"),
+    13392: ("Forestry:minerBag", "Forestry Miner's Backpack"),
+    13393: ("Forestry:minerBagT2", "Forestry Woven Miner's Backpack"),
 
     4091: ("MineFactoryReloaded:laserair", "MineFactoryReloaded ID.FakeLaser"),
     4093: ("flansmod:gunBox.american", "Flan's Mod Weapons Box"),
