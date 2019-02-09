@@ -166,6 +166,7 @@ overloaded_allow_multiple_substitutions = [
     "UsefulFood:BreadSlice",
     "GalacticraftCore:tile.airLockFrame",
     "UsefulFood:CookedMutton",
+    "UsefulFood:RawMutton",
     "erebus:oreCopper",
     "UsefulFood:ChickenSandwich",
     "UsefulFood:Biscuit",
@@ -990,11 +991,12 @@ force_direct = {
     4507: ("minecraft:leather", "1.2.5/item.Black Penguin Skin"),
     4508: ("minecraft:leather", "1.2.5/item.Blue Penguin Skin"),
     4509: ("minecraft:leather", "1.2.5/item.Red Penguin Skin"),
-    4356: ("erebus:helmetJade", "1.2.5/item.Penguin Crown"),
+    4536: ("erebus:helmetJade", "1.2.5/item.Penguin Crown"),
     5325: ("UsefulFood:BreadSlice", "1.2.5/item.Breadslice"),
     5329: ("UsefulFood:ChickenSandwich", "1.2.5/item.Chicken Sandwich"),
     5333: ("UsefulFood:Biscuit", "1.2.5/item.Bisquit"),
-    5336: ("UsefulFood:CookedMutton", "1.2.5//UsefulFood:CookedMutton"),
+    5336: ("UsefulFood:CookedMutton", "1.2.5/item.Cooked Mutton"),
+    5337: ("UsefulFood:RawMutton", "1.2.5/item.Raw Mutton"),
 }
 
 def ucfirst(s):
