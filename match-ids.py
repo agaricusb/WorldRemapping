@@ -127,6 +127,7 @@ overloaded_allow_multiple_substitutions = [
     "ExtraUtilities:chandelier",
     "OpenBlocks:trophy",
     "cfm:freezer",
+    "OpenBlocks:paintcan",
 ]
 
 # Manually assigned old name to new name replacements
@@ -538,6 +539,24 @@ force_direct = {
     1437: (1290, "1.2.5/Kaevator SuperSlopes tile.BlockKaevStoneIntCorners"),
     1478: (1290, "1.2.5/Kaevator SuperSlopes tile.BlockKaevWhiteWoolSlopes"),
     2000: (3514, "1.2.5/1.5.1/RedPower2 Copper Ore/erebus:oreCopper"),
+
+    # RedPower2 from 1.2.5, substitutions
+    # TODO: add NBT tag for custom name, historical item?
+    1256: (7765, "1.2.5/RedPower2 eloraam.core.ItemParts/ProjRed|Core:projectred.core.part"),
+    1258: (3832, "1.2.5/RedPower2 eloraam.core.ItemParts__/framez:motorcore"),
+    1262: (7767, "1.2.5/RedPower2 item.screwdriver/ProjRed|Core:projectred.core.screwdriver"),
+    1263: (5905, "1.2.5/RedPower2 eloraam.core.ItemParts___/RedLogic:redlogic.chip"),
+    1290: (507, "1.2.5/RedPower2 eloraam.world.ItemCustomSeeds/flax/atum:tile.flax"),
+    1293: (2873, "1.2.5/RedPower2 item.paintcan.orange/OpenBlocks:paintcan"),
+    1296: (2873, "1.2.5/RedPower2 item.paintcan.yellow/OpenBlocks:paintcan"),
+    1297: (2873, "1.2.5/RedPower2 item.paintcan.lime/OpenBlocks:paintcan"),
+    1299: (2873, "1.2.5/RedPower2 item.paintcan.gray/OpenBlocks:paintcan"),
+    1323: (2873, "1.2.5/RedPower2 item.paintbrush.red/OpenBlocks:paintcan"),
+    1325: (6327, "1.2.5/RedPower2 item.voltmeter/factorization:tool/charge_meter"),
+    1326: (6653, "1.2.5/RedPower2 item.btbattery/ihl:item.battery"),
+    1327: (7031, "1.2.5/RedPower2 item.sonicDriver/OpenBlocks:sonicglasses"),
+    1329: (9218, "1.2.5/RedPower2 item.athame/ProjRed|Exploration:projectred.exploration.athame"),
+    1331: (7766, "1.2.5/RedPower2 item.drawplateDiamond/ProjRed|Core:projectred.core.drawplate"),
 }
 
 def ucfirst(s):
