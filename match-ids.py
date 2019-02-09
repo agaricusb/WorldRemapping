@@ -971,6 +971,22 @@ force_direct = {
     1327: (7031, "1.2.5/RedPower2 item.sonicDriver/OpenBlocks:sonicglasses"),
     1329: (9218, "1.2.5/RedPower2 item.athame/ProjRed|Exploration:projectred.exploration.athame"),
     1331: (7766, "1.2.5/RedPower2 item.drawplateDiamond/ProjRed|Core:projectred.core.drawplate"),
+
+    # Items from 1.2.5
+    4300: (6906, "1.2.5/item.PipeItemsAdvancedInsertion/LogisticsPipes:item.PipeFluidInsertion"),
+    4301: (6905, "1.2.5/item.PipeItemsAdvancedWood/LogisticsPipes:item.PipeFluidBasic"),
+    4302: (6881, "1.2.5/item.PipeItemsDistributor/LogisticsPipes:item.pipeController"),
+    4303: (6913, "1.2.5/item.PipeItemTeleport/LogisticsPipes:item.PipeItemsBasicTransport"),
+    4304: (6913, "1.2.5/item.PipeLiquidsTeleport/LogisticsPipes:item.PipeItemsBasicTransport"),
+    4305: (6913, "1.2.5/item.PipePowerTeleport/LogisticsPipes:item.PipeItemsBasicTransport"),
+    4507: (334, "1.2.5/item.Black Penguin Skin/minecraft:leather"),
+    4508: (334, "1.2.5/item.Blue Penguin Skin/minecraft:leather"),
+    4509: (334, "1.2.5/item.Red Penguin Skin/minecraft:leather"),
+    4356: (7509, "1.2.5/item.Penguin Crown/erebus:helmetJade"),
+    5325: (7595, "1.2.5/item.Breadslice/UsefulFood:BreadSlice"),
+    5329: (7599, "1.2.5/item.Chicken Sandwich/UsefulFood:ChickenSandwich"),
+    5333: (7601, "1.2.5/item.Bisquit/UsefulFood:Biscuit"),
+    5336: (7606, "1.2.5//UsefulFood:CookedMutton"),
 }
 
 def ucfirst(s):
