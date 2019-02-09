@@ -323,6 +323,7 @@ manual = {
 
     "tile.enderIO:blockCustomFence": "thebetweenlands:weedwoodPlankFence",
     "item.enderIO:itemRedstoneConduit": "EnderIO:itemRedstoneConduit",
+    "item.enderIO:itemIndustrialBinder": "EnderIO:itemFrankenSkull",
 
     "tile.oilMoving": "BuildCraft|Energy:blockOil",
     "tile.builderBlock": "BuildCraft|Builders:builderBlock",
@@ -388,6 +389,7 @@ manual = {
     "tile.extrabiomes.newlog": "ExtrabiomesXL:log1",
     "tile.extrabiomes.woodslab_": "ExtrabiomesXL:woodslab2",
 
+    # Biomes O' Plenty
     "tile.bop.holyStone": "chisel:holystone",
     "tile.bop.generic.holy_dirt": "GalaxySpace:barnardaCdirt",
     "tile.bop.generic.ash_stone": "BiomesOPlenty:ashStone",
@@ -416,6 +418,9 @@ manual = {
     "tile.bop.generic.mud_brick": "thebetweenlands:mud",
     "tile.bop.promisedPortal": "thebetweenlands:portalBark",
     "tile.bop.generic.crystal": "GalaxySpace:enceladuscrystal",
+    "item.bop.soulManipulator": "ExtraUtilities:mini-soul",
+    "item.bop.miscItems": "BiomesOPlenty:misc",
+    "item.bop.bopDisc": "BiomesOPlenty:record_wanderer",
    
     "tile.blockSurreal": "ihl:oreGypsum", # Legendary Beasts
 
@@ -653,6 +658,8 @@ manual = {
     "itemDustGold": "IC2:itemDust",
     "itemDustIron": "IC2:itemDust2",
     "itemDustCoal": "IC2:itemDust",
+    "item.UltimateLappack": "GraviSuiteReloaded:ItemArmorQuantumLappack",
+    "item.ingotIridium": "IC2:itemShardIridium",
 
     # GregTech, loose matches
     "item.GT_Materials": "gregtech:gt.metaitem.01",
@@ -915,6 +922,12 @@ direct = {
 
     4091: ("MineFactoryReloaded:laserair", "MineFactoryReloaded ID.FakeLaser"),
     4093: ("flansmod:gunBox.american", "Flan's Mod Weapons Box"),
+
+    30377: ("IC2NuclearControl:ItemEnergySensorLocationCard", "IC2 Nuclear Control counter sensor location card"),
+    30381: ("IC2NuclearControl:ItemUpgrade", "IC2 Nuclear Control Range Upgrade"),
+    30475: ("GraviSuiteReloaded:ItemMiscQuantumCircuit", "IC2 Nuclear Control superconductor cover"),
+
+    31999: ("Forestry:pollen", "Forestry silver lime pollen"),
 }
 
 force_direct = {
