@@ -173,6 +173,10 @@ overloaded_allow_multiple_substitutions = [
     "UsefulFood:VanillaIceCream",
     "weaponmod:musket",
     "thebetweenlands:crabstick",
+    "Forestry:pollen",
+    "TConstruct:metalPattern",
+    "TConstruct:arrowhead",
+    "Forestry:beeCombs",
 ]
 
 # Normally vanilla content is completely ignored, but sometimes having these
@@ -228,11 +232,13 @@ manual = {
     "item.lootBag": "Thaumcraft:ItemLootBag",
     "item.itemTear": "TwilightForest:item.fieryTears",
     "item.itemClaw": "xreliquary:infernal_claws",
-    "item.tileBox": "IC2:itemToolbox",
+    "item.tileBox": "MoCreatures:kittylitter",
+    "itemToolbox": "IC2:itemToolbox",
 
     "item.trophy": "TwilightForest:item.trophy",
 
     "item.railcraft.liquid.creosote.bottle": "Railcraft:fluid.creosote.bottle",
+    "item.railcraft.liquid.creosote.can": "Railcraft:fluid.creosote.can",
     "item.railcraft.part.gear": "Railcraft:part.circuit",
     "item.railcraft.cart.loco.steam": "Railcraft:cart.loco.steam.solid",
     
@@ -243,6 +249,7 @@ manual = {
     "item.marshmallowFood": "UsefulFood:CookedMarshmallow",
     "item.AppleBiscuit": "UsefulFood:AppleJamBiscuit",
 
+    # Netherrocks
     "tile.fyriteOre": "netherrocks:fyrite_ore", "tile.fyriteBlock": "netherrocks:fyrite_block",
     "tile.malachiteOre": "netherrocks:malachite_ore", "tile.malachiteBlock": "netherrocks:malachite_block",
     "tile.ashstoneOre": "netherrocks:ashstone_ore", "tile.ashstoneBlock": "netherrocks:ashstone_block",
@@ -267,6 +274,7 @@ manual = {
     "item.illumeniteIngot": "netherrocks:illumenite_ingot",
     "item.dragonstoneGem": "netherrocks:dragonstone_gem",
     "item.argoniteIngot": "netherrocks:argonite_ingot",
+    "item.dragonstoneShovel": "netherrocks:dragonstone_shovel",
 
     # Thermal Expansion / Thermal Foundation / Thermal Dynamics
     "tile.thermalexpansion.ore": "ThermalFoundation:Ore",
@@ -456,6 +464,7 @@ manual = {
     "item.tconstruct.manual": "TConstruct:manualBook",
     "item.tconstruct.Pattern": "TConstruct:Pattern",
     "item.tconstruct.Pattern_": "TConstruct:metalPattern",
+    "item.tconstruct.MetalPattern": "TConstruct:metalPattern",
     "item.tconstruct.AxeHead": "TConstruct:broadAxeHead",
     "item.tconstruct.LargeGuard": "TGregworks:tGregToolPartLargeGuard",
     "item.tconstruct.MediumGuard": "TGregworks:tGregToolPartMediumGuard",
@@ -469,6 +478,7 @@ manual = {
     "item.InfiTool.Excavator": "TConstruct:excavator",
     "item.InfiTool.Hammer": "TConstruct:hammer",
     "item.InfiTool.Arrow": "TConstruct:arrowhead",
+    "item.tconstruct.Arrowhead": "TConstruct:arrowhead",
     "item.tconstruct.bucket": "TConstruct:buckets",
     "item.tconstruct.strangefood": "TConstruct:strangeFood",
     "item.oreberry": "TConstruct:oreBerries",
@@ -504,7 +514,8 @@ manual = {
     #"tile.stained": 
     "tile.ffarm": "Forestry:ffarm",
     "tile.apiaristMachine": "gendustry:IndustrialApiary",
-    "item.hiveFrame__": "Forestry:frameProven",
+    "item.hiveFrame__": "Forestry:frameImpregnated",
+    "item.frameProven": "Forestry:frameProven",
     "item.apatite": "Forestry:apatite",
     "item.ash": "Forestry:ash",
     "item.biofuelCan": "GalaxySpace:item.ItemBioFuelCanister",
@@ -518,8 +529,12 @@ manual = {
     "item.wrench": "Forestry:wrench",
     "item.imprinter": "Forestry:imprinter",
     "item.comb": "Forestry:beeCombs",
+    "item.beeCombs": "Forestry:beeCombs",
     "item.frameOblivion": "miscutils:frameAccelerated",
     "item.magicbees:thaumiumScoop": "Forestry:scoop",
+    "item.biomassCan": "Forestry:fluid.biomass",
+    "item.pollen": "Forestry:pollen",
+    "item.vialCatalyst": "Botania:vial",
    
     # Dartcraft substitutions
     "tile.hive_": "ihl:oreBischofite",
@@ -659,7 +674,8 @@ manual = {
     "itemCellLava": "IC2:fluidPahoehoeLava",
     "itemOreUran": "IC2:itemUran",
     "itemIngotUran": "IC2:itemUran235",
-    "itemIngotAlloy": "IC2:itemPartAlloy",
+    "itemIngotAlloy": "miscutils:itemIngotAstatine",
+    "itemPartAlloy": "IC2:itemPartAlloy",
     "itemIngotBronze": "IC2:itemIngot",
     "itemIngotTin": "IC2:itemIngot",
     "itemIngotCopper": "IC2:itemIngot",
@@ -672,6 +688,8 @@ manual = {
     "itemDustCoal": "IC2:itemDust",
     "item.UltimateLappack": "GraviSuiteReloaded:ItemArmorQuantumLappack",
     "item.ingotIridium": "IC2:itemShardIridium",
+    "item.ItemEnergySensorLocationCard": "IC2NuclearControl:ItemEnergySensorLocationCard",
+    "item.GraviChestPlate": "GraviSuiteReloaded:ItemArmorAdvancedJetpack",
 
     # GregTech, loose matches
     "item.GT_Materials": "gregtech:gt.metaitem.01",
@@ -935,11 +953,11 @@ direct = {
     4091: ("MineFactoryReloaded:laserair", "MineFactoryReloaded ID.FakeLaser"),
     4093: ("flansmod:gunBox.american", "Flan's Mod Weapons Box"),
 
-    30377: ("IC2NuclearControl:ItemEnergySensorLocationCard", "IC2 Nuclear Control counter sensor location card"),
+    30377: ("IC2NuclearControl:ItemMultipleSensorLocationCard", "IC2 Nuclear Control counter sensor location card"),
     30381: ("IC2NuclearControl:ItemUpgrade", "IC2 Nuclear Control Range Upgrade"),
     30475: ("GraviSuiteReloaded:ItemMiscQuantumCircuit", "IC2 Nuclear Control superconductor cover"),
 
-    31999: ("Forestry:pollen", "Forestry silver lime pollen"),
+    31999: ("Forestry:pollenFertile", "Forestry silver lime pollen"),
 }
 
 force_direct = {
