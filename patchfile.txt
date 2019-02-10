@@ -1706,7 +1706,7 @@
 13360 -> 5048 # ('item.fertilizerCompound', 'Forestry:fertilizerCompound', 'anyspace') 
 13361 -> 5175 # ("item.null____________/Forestry Forester's Backpack", 'Forestry:foresterBag', 'direct') 
 13362 -> 5176 # ("item.null_____________/Forestry Woven Forester's Backpack", 'Forestry:foresterBagT2', 'direct') 
-# 13363 -> (None, 'item.frameImpregnated', 'frameImpregnated', 'no match')
+13363 -> 5137 # ('item.frameImpregnated', 'Forestry:frameImpregnated', 'manual') 
 13364 -> 5138 # ('item.frameProven', 'Forestry:frameProven', 'manual') 
 13365 -> 5136 # ('item.frameUntreated', 'Forestry:frameUntreated', 'anyspace') 
 13366 -> 5064 # ('item.gearBronze', 'Forestry:gearBronze', 'anyspace') 

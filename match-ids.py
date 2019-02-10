@@ -177,6 +177,7 @@ overloaded_allow_multiple_substitutions = [
     "TConstruct:metalPattern",
     "TConstruct:arrowhead",
     "Forestry:beeCombs",
+    "Forestry:frameImpregnated",
 ]
 
 # Normally vanilla content is completely ignored, but sometimes having these
@@ -515,6 +516,7 @@ manual = {
     "tile.ffarm": "Forestry:ffarm",
     "tile.apiaristMachine": "gendustry:IndustrialApiary",
     "item.hiveFrame__": "Forestry:frameImpregnated",
+    "item.frameImpregnated": "Forestry:frameImpregnated",
     "item.frameProven": "Forestry:frameProven",
     "item.apatite": "Forestry:apatite",
     "item.ash": "Forestry:ash",
