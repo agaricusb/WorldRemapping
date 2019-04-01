@@ -190,6 +190,16 @@ force_available_substitutions = {
     "minecraft:flower_pot": 140,
 }
 
+# Change metadata of mapped blocks/items, if omitted, then preserved
+metadata_map = {
+    "tile.Crystal Mushroom Block":
+    {
+        # old_meta: new_meta
+        0: 0,
+        1: 0,
+    },
+}
+
 # Manually assigned old name to new name replacements
 manual = {
     "tile.IronChest": "IronChest:BlockIronChest",
@@ -1233,7 +1243,11 @@ def main():
     for k in sorted(mapping.keys()):
         v = mapping[k]
         if v[0] is not None:
-            print "%s -> %s # %s " % (k, v[0], v[1:])
+            if v[1] in metadata_map:
+                for old_meta, new_meta in metadata_map[v[1]].items():
+                    print "%s:%s -> %s:%s # %s (META)" % (k, old_meta, v[0], new_meta, v[1:])
+            else:
+                print "%s -> %s # %s " % (k, v[0], v[1:])
         else:
             print "# %s -> %s" % (k, v)
  
