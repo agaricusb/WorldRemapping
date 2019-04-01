@@ -136,6 +136,7 @@ overloaded_allow_multiple_substitutions = [
     "Railcraft:part.circuit",
     "UsefulFood:RawMarshmallow",
     "MoCreatures:furchest",
+    "IC2:blockOreUran",
     "minecraft:leather",
     "atum:item.bow",
     "MoCreatures:katana",
@@ -194,7 +195,8 @@ manual = {
     "tile.IronChest": "IronChest:BlockIronChest",
     "tile.CompactSolar": "CompactSolars:CompactSolarBlock",
 
-    "tile.bau5ProjectBench": "projectbench:pb_block",
+    # TODO: fix converting Project Bench, get StackOverflow on RednetAdaptor?!
+    "tile.bau5ProjectBench": "IC2:blockOreUran", #"projectbench:pb_block",
 
     "AppEng.Items.*": "appliedenergistics2:item.ItemBasicStorageCell.64k",
     "AppEng.Items.*_": "appliedenergistics2:item.ItemMultiPart",

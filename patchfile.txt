@@ -701,7 +701,7 @@
 # 2827 -> (None, 'item.flowerPot3', 'flowerPot3', 'no match')
 # 2828 -> (None, 'item.flowerPot4', 'flowerPot4', 'no match')
 2829 -> 2430 # ('tile.blockSurreal', 'ihl:oreGypsum', 'manual') 
-2830 -> 2929 # ('tile.bau5ProjectBench', 'projectbench:pb_block', 'manual') 
+2830 -> 188 # ('tile.bau5ProjectBench', 'IC2:blockOreUran', 'manual') 
 2850 -> 3977 # ('tile.powerconverters.common', 'PowerConverters3:powerconverters.common', 'anyspace') 
 # 2851 -> (None, 'tile.powerconverters.bc', 'PowerConverters3:bc', 'no match')
 2852 -> 3979 # ('tile.powerconverters.ic2', 'PowerConverters3:powerconverters.ic2', 'anyspace') 
