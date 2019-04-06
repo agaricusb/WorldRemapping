@@ -198,6 +198,25 @@ metadata_map = {
         0: 0,
         1: 0,
     },
+    2635: #"ForgottenNature:FNSapling3":
+    {
+        0: 0, # ForgottenNature:SaplingHuckleberry
+        1: 1, # ForgottenNature:SaplingBlackberry
+        2: 2, # ForgottenNature:SaplingCrystal
+        3: 3, # ForgottenNature:SaplingNetherAsh
+        4: 4, # ForgottenNature:SaplingNetherBlaze
+        5: 5, # ForgottenNature:SaplingNetherMushroom
+        6: 0,
+        7: 1,
+        8: 2,
+        9: 3,
+        10: 4,
+        11: 5,
+        12: 0,
+        13: 1,
+        14: 2,
+        15: 3,
+    },
 }
 
 # Manually assigned old name to new name replacements
@@ -1245,6 +1264,9 @@ def main():
         if v[0] is not None:
             if v[1] in metadata_map:
                 for old_meta, new_meta in metadata_map[v[1]].items():
+                    print "%s:%s -> %s:%s # %s (META)" % (k, old_meta, v[0], new_meta, v[1:])
+            elif k in metadata_map:
+                for old_meta, new_meta in metadata_map[k].items():
                     print "%s:%s -> %s:%s # %s (META)" % (k, old_meta, v[0], new_meta, v[1:])
             else:
                 print "%s -> %s # %s " % (k, v[0], v[1:])
