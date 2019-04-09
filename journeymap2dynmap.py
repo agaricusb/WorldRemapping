@@ -22,9 +22,11 @@ for fn in files:
     x = j["x"]
     y = j["y"]
     z = j["z"]
+    if 0 not in j["dimensions"]: continue
+    if name.startswith("Death ") or name == "ack": continue
 
     id = name.lower().replace(" ","_")
-    for c in "[]:-": id = id.replace(c, "")  # TODO: why not .translate?
+    for c in "[]:-'/": id = id.replace(c, "")  # TODO: why not .translate?
     if len(id) > 25: id = id[:25]
 
     if "Spawn: " in name:
@@ -41,4 +43,5 @@ for fn in files:
             name,
             x, y, z,
             icon)
+    #cmd = 'dmarker delete %s' % (id,)
     print cmd
