@@ -1077,7 +1077,7 @@ def lcfirst(s):
     return s[0].lower() + s[1:]
 
 def to_snakecase(s):
-    return re.sub("([A-Z])", lambda x: "_" + x.group(1).lower(), "fooBar")
+    return re.sub("([A-Z])", lambda x: "_" + x.group(1).lower(), s)
 
 def matchAll(before, after, configsBefore, configsAfter):
     mapping = {}
