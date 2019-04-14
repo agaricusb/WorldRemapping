@@ -12,6 +12,7 @@ files = os.listdir(root)
 for fn in files:
     #if not fn.startswith("[152]") and not fn.startswith("hcsmp"): continue
     #if not (not fn.startswith("[152]") and not fn.startswith("hcsmp")): continue
+    if not fn.startswith("hcsmp: "): continue
 
     if fn.startswith('.') or fn.endswith('.zip'): continue
 
@@ -36,7 +37,7 @@ for fn in files:
     elif "Base" in name:
         icon = "house"
     else:
-        icon = "pin"
+        icon = "temple"
 
     cmd = 'dmarker add %s "%s" x:%s y:%s z:%s world:world icon:%s' % (
             id,
