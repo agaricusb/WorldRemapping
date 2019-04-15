@@ -1,0 +1,42 @@
+
+vanilla Block IDs
+minecraft.jar | 0-124 | 0-158
+http://www.minecraftwiki.net/wiki/Data_values
+
+original    identifier                                                              proposed
+126: eloraam.logic.BlockLogic@7ffba3f9                                              1900 (arbitrary)
+127: net.minecraft.server.powercrystals.netherores.BlockNetherOres@61ca7213         1440 NetherOres 4.1
+128: net.minecraft.server.BlockCrystalBlock@32076f8d                                4074 ForgottenNature I:crystalBlockID=4074
+129: net.minecraft.server.BlockCrystalLeaves@62caba4a                               4070 (arbitrary) near ForgottenNature
+130: net.minecraft.server.BlockCrystalStone@5eb89f26                                4073 ForgottenNature I:crystalStoneID=4073
+131: net.minecraft.server.BlockCrystalWood@2ad8a85f                                 4072 ForgottenNature I:crystalWoodID=4072
+132: net.minecraft.server.BlockNewFruit@76160af2                                    4075 ForgottenNature I:fruitID=4075
+133: net.minecraft.server.BlockNewLeaves@2128d26f                                   4084 ForgottenNature I:leafIDindex=4084
+134: net.minecraft.server.BlockNewLeaves2@7f0f866a                                  4085 ForgottenNature implied
+135: net.minecraft.server.BlockNewLeaves3@5441da51                                  4086 ForgottenNature implied
+ 169 leafID4=169                                                                    4087 ForgottenNature implied
+ 170 leafID5=170                                                                    4088 ForgottenNature implied
+ 171 leafID6=171                                                                    4089 ForgottenNature implied
+136: eloraam.base.BlockMicro@2f64270e                                               1901 (arbitrary)
+137: eloraam.base.BlockAppliance@58402070                                           1902 (arbitrary)
+138: eloraam.logic.BlockLogic@5a11c653                                              1903 (arbtirary)
+139: eloraam.world.BlockCustomFlower@44f3a157                                       1904 (arbitrary)
+140: eloraam.world.BlockCustomOre@56e57a1e                                          1905 (arbitrary)
+141: eloraam.world.BlockCustomLeaves@73b47423                                       1906 (arbitrary)
+142: eloraam.world.BlockCustomStone@4c34e12d                                        1907 (arbitrary)
+143: eloraam.world.BlockCustomLog@23ab7871                                          1908 (arbitrary)
+144: eloraam.world.BlockCustomCrops@4e705502                                        1909 (arbitrary)
+146: extrabiomes.blocks.BlockCrackedSand@30dd1e89                                   255 ExtraBiomesXL tile.extrabiomes.crackedsand
+ 255 railcraft.common.detector.BlockDetector@4c9fc2e7                               1051 Railcraft FTB I:block.detector=1051
+147: extrabiomes.blocks.BlockRedRock@4ffcd6f                                        254 ExtraBiomesXL tile.extrabiomes.redrock
+148: eloraam.core.BlockMultipart@360834f9                                           1910 (arbitrary)
+149: eloraam.control.BlockPeripheral@54cde325                                       1911 (arbitrary)
+150: buildcraft.factory.BlockMiningWell@18fbbda2                                    1500 Buildcraft I:miningWell.id=1500
+151: buildcraft.factory.BlockPlainPipe@375ee37ea                                    1501 Buildcraft I:drill.id=1501
+152: buildcraft.factory.BlockAutoWorkbench@36a98198                                 1502 Buildcraft I:autoWorkbench.id=1502
+153: buildcraft.factory.BlockQuarry@327b3e31                                        1503 Buildcraft I:quarry.id=1503
+154: buildcraft.builders.BlockMarker@39301cdb                                       1504 Buildcraft I:marker.id=1504
+155: buildcraft.builders.BlockFiller@5b68b32                                        1505 Buildcraft I:filler.id=1505
+157: buildcraft.builders.BlockBuilder@136c828c                                      1507 Buildcraft I:builder.id=1507 (no 1506!)
+158: buildcraft.builders.BlockTemplate@38eebf4a                                     1508 Buildcraft I:architect.id=1508
+
